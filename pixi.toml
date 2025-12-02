@@ -1,0 +1,76 @@
+[workspace]
+channels = ["conda-forge"]
+name = "sst-rsoxs-profile-collection"
+platforms = ["linux-64"]
+version = "2025.3.1"
+
+[system-requirements]
+libc = "2.17"
+
+[feature.profile.dependencies]
+bluesky-base = "==1.14.6"
+bluesky-queueserver = "*"
+matplotlib-base= ">=3.9.3,<4"
+networkx = ">=3.4.2,<4"
+nslsii = "==0.11.4"
+numpy = "*"
+ophyd = ">=1.11.0"
+pyepics = "*"
+python = ">=3.12,<3.13"
+semver = ">=3.0.4,<4"
+tiled-client = ">=0.1.6"
+hdf5-external-filter-plugins = ">=0.1.0,<0.2"
+blosc-hdf5-plugin = ">=1.0.1,<2"
+databroker = "==2.0.0"
+pyhyperscattering = ">=0.2.10,<0.3"
+epicscorelibs = ">=7.0.7.99.1.1,<8"
+bluesky-tiled-plugins = ">=2.0.0b68"
+ophyd-async = ">=0.13.7,<0.14"
+
+[feature.profile.pypi-dependencies]
+sst-base = { git = "https://github.com/nsls-ii-sst/sst_base", rev = "v0.1.0" }
+nbs-bl = { git = "https://github.com/xraygui/nbs-bl", rev = "v0.1.2" }
+nbs-core = { git = "https://github.com/xraygui/nbs-core", rev="v0.0.2" }
+rsoxs = { git = "https://github.com/usnistgov/sst-rsoxs", branch = "main" }
+pvxslibs = ">=1.3.2, <2"
+
+[feature.qs.dependencies]
+bluesky-queueserver = "*"
+bluesky-httpserver = "*"
+
+[feature.qs.tasks]
+# This section needs some development work to understand the best way to
+# thread the required configuration through both the task and files checked into
+# the profile.  These will interact with the ansible roles for pushing out the
+# systemd units
+qs-backend = "start-re-manager --profile-dir=."
+qs-server = "uvicorn --host localhost --port 60610 bluesky_httpserver.server:app"
+
+
+[feature.terminal.dependencies]
+ipython = ">=9.5.0"
+pyside6 = "*"
+numpy = ">2"
+
+
+[feature.terminal.tasks]
+start = "unset SESSION_MANAGER PYTHONPATH && MPLBACKEND=qtagg ipython --profile-dir=."
+pvs = "ipython --profile-dir=. -c 'get_pv_types(); exit()'"
+
+[feature.gui.tasks]
+nbs-gui = "nbs-gui --profile collection"
+nbs-viewer = "nbs-viewer"
+
+[feature.gui.pypi-dependencies]
+nbs-viewer = { git = "https://github.com/xraygui/nbs-viewer", rev="v0.3.3" }
+
+[feature.gui.dependencies]
+asteval = ">=1.0.6,<2"
+pyqtgraph = ">=0.13.7,<0.14"
+bluesky-widgets = ">=0.0.17,<0.0.18"
+bluesky-live = ">=0.0.8,<0.0.9"
+
+[environments]
+terminal = {features=["profile", "terminal"], solve-group="profile"}
+qs = {features=["profile", "qs"], solve-group="profile"}
+gui = {features=["profile", "gui"], solve-group="profile"}
