@@ -78,7 +78,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-live-0.0.8-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-queueserver-0.0.23-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-queueserver-api-0.0.12-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.0rc3-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-widgets-0.0.17-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bokeh-3.8.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boltons-25.0.0-pyhd8ed1ab_0.conda
@@ -648,7 +648,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/e2/0d/8ba33fa83a7dcde13eb3c1c2a0c1cc29950a048bfed6d9b0d8b6bd710b4c/pydata_sphinx_theme-0.16.1-py3-none-any.whl
-      - pypi: git+https://github.com/silx-kit/pyFAI#65b5955e8253db3d62ca2e5afae5f1cbfb3c573c
+      - pypi: git+https://github.com/silx-kit/pyFAI#3a7adedc45c9a94585ec19bbd4622ac9f483ab9c
       - pypi: git+https://github.com/usnistgov/PyHyperScattering#5d8b944d79cf6574257fc7bb474f1b155d8192ed
       - pypi: https://files.pythonhosted.org/packages/97/d2/3cb0980a6a4a2581facc4d47b2e7d99912a1f7065407f007f27419e19979/qtconsole-5.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/69/76/37c0ccd5ab968a6a438f9c623aeecc84c202ab2fabc6a8fd927580c15b5a/QtPy-2.4.3-py3-none-any.whl
@@ -656,7 +656,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/14/a0/bb38d3b76b8cae341dad93a2dd83ab7462e6dbcdd84d43f54ee60a8dc167/soupsieve-2.8-py3-none-any.whl
       - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#f615449bab4b0ddb0b9118016b92edfa841d689d
-      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#994eafa32675c798a0f008ac9eb9655ab0a55fce
+      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#548feedd9b90ed8304e2d445d3f913b2caf255b0
       - pypi: https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32dd3df50d43d7ff9854f8e0603945ff398974c1d91ac1ef/tomli_w-1.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/db/0f/0d52c98b8a885aeda831224b78f3be7ec2e1aa4a62091f9f9188c3c65b56/yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   qs:
@@ -734,7 +734,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-live-0.0.8-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-queueserver-0.0.23-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-queueserver-api-0.0.12-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.0rc3-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bokeh-3.8.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boltons-25.0.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-1.2.0-hed03a55_1.conda
@@ -1299,13 +1299,13 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/e2/0d/8ba33fa83a7dcde13eb3c1c2a0c1cc29950a048bfed6d9b0d8b6bd710b4c/pydata_sphinx_theme-0.16.1-py3-none-any.whl
-      - pypi: git+https://github.com/silx-kit/pyFAI#65b5955e8253db3d62ca2e5afae5f1cbfb3c573c
+      - pypi: git+https://github.com/silx-kit/pyFAI#3a7adedc45c9a94585ec19bbd4622ac9f483ab9c
       - pypi: git+https://github.com/usnistgov/PyHyperScattering#5d8b944d79cf6574257fc7bb474f1b155d8192ed
       - pypi: https://files.pythonhosted.org/packages/fa/a2/8ca963a9a00ff84a6835123573e014d2742d6dee0303310340877d0da445/silx-2.2.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/14/a0/bb38d3b76b8cae341dad93a2dd83ab7462e6dbcdd84d43f54ee60a8dc167/soupsieve-2.8-py3-none-any.whl
       - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#f615449bab4b0ddb0b9118016b92edfa841d689d
-      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#994eafa32675c798a0f008ac9eb9655ab0a55fce
+      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#548feedd9b90ed8304e2d445d3f913b2caf255b0
       - pypi: https://files.pythonhosted.org/packages/db/0f/0d52c98b8a885aeda831224b78f3be7ec2e1aa4a62091f9f9188c3c65b56/yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   terminal:
     channels:
@@ -1378,7 +1378,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-kafka-0.10.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-live-0.0.8-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-queueserver-0.0.23-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.0rc3-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bokeh-3.8.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boltons-25.0.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-1.2.0-hed03a55_1.conda
@@ -1998,7 +1998,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-kafka-0.10.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-live-0.0.8-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-queueserver-0.0.23-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.0rc3-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-widgets-0.0.17-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/bokeh-3.8.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/boltons-25.0.0-pyhd8ed1ab_0.conda
@@ -2549,7 +2549,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zlib-ng-2.3.2-h54a6638_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.25.0-py312h5253ce2_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda
-      - pypi: git+https://github.com/xraygui/nbs-viewer?branch=combination#458793326ef21c359b36ca2f36cb886112f4a108
+      - pypi: https://files.pythonhosted.org/packages/37/b1/c27e8aa2284ebec953c9cf7976cf6e9159c6f3cc8436ec770bf9a5cdea2c/nbs_viewer-0.3.4-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/69/76/37c0ccd5ab968a6a438f9c623aeecc84c202ab2fabc6a8fd927580c15b5a/QtPy-2.4.3-py3-none-any.whl
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
@@ -3598,9 +3598,9 @@ packages:
   - pkg:pypi/bluesky-queueserver-api?source=hash-mapping
   size: 78314
   timestamp: 1747612811568
-- conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.0rc3-pyhd8ed1ab_0.conda
-  sha256: 96e8c7923fb862d2fe335943cb30668e48ed107bdd4bc471cc3df5d881fd1c86
-  md5: 47961c578642f6c3501e1136000aaa4f
+- conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-tiled-plugins-2.0.1-pyhd8ed1ab_0.conda
+  sha256: b3ccd7466c81804c29069596359de1338c9c2650f83540d470d77c6901eefb49
+  md5: 67d9fd5a74b57eae43c39e30c0ea4490
   depends:
   - dask-core
   - event-model
@@ -3613,8 +3613,8 @@ packages:
   license_family: BSD
   purls:
   - pkg:pypi/bluesky-tiled-plugins?source=hash-mapping
-  size: 47692
-  timestamp: 1763569198255
+  size: 49270
+  timestamp: 1769034143154
 - conda: https://conda.anaconda.org/conda-forge/noarch/bluesky-widgets-0.0.17-pyhd8ed1ab_1.conda
   sha256: b436f79f6dae2a1e102fe327f98bd8cb33b0ac01109a7452c3b0bcf7ef96e330
   md5: 41fd7cea1cabdf4ee175493b264c8ca3
@@ -8125,21 +8125,22 @@ packages:
   - tomli-w
   - tomli ; python_full_version < '3.11'
   requires_python: '>=3.8'
-- pypi: git+https://github.com/xraygui/nbs-viewer?branch=combination#458793326ef21c359b36ca2f36cb886112f4a108
+- pypi: https://files.pythonhosted.org/packages/37/b1/c27e8aa2284ebec953c9cf7976cf6e9159c6f3cc8436ec770bf9a5cdea2c/nbs_viewer-0.3.4-py3-none-any.whl
   name: nbs-viewer
-  version: 0.3.5.dev21+g458793326
+  version: 0.3.4
+  sha256: c46fc1368ed21d3e89320d676183de93afcf2c4d241ee5775ea0fecbfe04101b
   requires_dist:
-  - asteval
-  - bluesky-kafka
-  - bluesky-tiled-plugins>=2.0.0b59
-  - bluesky-widgets>=0.0.15
-  - databroker[back-compat,client,server]>=2.0.0b57
-  - matplotlib
-  - nslsii
   - numpy
-  - pyzmq
   - qtpy
+  - matplotlib
   - tiled>=0.1.0b17
+  - bluesky-widgets>=0.0.15
+  - pyzmq
+  - bluesky-kafka
+  - nslsii
+  - databroker[back-compat,client,server]>=2.0.0b57
+  - bluesky-tiled-plugins>=2.0.0b59
+  - asteval
   - tomli>=2.0.0 ; python_full_version < '3.11'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h2d0b736_3.conda
   sha256: 3fde293232fa3fca98635e1167de6b7c7fda83caf24b9d6c91ec9eefb4f4d586
@@ -9457,7 +9458,7 @@ packages:
   - pkg:pypi/pyerfa?source=hash-mapping
   size: 295617
   timestamp: 1756821497270
-- pypi: git+https://github.com/silx-kit/pyFAI#65b5955e8253db3d62ca2e5afae5f1cbfb3c573c
+- pypi: git+https://github.com/silx-kit/pyFAI#3a7adedc45c9a94585ec19bbd4622ac9f483ab9c
   name: pyfai
   version: 2026.1.0a0
   requires_dist:
@@ -10782,9 +10783,9 @@ packages:
   - pkg:pypi/sqlalchemy?source=hash-mapping
   size: 3580299
   timestamp: 1765351891054
-- pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#994eafa32675c798a0f008ac9eb9655ab0a55fce
+- pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#548feedd9b90ed8304e2d445d3f913b2caf255b0
   name: sst-base
-  version: 0.1.1.dev3+g994eafa32
+  version: 0.1.1.dev4+g548feedd9
   requires_dist:
   - bluesky
   - ophyd

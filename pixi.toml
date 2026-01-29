@@ -26,7 +26,7 @@ databroker = "==2.0.0"
 epicscorelibs = ">=7.0.7.99.1.1,<8"
 pyzmq = ">=27.0.2,<28"
 bluesky-live = ">=0.0.8,<0.0.9"
-bluesky-tiled-plugins = ">=2.0.0b68"
+bluesky-tiled-plugins = ">=2.0.1"
 ophyd-async = ">=0.13.7,<0.14"
 
 #[feature.nbs.dependencies]
@@ -75,6 +75,8 @@ qs-backend = "start-re-manager --profile-dir=."
 qs-server = "uvicorn --host localhost --port 60610 bluesky_httpserver.server:app"
 qs = "scripts/qs-start.sh"
 qs-dev = "scripts/qs-dev.sh"
+qs-connect = "jupyter console --existing"
+bsui = "scripts/bsui-start.sh"
 
 [feature.terminal.dependencies]
 ipython = ">=9.5.0"
