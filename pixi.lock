@@ -474,7 +474,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pymongo-4.15.5-py312h1289d80_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyolog-4.5.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.2.5-pyhcf101f3_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/pyqtgraph-0.13.7-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pyside6-6.9.3-py312h9da60e5_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha55dd90_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pytango-10.1.1-np2py312hc9d1799_0.conda
@@ -639,24 +638,22 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/3b/90/87c30193cf3bb8fd4b5ec5c1dcb65cc295209157de19bf1bbbdf3298d85a/fabio-2025.10.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/38/74/f94141b38a51a553efef7f510fc213894161ae49b88bffd037f8d2a7cb2f/frozendict-2.4.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6a/bd/d91c5e39f490a49df14320f4e8c80161cfcce09f1e2cde1edd16a551abb3/frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
-      - pypi: git+https://github.com/xraygui/livetable#04456b1cf6c8b21559be8b5031858a67b448b84b
       - pypi: https://files.pythonhosted.org/packages/da/87/f6cb9442e4bada8aab5ae7e1046264f62fdbeaa6e3f6211b93f4c0dd97f1/lxml-6.0.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/0d/e2/9baffdae21a76f77ef8447f1a05a96ec4bc0a24dae08767abc0a2fe680b8/multidict-6.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/d7/74/f7de37a9a9592b395fb1030f96a383253684da1741105e6afbed5c45ee37/nbs_bl-0.2.0-py3-none-any.whl
+      - pypi: git+https://github.com/xraygui/nbs-bl?tag=v0.2.1#1c23205aa59aab4ba60809c29ac0130d5ffd4b8c
       - pypi: https://files.pythonhosted.org/packages/9d/be/339b1eb92b77310d8f4524047af8d25c1373a4ca36a441b33dd75ea11110/nbs_core-0.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/0b/1ac75645a53cd81178e5fa829796890cb59fc43241499dcc929bf88d0007/nbs_gui-0.1.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/e2/0d/8ba33fa83a7dcde13eb3c1c2a0c1cc29950a048bfed6d9b0d8b6bd710b4c/pydata_sphinx_theme-0.16.1-py3-none-any.whl
-      - pypi: git+https://github.com/silx-kit/pyFAI#3a7adedc45c9a94585ec19bbd4622ac9f483ab9c
+      - pypi: git+https://github.com/silx-kit/pyFAI#136d73ca6e02cac044468983ada113e068277642
       - pypi: git+https://github.com/usnistgov/PyHyperScattering#5d8b944d79cf6574257fc7bb474f1b155d8192ed
-      - pypi: https://files.pythonhosted.org/packages/97/d2/3cb0980a6a4a2581facc4d47b2e7d99912a1f7065407f007f27419e19979/qtconsole-5.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/69/76/37c0ccd5ab968a6a438f9c623aeecc84c202ab2fabc6a8fd927580c15b5a/QtPy-2.4.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/a2/8ca963a9a00ff84a6835123573e014d2742d6dee0303310340877d0da445/silx-2.2.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/14/a0/bb38d3b76b8cae341dad93a2dd83ab7462e6dbcdd84d43f54ee60a8dc167/soupsieve-2.8-py3-none-any.whl
       - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#f615449bab4b0ddb0b9118016b92edfa841d689d
-      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#548feedd9b90ed8304e2d445d3f913b2caf255b0
+      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=pol_spline#d4690b24ebafbb04c4a013512c2e2845323fad97
       - pypi: https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32dd3df50d43d7ff9854f8e0603945ff398974c1d91ac1ef/tomli_w-1.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/db/0f/0d52c98b8a885aeda831224b78f3be7ec2e1aa4a62091f9f9188c3c65b56/yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   qs:
@@ -1294,18 +1291,18 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/6a/bd/d91c5e39f490a49df14320f4e8c80161cfcce09f1e2cde1edd16a551abb3/frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/da/87/f6cb9442e4bada8aab5ae7e1046264f62fdbeaa6e3f6211b93f4c0dd97f1/lxml-6.0.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/0d/e2/9baffdae21a76f77ef8447f1a05a96ec4bc0a24dae08767abc0a2fe680b8/multidict-6.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/d7/74/f7de37a9a9592b395fb1030f96a383253684da1741105e6afbed5c45ee37/nbs_bl-0.2.0-py3-none-any.whl
+      - pypi: git+https://github.com/xraygui/nbs-bl?tag=v0.2.1#1c23205aa59aab4ba60809c29ac0130d5ffd4b8c
       - pypi: https://files.pythonhosted.org/packages/9d/be/339b1eb92b77310d8f4524047af8d25c1373a4ca36a441b33dd75ea11110/nbs_core-0.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/e2/0d/8ba33fa83a7dcde13eb3c1c2a0c1cc29950a048bfed6d9b0d8b6bd710b4c/pydata_sphinx_theme-0.16.1-py3-none-any.whl
-      - pypi: git+https://github.com/silx-kit/pyFAI#3a7adedc45c9a94585ec19bbd4622ac9f483ab9c
+      - pypi: git+https://github.com/silx-kit/pyFAI#136d73ca6e02cac044468983ada113e068277642
       - pypi: git+https://github.com/usnistgov/PyHyperScattering#5d8b944d79cf6574257fc7bb474f1b155d8192ed
       - pypi: https://files.pythonhosted.org/packages/fa/a2/8ca963a9a00ff84a6835123573e014d2742d6dee0303310340877d0da445/silx-2.2.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/14/a0/bb38d3b76b8cae341dad93a2dd83ab7462e6dbcdd84d43f54ee60a8dc167/soupsieve-2.8-py3-none-any.whl
       - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#f615449bab4b0ddb0b9118016b92edfa841d689d
-      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#548feedd9b90ed8304e2d445d3f913b2caf255b0
+      - pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=pol_spline#d4690b24ebafbb04c4a013512c2e2845323fad97
       - pypi: https://files.pythonhosted.org/packages/db/0f/0d52c98b8a885aeda831224b78f3be7ec2e1aa4a62091f9f9188c3c65b56/yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   terminal:
     channels:
@@ -7726,14 +7723,6 @@ packages:
   purls: []
   size: 168074
   timestamp: 1607309189989
-- pypi: git+https://github.com/xraygui/livetable#04456b1cf6c8b21559be8b5031858a67b448b84b
-  name: livetable
-  version: 0.1.0
-  requires_dist:
-  - qtpy
-  - bluesky-kafka>=0.10.0
-  - bluesky-widgets>=0.0.16
-  - nslsii
 - conda: https://conda.anaconda.org/conda-forge/linux-64/llvmlite-0.46.0-py312h7424e68_0.conda
   sha256: 1dbcff26480ae7a7a466b45aaa06b793ad66fe2a167ca2b5805e449b0403e3c0
   md5: 7b8f200683fab3c020c37254debfcbc5
@@ -8088,12 +8077,12 @@ packages:
   - pkg:pypi/narwhals?source=compressed-mapping
   size: 268700
   timestamp: 1764604454148
-- pypi: https://files.pythonhosted.org/packages/d7/74/f7de37a9a9592b395fb1030f96a383253684da1741105e6afbed5c45ee37/nbs_bl-0.2.0-py3-none-any.whl
+- pypi: git+https://github.com/xraygui/nbs-bl?tag=v0.2.1#1c23205aa59aab4ba60809c29ac0130d5ffd4b8c
   name: nbs-bl
-  version: 0.2.0
-  sha256: fee4df1cc2bb9f4efbc1eb6b69af2fb8b26c3ede6a550f8837bcc5246f50f601
+  version: 0.2.1
   requires_dist:
   - bluesky
+  - bluesky-live
   - bluesky-queueserver
   - databroker>=2.0.0b67
   - ipython
@@ -9458,7 +9447,7 @@ packages:
   - pkg:pypi/pyerfa?source=hash-mapping
   size: 295617
   timestamp: 1756821497270
-- pypi: git+https://github.com/silx-kit/pyFAI#3a7adedc45c9a94585ec19bbd4622ac9f483ab9c
+- pypi: git+https://github.com/silx-kit/pyFAI#136d73ca6e02cac044468983ada113e068277642
   name: pyfai
   version: 2026.1.0a0
   requires_dist:
@@ -10018,25 +10007,6 @@ packages:
   purls: []
   size: 1600625
   timestamp: 1759303398114
-- pypi: https://files.pythonhosted.org/packages/97/d2/3cb0980a6a4a2581facc4d47b2e7d99912a1f7065407f007f27419e19979/qtconsole-5.7.0-py3-none-any.whl
-  name: qtconsole
-  version: 5.7.0
-  sha256: 42ff0734269a77129097131ce96059f97dc864e6e061d7ed919609ccfe18dd22
-  requires_dist:
-  - traitlets!=5.2.1,!=5.2.2
-  - jupyter-core
-  - jupyter-client>=4.1
-  - pygments
-  - ipykernel>=4.1
-  - ipython-pygments-lexers
-  - qtpy>=2.4.0
-  - packaging
-  - flaky ; extra == 'test'
-  - pytest ; extra == 'test'
-  - pytest-qt ; extra == 'test'
-  - pytest-asyncio ; extra == 'test'
-  - sphinx>=1.3 ; extra == 'doc'
-  requires_python: '>=3.9'
 - pypi: https://files.pythonhosted.org/packages/69/76/37c0ccd5ab968a6a438f9c623aeecc84c202ab2fabc6a8fd927580c15b5a/QtPy-2.4.3-py3-none-any.whl
   name: qtpy
   version: 2.4.3
@@ -10783,9 +10753,9 @@ packages:
   - pkg:pypi/sqlalchemy?source=hash-mapping
   size: 3580299
   timestamp: 1765351891054
-- pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=multi_speed_flyscan#548feedd9b90ed8304e2d445d3f913b2caf255b0
+- pypi: git+https://github.com/nsls-ii-sst/sst_base?branch=pol_spline#d4690b24ebafbb04c4a013512c2e2845323fad97
   name: sst-base
-  version: 0.1.1.dev4+g548feedd9
+  version: 0.1.1.dev7+gd4690b24e
   requires_dist:
   - bluesky
   - ophyd

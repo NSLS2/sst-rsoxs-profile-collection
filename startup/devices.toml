@@ -582,6 +582,7 @@ read_attrs = ["tiff"]
 ## Ethernet cable from port upstream of RSoXS (Workstation area) to pyI-4:1 patch panel on upstream inboard SST2 side.
 ## Cable from pyI-4:1 patch panel to C racks on inboard SST2 side of RSoXS.
 ## Switch: [need to locate port]
+## IOC: xf07id-ioc3, softioc: ad_RSoXS_cam05 
 ## Acquisition parameters in Phoebus: ######################
 ## Exposure time = 0.05 s ## Likely the first parameter to be adjusted if image is too bright or dim
 ## Acquire Period: 1 s

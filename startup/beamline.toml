@@ -19,11 +19,11 @@ prefix = "rsoxs-"
 [settings.redis.config]
 host = "info.sst.nsls2.bnl.gov"
 prefix = "rsoxs-"
-port = 60737
+# port = 60737
 db = 1
 
 [settings.redis.info]
 host = "info.sst.nsls2.bnl.gov"
 prefix = "rsoxs-"
-port = 60737
+# port = 60737
 db = 2

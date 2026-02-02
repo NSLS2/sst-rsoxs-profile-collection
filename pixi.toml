@@ -36,10 +36,10 @@ ophyd-async = ">=0.13.7,<0.14"
 pyfai = { git = "https://github.com/silx-kit/pyFAI"}
 pyhyperscattering = { git = "https://github.com/usnistgov/PyHyperScattering" }
 nbs-core = ">=0.1.0"
-nbs-bl = ">=0.2.0"
+nbs-bl = {git = "https://github.com/xraygui/nbs-bl", tag="v0.2.1"}
 bluesky-darkframes = ">=0.6.0"
 slackclient = "*"
-sst-base = { git = "https://github.com/nsls-ii-sst/sst_base", branch = "multi_speed_flyscan" }
+sst-base = { git = "https://github.com/nsls-ii-sst/sst_base", branch = "pol_spline" }
 rsoxs = { git = "https://github.com/usnistgov/sst-rsoxs", branch = "main" }
 pvxslibs = ">=1.3.2, <2"
 
@@ -50,10 +50,9 @@ bluesky-live = ">=0.0.8,<0.0.9"
 qt6-wayland = "*"
 pyside6 = "*"
 
+
 [feature.gui.pypi-dependencies]
-livetable = { git="https://github.com/xraygui/livetable" }
 nbs-gui = ">=0.1.2"
-qtconsole = "*"
 
 [feature.viewer.dependencies]
 pyqtgraph = ">=0.13.7,<0.14"
@@ -94,12 +93,6 @@ gui-dev = "scripts/gui-dev.sh"
 [feature.viewer.tasks]
 viewer = "scripts/viewer-start.sh"
 viewer-dev = "scripts/viewer-dev.sh"
-
-[feature.gui.dependencies]
-asteval = ">=1.0.6,<2"
-pyqtgraph = ">=0.13.7,<0.14"
-bluesky-widgets = ">=0.0.17,<0.0.18"
-bluesky-live = ">=0.0.8,<0.0.9"
 
 [environments]
 terminal = {features=["profile", "terminal"], solve-group="profile"}
