@@ -574,6 +574,34 @@ name = "Sample Imager Detector Area Camera" ## TODO: Would like to rename to "So
 camera_name = "sampleviewer_cam-1"
 date_template = "%Y/%m/%d"
 read_attrs = ["tiff"]
+## Camera specs #####################################
+## Allied Vision
+## Mako G-57C IRC PoE, SN: 536940227, MAC 000F315C9B43, 967, Made in Germany
+## Cable connections #################################
+## Ethernet cable from camera to port upstream of RSoXS
+## Ethernet cable from port upstream of RSoXS (Workstation area) to pyI-4:1 patch panel on upstream inboard SST2 side.
+## Cable from pyI-4:1 patch panel to C racks on inboard SST2 side of RSoXS.
+## Switch: [need to locate port]
+## Acquisition parameters in Phoebus: ######################
+## Exposure time = 0.05 s ## Likely the first parameter to be adjusted if image is too bright or dim
+## Acquire Period: 1 s
+## Num Images: 1
+## Exp/Image: 1
+## Image Mode: Single
+## Trigger Mode: Fixed Rate
+## areaDetector Plugins --> Expert (AD detail) --> Prosilica
+## Binning x = 1, y = 1
+## Region start x = 0, y = 0
+## Region size x = 2464, y = 2056
+## Gain: 0
+## Data type: UInt8
+## Color mode: RGB1 ## May need to switch this to something else then back to RGB1 for colors to show up
+## Bayer convert: None
+## Shutter mode: None
+## Wait for plugins: Yes
+## Image counter: 0
+## Array callbacks: Enable
+## Buffer & memory polling: 1
 
 [manipulator]
 _target = "rsoxs.devices.manipulator.ManipulatorBuilderRSOXS"
