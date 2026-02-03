@@ -110,3 +110,6 @@ startup/.idea/
 db/
 static/
 *history.sqlite
+# pixi environments
+.pixi/*
+!.pixi/config.toml

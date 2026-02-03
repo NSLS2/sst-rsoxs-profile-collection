@@ -12,1168 +12,7 @@ existing_devices:
     is_movable: true
     is_readable: true
     module: ophyd.signal
-  BeamStopS:
-    classname: PrettyMotorFMBODeadband
-    components:
-      abdec:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      abdec_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      acceleration:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfae:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfae_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      ampen:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      ampen_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      asscs:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      asscs_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      clr_enc_lss:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      daerr:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      daerr_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      direction_of_travel:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dvzer:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dvzer_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dwpro:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dwpro_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      enable:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      enc_lss:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      enc_lss_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      encoder:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      errtg:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      errtg_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      fafoe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      fafoe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      frpos:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      frpos_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      high_limit_switch:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      high_limit_travel:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hocpl:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hocpl_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      home_cmd:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      home_forward:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      home_reverse:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hsrch:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hsrch_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      iffe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      iffe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      inpos:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      inpos_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      intmo:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      intmo_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      kill:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      loopm:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      loopm_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      low_limit_switch:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      low_limit_travel:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mlim:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mlim_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_done_move:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_egu:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_is_moving:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_stop:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      move_latch:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mtact:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mtact_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      offset_freeze_switch:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      phsra:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      phsra_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      plim:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      plim_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      prefe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      prefe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      resolution:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      set_use_switch:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sodpl:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sodpl_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sopl:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sopl_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      swpoc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      swpoc_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      tiact:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      tiact_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      tolerance:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      trmov:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      trmov_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_offset:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_offset_dir:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_readback:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_setpoint:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwpen:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwpen_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwsen:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwsen_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      velocity:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      wfoer:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      wfoer_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-    is_flyable: false
-    is_movable: true
-    is_readable: true
-    module: sst_base.motors
   BeamStopW:
-    classname: PrettyMotorFMBODeadband
-    components:
-      abdec:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      abdec_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      acceleration:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfae:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfae_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      amfe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      ampen:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      ampen_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      asscs:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      asscs_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      clr_enc_lss:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      daerr:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      daerr_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      direction_of_travel:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dvzer:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dvzer_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dwpro:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      dwpro_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      enable:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      enc_lss:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      enc_lss_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      encoder:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      errtg:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      errtg_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      fafoe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      fafoe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      frpos:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      frpos_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      high_limit_switch:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      high_limit_travel:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hocpl:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hocpl_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      home_cmd:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      home_forward:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      home_reverse:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hsrch:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      hsrch_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      iffe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      iffe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      inpos:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      inpos_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      intmo:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      intmo_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      kill:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      loopm:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      loopm_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      low_limit_switch:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      low_limit_travel:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mlim:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mlim_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_done_move:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_egu:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_is_moving:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      motor_stop:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      move_latch:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mtact:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mtact_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      offset_freeze_switch:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      phsra:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      phsra_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      plim:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      plim_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      prefe:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      prefe_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      resolution:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      set_use_switch:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sodpl:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sodpl_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sopl:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sopl_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      swpoc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      swpoc_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      tiact:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      tiact_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      tolerance:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      trmov:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      trmov_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_offset:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_offset_dir:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_readback:
-        classname: EpicsSignalRO
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      user_setpoint:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwpen:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwpen_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwsen:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      uwsen_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      velocity:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      wfoer:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      wfoer_desc:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-    is_flyable: false
-    is_movable: true
-    is_readable: true
-    module: sst_base.motors
-  Beamstop_SAXS:
-    classname: EpicsSignalRO
-    is_flyable: false
-    is_movable: true
-    is_readable: true
-    module: ophyd.signal
-  Beamstop_SAXS_int:
-    classname: ophScalar
-    components:
-      exposure_time:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      gain:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      mean:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      median:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      npts:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      offset:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      rescale:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      std:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      sum:
-        classname: Signal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-      target:
-        classname: EpicsSignal
-        is_flyable: false
-        is_movable: true
-        is_readable: true
-        module: ophyd.signal
-    is_flyable: true
-    is_movable: false
-    is_readable: true
-    module: sst_base.detectors.scalar
-  DetS_cam:
-    classname: StandardProsilica
-    is_flyable: false
-    is_movable: false
-    is_readable: true
-    module: sst_base.cameras
-  Det_S:
     classname: PrettyMotorFMBODeadband
     components:
       abdec:
@@ -3374,12 +2213,6 @@ existing_devices:
     is_movable: false
     is_readable: true
     module: ophyd.areadetector.plugins
-  crosshair_saxs:
-    classname: Overlay
-    is_flyable: false
-    is_movable: false
-    is_readable: true
-    module: ophyd.areadetector.plugins
   crosshair_side:
     classname: Overlay
     is_flyable: false
@@ -3733,6 +2566,103 @@ existing_devices:
             module: ophyd.signal
         is_flyable: true
         is_movable: true
+        is_readable: true
+        module: sst_base.energy
+      flycontrol:
+        classname: FlyControl
+        components:
+          flymove_moving:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          flymove_speed_ev:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          flymove_start:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          flymove_stop:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          flymove_stop_ev:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          num_scans:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_segments:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_segments_n:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_speed_ev:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_start_go:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_trigger_n:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_trigger_width:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scan_type:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          scanning:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          undulator_dance_enable:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: false
         is_readable: true
         module: sst_base.energy
       harmonic:
@@ -22096,12 +21026,6 @@ existing_devices:
     is_movable: true
     is_readable: true
     module: ophyd.signal
-  waxs_det:
-    classname: RSOXSGreatEyesDetector
-    is_flyable: false
-    is_movable: false
-    is_readable: true
-    module: rsoxs.devices.detectors
 existing_plans:
   HOPG_energy_resolution_series:
     description: 'This series is especially helpful when selecting slits1.vsize to
@@ -22146,12 +21070,6 @@ existing_plans:
   WAXS_camera_flat_field_illumination_SiN:
     module: rsoxs.plans.run_acquisitions
     name: WAXS_camera_flat_field_illumination_SiN
-    parameters: []
-    properties:
-      is_generator: true
-  WAXS_camera_position_offset_scans:
-    module: rsoxs.plans.run_acquisitions
-    name: WAXS_camera_position_offset_scans
     parameters: []
     properties:
       is_generator: true
@@ -22982,6 +21900,12 @@ existing_plans:
       name: md
     properties:
       is_generator: true
+  clear_all_rois:
+    module: nbs_bl.plans.plan_stubs
+    name: clear_all_rois
+    parameters: []
+    properties:
+      is_generator: true
   clear_one_roi:
     module: nbs_bl.plans.plan_stubs
     name: clear_one_roi
@@ -23344,9 +22268,9 @@ existing_plans:
       name: md
     properties:
       is_generator: true
-  commissioning_scans_20251201:
+  commissioning_scans_20260125:
     module: rsoxs.plans.run_acquisitions
-    name: commissioning_scans_20251201
+    name: commissioning_scans_20260125
     parameters: []
     properties:
       is_generator: true
@@ -23764,25 +22688,6 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: samples
-    properties:
-      is_generator: true
-  do_rsoxs:
-    description: "inputs:\n    edge,\n    exposure_time = 1,\n    frames='full',\n\
-      \    ratios=None,\n    repeats =1,\n    polarizations = [0],\n    angles = None,\n\
-      \    grating='rsoxs',\n    diode_range='high',\n    temperatures=None,\n   \
-      \ temp_ramp_speed=10,\n    temp_wait=True,\n    md=None,"
-    module: rsoxs.Functions.rsoxs_plans
-    name: do_rsoxs
-    parameters:
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: md
-    - kind:
-        name: VAR_KEYWORD
-        value: 4
-      name: kwargs
     properties:
       is_generator: true
   enc_clr_gx:
@@ -24704,6 +23609,75 @@ existing_plans:
       name: bar
     properties:
       is_generator: true
+  is_signal_above:
+    description: Check if a readable object is above a threshold value.
+    module: nbs_bl.plans.conditions
+    name: is_signal_above
+    parameters:
+    - annotation:
+        type: __READABLE__
+      convert_device_names: true
+      description: Any object that implements the Readable protocol (can be read with
+        rd()).
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sig
+    - annotation:
+        type: float
+      description: The threshold value to wait for.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: val
+    properties:
+      is_generator: true
+  is_signal_below:
+    description: Check if a readable object is below a threshold value.
+    module: nbs_bl.plans.conditions
+    name: is_signal_below
+    parameters:
+    - annotation:
+        type: __READABLE__
+      convert_device_names: true
+      description: Any object that implements the Readable protocol (can be read with
+        rd()).
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sig
+    - annotation:
+        type: float
+      description: The threshold value to wait for.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: val
+    properties:
+      is_generator: true
+  is_signal_equals:
+    description: Check if a readable object equals a target value.
+    module: nbs_bl.plans.conditions
+    name: is_signal_equals
+    parameters:
+    - annotation:
+        type: __READABLE__
+      convert_device_names: true
+      description: Any object that implements the Readable protocol (can be read with
+        rd()).
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sig
+    - annotation:
+        type: float
+      description: The target value to wait for.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: val
+    properties:
+      is_generator: true
   k_rsoxs:
     description: 'Perform an in-place RSoXS scan for  with energy pattern [275, 295,
       0.2, 310, 0.1, 320, 0.2] '
@@ -25084,6 +24058,16 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: sim_mode
+    properties:
+      is_generator: true
+  m3_pitch_sweep:
+    description: 'Runs sweep in M3 pitch across different energies to see if the maximum
+      stays the same across energies.
+
+      If not, then the M2/PGM roll may need to be adjusted via the manual wobble stick.'
+    module: rsoxs.plans.run_acquisitions
+    name: m3_pitch_sweep
+    parameters: []
     properties:
       is_generator: true
   mg_rsoxs:
@@ -26493,10 +25477,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': -0.9458900000000057, ''order'':
-        0}, {''motor'': ''y'', ''position'': -102.06509, ''order'': 0}, {''motor'':
-        ''z'', ''position'': -1.1315599999999932, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 179.999842349, ''order'': 0}]'
+    - default: '[{''motor'': ''x'', ''position'': 0.008169999999992683, ''order'':
+        0}, {''motor'': ''y'', ''position'': 345.035145, ''order'': 0}, {''motor'':
+        ''z'', ''position'': -1.1715149999999923, ''order'': 0}, {''motor'': ''th'',
+        ''position'': -0.0056487670000251455, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -26524,6 +25508,14 @@ existing_plans:
         name: KEYWORD_ONLY
         value: 3
       name: group
+    - annotation:
+        type: typing.Optional[float]
+      default: None
+      description: Specify a maximum time that the move(s) can be waited for.
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: timeout
     - description: passed to obj.set()
       kind:
         name: VAR_KEYWORD
@@ -27794,7 +26786,7 @@ existing_plans:
         value: 2
       name: args
     - annotation:
-        type: typing.Union[collections.abc.Iterable, bool, NoneType]
+        type: typing.Union[collections.abc.Iterable[typing.Any], bool, NoneType]
       default: None
       description: 'which axes should be snaked, either ``False`` (do not snake any
         axes),
@@ -28531,7 +27523,10 @@ existing_plans:
     module: nbs_bl.plans.preprocessors
     name: nbs_log_scan
     parameters:
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -28725,7 +27720,7 @@ existing_plans:
         value: 2
       name: args
     - annotation:
-        type: typing.Union[collections.abc.Iterable, bool, NoneType]
+        type: typing.Union[collections.abc.Iterable[typing.Any], bool, NoneType]
       default: None
       description: 'which axes should be snaked, either ``False`` (do not snake any
         axes),
@@ -30641,12 +29636,18 @@ existing_plans:
     module: nbs_bl.plans.preprocessors
     name: nbs_spiral
     parameters:
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: x_motor
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -30874,12 +29875,18 @@ existing_plans:
     module: nbs_bl.plans.preprocessors
     name: nbs_spiral_fermat
     parameters:
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: x_motor
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -31106,12 +30113,18 @@ existing_plans:
     module: nbs_bl.plans.preprocessors
     name: nbs_spiral_square
     parameters:
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: x_motor
-    - description: any 'settable' object (motor, temp controller, etc.)
+    - annotation:
+        type: __MOVABLE__
+      convert_device_names: true
+      description: any 'settable' object (motor, temp controller, etc.)
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -32252,6 +31265,148 @@ existing_plans:
     parameters: []
     properties:
       is_generator: true
+  repeat_plan_sequence_for_duration:
+    description: Repeat a sequence of plans for a specified duration.
+    module: nbs_bl.plans.metaplans
+    name: repeat_plan_sequence_for_duration
+    parameters:
+    - annotation:
+        type: typing.List[__PLAN__]
+      convert_plan_names: true
+      description: List of plan names or callables to run in sequence.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plans
+    - annotation:
+        type: typing.List[typing.List]
+      description: List of argument lists, one for each plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plan_args_list
+    - annotation:
+        type: typing.List[typing.Dict]
+      description: List of kwargs dicts, one for each plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plan_kwargs_list
+    - annotation:
+        type: float
+      description: Total duration to repeat the sequence (seconds).
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: duration
+    properties:
+      is_generator: true
+  repeat_plan_sequence_until_condition:
+    description: Repeat a sequence of plans until a condition plan returns True.
+    module: nbs_bl.plans.metaplans
+    name: repeat_plan_sequence_until_condition
+    parameters:
+    - annotation:
+        type: typing.List[__PLAN__]
+      convert_plan_names: true
+      description: List of plan names or callables to run in sequence.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plans
+    - annotation:
+        type: typing.List[typing.List]
+      description: List of argument lists, one for each plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plan_args_list
+    - annotation:
+        type: typing.List[typing.Dict]
+      description: List of kwargs dicts, one for each plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plan_kwargs_list
+    - annotation:
+        type: __PLAN__
+      convert_plan_names: true
+      description: A plan that returns a boolean; controls loop continuation.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition
+    - annotation:
+        type: typing.List
+      default: None
+      description: Arguments for the condition plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition_args
+    - annotation:
+        type: typing.Dict
+      default: None
+      description: Keyword arguments for the condition plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition_kwargs
+    properties:
+      is_generator: true
+  repeat_plan_sequence_while_condition:
+    description: Repeat a sequence of plans while a condition plan returns True.
+    module: nbs_bl.plans.metaplans
+    name: repeat_plan_sequence_while_condition
+    parameters:
+    - annotation:
+        type: typing.List[__PLAN__]
+      convert_plan_names: true
+      description: List of plan names or callables to run in sequence.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plans
+    - annotation:
+        type: typing.List[typing.List]
+      description: List of argument lists, one for each plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plan_args_list
+    - annotation:
+        type: typing.List[typing.Dict]
+      description: List of kwargs dicts, one for each plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: plan_kwargs_list
+    - annotation:
+        type: __PLAN__
+      convert_plan_names: true
+      description: A plan that returns a boolean; controls loop continuation.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition
+    - annotation:
+        type: typing.List
+      default: None
+      description: Arguments for the condition plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition_args
+    - annotation:
+        type: typing.Dict
+      default: None
+      description: Keyword arguments for the condition plan.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition_kwargs
+    properties:
+      is_generator: true
   reproduce_EPU_error:
     module: rsoxs.plans.run_acquisitions
     name: reproduce_EPU_error
@@ -32542,758 +31697,155 @@ existing_plans:
     module: rsoxs.plans.run_acquisitions
     name: run_acquisitions_queue
     parameters:
-    - default: "[{'bar_name': '20251201_WSU', 'sample_id': 'AF1_front', 'sample_name':\
-        \ 'AF1_front', 'project_name': 'Calibration', 'institution': 'NIST', 'proposal_id':\
-        \ 318915, 'bar_spot': '0A', 'front': True, 'grazing': False, 'angle': 0, 'height':\
-        \ 0.0, 'sample_priority': 1, 'notes': None, 'location': [{'motor': 'x', 'position':\
-        \ -1.5995478778859127, 'order': 0}, {'motor': 'y', 'position': -187.37897423865064,\
-        \ 'order': 0}, {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th',\
-        \ 'position': 180.0, 'order': 0}], 'bar_loc': {'spot': '0A', 'ximg': 0.6674117921250371,\
-        \ 'yimg': -185.5872221497133, 'th0': 0.0, 'th': 0, 'xoff': -0.7855399254746024,\
-        \ 'x0': 0.02846802693670763, 'y0': -187.37897423865064, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 3.4109474250316967},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': 'Calibration',\
-        \ 'sample_set': None, 'sample_state': None, 'composition': None, 'acq_history':\
-        \ [], 'density': None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id':\
-        \ 'AF2_front', 'sample_name': 'AF2_front', 'project_name': 'Calibration',\
-        \ 'institution': 'NIST', 'proposal_id': 318915, 'bar_spot': '0A', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.0, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -2.452174232662121,\
-        \ 'order': 0}, {'motor': 'y', 'position': 3.021703250963311, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 180.0, 'order': 0}], 'bar_loc': {'spot': '0A', 'ximg': 1.2705980080445496,\
-        \ 'yimg': 4.791595114600539, 'th0': 0.0, 'th': 0, 'xoff': -0.524179939550609,\
-        \ 'x0': 1.4038143535609031, 'y0': 3.021703250963311, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -1.285160013051283},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': 'Calibration',\
-        \ 'sample_set': None, 'sample_state': None, 'composition': None, 'acq_history':\
-        \ [], 'density': None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id':\
-        \ 'diode', 'sample_name': 'diode', 'project_name': 'Calibration', 'institution':\
-        \ 'NIST', 'proposal_id': 318915, 'bar_spot': '0A', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.0, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': -0.5959972928073318, 'order': 0}, {'motor':\
-        \ 'y', 'position': 44.331847431748265, 'order': 0}, {'motor': 'z', 'position':\
-        \ 0.0, 'order': 0}, {'motor': 'th', 'position': 180.0, 'order': 0}], 'bar_loc':\
-        \ {'spot': '0A', 'ximg': -0.6396985296840825, 'yimg': 46.09699640754036, 'th0':\
-        \ 0.0, 'th': 0, 'xoff': -0.46747416074792053, 'x0': -0.3389510286885089, 'y0':\
-        \ 44.331847431748265, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -2.304047539679159},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': 'Calibration',\
-        \ 'sample_set': None, 'sample_state': None, 'composition': None, 'acq_history':\
-        \ [], 'density': None, 'acquisitions': [{'sample_id': 'diode', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'calibration_sample', 'priority': 33, 'acquire_status':\
-        \ 'Not begun', 'uid_local': 'f6bfeee2-d83c-4923-b105-d3bd2796826b', 'notes':\
-        \ None}]}, {'bar_name': '20251201_WSU', 'sample_id': 'PC0', 'sample_name':\
-        \ 'PC0', 'project_name': 'Acacia Ternary', 'institution': 'WSU', 'proposal_id':\
-        \ 318915, 'bar_spot': '2B', 'front': True, 'grazing': False, 'angle': 0, 'height':\
-        \ 0.25, 'sample_priority': 1, 'notes': None, 'location': [{'motor': 'x', 'position':\
-        \ -1.8588088712579371}, {'motor': 'y', 'position': -174.12784942391798}, {'motor':\
-        \ 'th', 'position': 180.0}, {'motor': 'z', 'position': -1.1316}], 'bar_loc':\
-        \ {'spot': '2B', 'th': 180.0, 'ximg': 0.9093127505571932, 'yimg': -172.33761871913617,\
-        \ 'th0': 0.0, 'xoff': -0.7673503169043044, 'x0': 0.32410823744932793, 'y0':\
-        \ -174.12784942391798, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.8341171499197477},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'PC0', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Acacua_Ternary', 'priority': 2, 'acquire_status': 'Finished\
-        \ 2025-12-03_12-00-27', 'uid_local': 'acbcc28a-eedd-4c40-97f2-db43e943313b',\
-        \ 'notes': 'Do not delete this row.\\n\\nTEY NEXAFS (scan_type = nexafs) on\
-        \ HOPG (sample_id = HOPG). \\n2D detector is retracted, but beamstop is in\
-        \ position (configuration_instrument = WAXSNEXAFS) --> Protects 2D detector\
-        \ from sample bar rotation and reflected X-rays.\\nThe sample is rotated to\
-        \ an angle of 20 (angle between incident beam and sample is 20 degrees), sample_angles\
-        \ = [20] --> 20\xB0 angleensures a larger beam footprint on HOPG.  \\nA carbon-edge\
-        \ energy scan is performed at 90\xB0 polarization  --> The beam energy was\
-        \ calibrated at 90\xB0 polarization, so the calibration is being validated\
-        \ at this energy.\\nThe energy scan is performed in ascending and descending\
-        \ energy directions (cycles = 1) --> This checks for reproducibility of the\
-        \ NEXAFS profiles.\\n\\nOptional:\\nRun at additional polarizations (e.g.,\
-        \ polarizations =  [0, 20, 30, 55, 70, 90]) and/or sample angles (sample_angles\
-        \ = [20, 30, 55, 70, 90]) to see polarization dependence of HOPG.'}, {'sample_id':\
-        \ 'PC0', 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [270, 2, 282, 0.2, 283], 'polarization_frame': 'lab', 'polarizations': [0],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Acacua_Ternary', 'priority':\
-        \ 3, 'acquire_status': 'Finished 2025-12-03_12-02-01', 'uid_local': 'a0523cb7-57f2-4e62-ba8e-8a66b362aaa8',\
-        \ 'notes': None}, {'sample_id': 'PC0', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [284.1, 0.1, 288], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Acacua_Ternary', 'priority': 4, 'acquire_status': 'Finished 2025-12-03_12-05-30',\
-        \ 'uid_local': '64c25f3e-924a-49fc-a1ae-c71121b91e27', 'notes': None}, {'sample_id':\
-        \ 'PC0', 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [288.2, 0.2, 292, 1, 300, 2, 310, 5, 350], 'polarization_frame': 'lab',\
-        \ 'polarizations': [0], 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles':\
-        \ 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name': 'Acacua_Ternary',\
-        \ 'priority': 5, 'acquire_status': 'Finished 2025-12-03_12-09-02', 'uid_local':\
-        \ '14102fb1-f121-4b79-ab6c-c78b4532a74c', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': 'PC1', 'sample_name': 'PC1', 'project_name': 'Acacia Ternary',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '4B', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -1.4631283400483464,\
-        \ 'order': 0}, {'motor': 'y', 'position': -162.17179401037032, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 180.0, 'order': 0}], 'bar_loc': {'spot': '4B', 'th': 0, 'ximg': 0.4979688290600528,\
-        \ 'yimg': -160.38293600062556, 'th0': 0.0, 'xoff': -0.7509384295318882, 'x0':\
-        \ -0.03874851901543029, 'y0': -162.17179401037032, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.539228909510224},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC2',\
-        \ 'sample_name': 'PC2', 'project_name': 'Acacia Ternary', 'institution': 'WSU',\
-        \ 'proposal_id': 318915, 'bar_spot': '6B', 'front': True, 'grazing': False,\
-        \ 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': -1.2987950799706007}, {'motor': 'y', 'position':\
-        \ -150.24145054394856}, {'motor': 'th', 'position': 180.0}, {'motor': 'z',\
-        \ 'position': -1.1316}], 'bar_loc': {'spot': '6B', 'th': 180.0, 'ximg': 0.31800586340505355,\
-        \ 'yimg': -148.4539622772085, 'th0': 0.0, 'xoff': -0.7345618365409179, 'x0':\
-        \ -0.17032859311123516, 'y0': -150.24145054394856, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.2449748373596456},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'PC2', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Acacua_Ternary', 'priority': 6, 'acquire_status': 'Finished\
-        \ 2025-12-03_12-14-35', 'uid_local': '7f3e491d-e6c5-4dec-a81e-9987bd5cfbb2',\
-        \ 'notes': None}, {'sample_id': 'PC2', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [270, 2, 282, 0.2, 284],\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 0.1,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Acacua_Ternary', 'priority': 7, 'acquire_status': 'Finished\
-        \ 2025-12-03_12-18-16', 'uid_local': '147ea156-33a6-4d68-82fc-7a58cea1c016',\
-        \ 'notes': None}, {'sample_id': 'PC2', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [284.1, 0.1, 288], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Acacua_Ternary', 'priority': 8, 'acquire_status': 'Finished 2025-12-03_12-21-46',\
-        \ 'uid_local': 'dbf70773-b2e2-44a6-91f0-81dbdd62fb37', 'notes': None}, {'sample_id':\
-        \ 'PC2', 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [288.2, 0.2, 292, 1, 300, 2, 310, 5, 350], 'polarization_frame': 'lab',\
-        \ 'polarizations': [0], 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles':\
-        \ 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name': 'Acacua_Ternary',\
-        \ 'priority': 9, 'acquire_status': 'Finished 2025-12-03_12-25-22', 'uid_local':\
-        \ 'bcc4e530-498c-4f3e-9418-0e587e922edb', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': 'PC3', 'sample_name': 'PC3', 'project_name': 'Acacia Ternary',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '8B', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -1.0311933507333704,\
-        \ 'order': 0}, {'motor': 'y', 'position': -138.16933544837258, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 180.0, 'order': 0}], 'bar_loc': {'spot': '8B', 'th': 0, 'ximg': 0.034588696400282615,\
-        \ 'yimg': -136.38323320167888, 'th0': 0.0, 'xoff': -0.717990635886316, 'x0':\
-        \ -0.4047879210392618, 'y0': -138.16933544837258, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.9472240612531864},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC4',\
-        \ 'sample_name': 'PC4', 'project_name': 'Acacia Ternary', 'institution': 'WSU',\
-        \ 'proposal_id': 318915, 'bar_spot': '10B', 'front': True, 'grazing': False,\
-        \ 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': -1.4665274093054406}, {'motor': 'y', 'position':\
-        \ -126.22104889267615}, {'motor': 'th', 'position': 180.0}, {'motor': 'z',\
-        \ 'position': -1.1316}], 'bar_loc': {'spot': '10B', 'th': 180.0, 'ximg': 0.45426954251088425,\
-        \ 'yimg': -124.43631844906372, 'th0': 0.0, 'xoff': -0.701589412701682, 'x0':\
-        \ 0.06334858390207637, 'y0': -126.22104889267615, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.6525274346111223},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'PC4', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Acacua_Ternary', 'priority': 10, 'acquire_status':\
-        \ 'Finished 2025-12-03_12-30-56', 'uid_local': 'e254e30f-4072-486a-889b-10447cda7ec8',\
-        \ 'notes': None}, {'sample_id': 'PC4', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [270, 2, 282, 0.2, 284],\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 0.1,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Acacua_Ternary', 'priority': 11, 'acquire_status':\
-        \ 'Finished 2025-12-03_12-32-52', 'uid_local': '6da412d7-bf0a-4e05-a47d-90956d84b60e',\
-        \ 'notes': None}, {'sample_id': 'PC4', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [284.1, 0.1, 288], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Acacua_Ternary', 'priority': 12, 'acquire_status': 'Finished 2025-12-03_12-36-17',\
-        \ 'uid_local': '3a760c6e-f8dc-456b-bf19-7afa5b0505ca', 'notes': None}, {'sample_id':\
-        \ 'PC4', 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [288.2, 0.2, 292, 1, 300, 2, 310, 5, 350], 'polarization_frame': 'lab',\
-        \ 'polarizations': [0], 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles':\
-        \ 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name': 'Acacua_Ternary',\
-        \ 'priority': 13, 'acquire_status': 'Finished 2025-12-03_12-39-51', 'uid_local':\
-        \ '2fdf9a20-5ce8-444c-a148-16c8cf43973f', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': 'PC5', 'sample_name': 'PC5', 'project_name': 'Acacia Ternary',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '12B', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -1.2859996330538899,\
-        \ 'order': 0}, {'motor': 'y', 'position': -114.52459975852837, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 180.0, 'order': 0}], 'bar_loc': {'spot': '12B', 'th': 0, 'ximg': 0.2584184809926029,\
-        \ 'yimg': -112.74121220411493, 'th0': 0.0, 'xoff': -0.6855338827457641, 'x0':\
-        \ -0.0850681324376385, 'y0': -114.52459975852837, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.3640422122776727},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD1-1',\
-        \ 'sample_name': 'BD1-1', 'project_name': 'Neher blends', 'institution': 'WSU',\
-        \ 'proposal_id': 318915, 'bar_spot': '14B', 'front': True, 'grazing': False,\
-        \ 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': -0.9456614524215811}, {'motor': 'y', 'position':\
-        \ -102.0651722119069}, {'motor': 'th', 'position': 180.0}, {'motor': 'z',\
-        \ 'position': -1.1316}], 'bar_loc': {'spot': '14B', 'th': 180.0, 'ximg': -0.09824254774235364,\
-        \ 'yimg': -100.28321514554041, 'th0': 0.0, 'xoff': -0.6684310244411573, 'x0':\
-        \ -0.3912005964607337, 'y0': -102.0651722119069, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.056738629394483},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'BD1-1', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Neher_blends', 'priority': 14, 'acquire_status': 'Finished\
-        \ 2025-12-03_13-00-41', 'uid_local': 'db19ad19-05da-40ba-b6a9-49026c221ccb',\
-        \ 'notes': None}, {'sample_id': 'BD1-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [270, 270, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 15, 'acquire_status': 'Started 2025-12-03_13-01-01',\
-        \ 'uid_local': '76547abb-d073-4eaa-b2f5-eb6ac32d418d', 'notes': None}, {'sample_id':\
-        \ 'BD1-1', 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [284.13, 284.13, 0], 'polarization_frame': 'lab', 'polarizations': [0, 90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Neher_blends', 'priority':\
-        \ 16, 'acquire_status': 'Not begun', 'uid_local': 'ffab50ee-4f5c-4802-9466-e392f123ecb2',\
-        \ 'notes': None}, {'sample_id': 'BD1-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [284.95, 284.95, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 17, 'acquire_status': 'Not begun', 'uid_local':\
-        \ 'd620da70-89f7-4b41-863b-231f6e389094', 'notes': None}, {'sample_id': 'BD1-1',\
-        \ 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [287.05, 287.05, 0], 'polarization_frame': 'lab', 'polarizations': [0, 90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Neher_blends', 'priority':\
-        \ 18, 'acquire_status': 'Not begun', 'uid_local': 'e508c78d-b155-45f7-a310-d072a9a88048',\
-        \ 'notes': None}, {'sample_id': 'BD1-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [350, 350, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 19, 'acquire_status': 'Not begun', 'uid_local':\
-        \ 'e7e19263-1e45-4973-ac89-be9213de387a', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': 'BD2-1', 'sample_name': 'BD2-1', 'project_name': 'Neher blends',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '16B', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -1.0}, {'motor':\
-        \ 'y', 'position': -90.4}, {'motor': 'th', 'position': 179.9998}, {'motor':\
-        \ 'z', 'position': -1.1316}], 'bar_loc': {'spot': '16B', 'th': 0, 'ximg':\
-        \ 0.2483326025941448, 'yimg': -88.32637245893125, 'th0': 0.0, 'xoff': -0.6520161717743876,\
-        \ 'x0': 0.003870479553002626, 'y0': -90.1069565822426, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.7617971086757351},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'BD2-1', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Neher_blends', 'priority': 20, 'acquire_status': 'Not\
-        \ begun', 'uid_local': '8293732e-f0aa-4cbe-a253-9053c4256c45', 'notes': None},\
-        \ {'sample_id': 'BD2-1', 'configuration_instrument': 'WAXS', 'scan_type':\
-        \ 'rsoxs', 'energy_list_parameters': [270, 270, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 21, 'acquire_status': 'Not begun', 'uid_local':\
-        \ '550875eb-001e-41c6-af99-6108f558d608', 'notes': None}, {'sample_id': 'BD2-1',\
-        \ 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [285.4, 285.4, 0], 'polarization_frame': 'lab', 'polarizations': [0, 90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Neher_blends', 'priority':\
-        \ 22, 'acquire_status': 'Not begun', 'uid_local': 'ae83b9d5-817e-4c77-8b01-f67443d3c8a5',\
-        \ 'notes': None}, {'sample_id': 'BD2-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [286.3, 286.3, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 23, 'acquire_status': 'Not begun', 'uid_local':\
-        \ '5b794c2a-e7c4-4576-b4a0-e0f4dd2f4efa', 'notes': None}, {'sample_id': 'BD2-1',\
-        \ 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [287.73, 287.73, 0], 'polarization_frame': 'lab', 'polarizations': [0, 90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Neher_blends', 'priority':\
-        \ 24, 'acquire_status': 'Not begun', 'uid_local': 'a3f4a14a-3f29-4658-9580-ce75094e3778',\
-        \ 'notes': None}, {'sample_id': 'BD2-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [350, 350, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 25, 'acquire_status': 'Not begun', 'uid_local':\
-        \ '42f52b50-3712-4444-8634-cc5502b09774', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': 'BD3-1', 'sample_name': 'BD3-1', 'project_name': 'Neher blends',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '18B', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -1.6}, {'motor':\
-        \ 'y', 'position': -78.4}, {'motor': 'th', 'position': 179.9998}, {'motor':\
-        \ 'z', 'position': -1.1316}], 'bar_loc': {'spot': '18B', 'th': 0, 'ximg':\
-        \ 0.4958862814059284, 'yimg': -76.29526366867854, 'th0': 0.0, 'xoff': -0.6354993635009921,\
-        \ 'x0': 0.3002213009716964, 'y0': -78.07446632133815, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.4650236530456904},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'BD3-1', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'Neher_blends', 'priority': 26, 'acquire_status': 'Not\
-        \ begun', 'uid_local': '49ca0d80-fff7-4635-bc64-72c99ff65646', 'notes': None},\
-        \ {'sample_id': 'BD3-1', 'configuration_instrument': 'WAXS', 'scan_type':\
-        \ 'rsoxs', 'energy_list_parameters': [270, 270, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 27, 'acquire_status': 'Not begun', 'uid_local':\
-        \ '525c3460-f1b8-43a7-a6fe-3a9afc535ea2', 'notes': None}, {'sample_id': 'BD3-1',\
-        \ 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [285.4, 285.4, 0], 'polarization_frame': 'lab', 'polarizations': [0, 90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Neher_blends', 'priority':\
-        \ 28, 'acquire_status': 'Not begun', 'uid_local': '674878a6-e16b-408c-919b-038022f931f4',\
-        \ 'notes': None}, {'sample_id': 'BD3-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [286.3, 286.3, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 29, 'acquire_status': 'Not begun', 'uid_local':\
-        \ '8f0369b1-65bf-4a7e-87f3-c1841a550e88', 'notes': None}, {'sample_id': 'BD3-1',\
-        \ 'configuration_instrument': 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters':\
-        \ [287.73, 287.73, 0], 'polarization_frame': 'lab', 'polarizations': [0, 90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'Neher_blends', 'priority':\
-        \ 30, 'acquire_status': 'Not begun', 'uid_local': '94881fc3-2b2e-44e9-86b1-ed99da7d53c8',\
-        \ 'notes': None}, {'sample_id': 'BD3-1', 'configuration_instrument': 'WAXS',\
-        \ 'scan_type': 'rsoxs', 'energy_list_parameters': [350, 350, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'Neher_blends', 'priority': 31, 'acquire_status': 'Not begun', 'uid_local':\
-        \ 'c77083c4-ef8b-45de-9369-5fb9a2cdc0b9', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': 'PM6', 'sample_name': 'PM6', 'project_name': 'Tanner PM6',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '20B', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -1.3655013656251274,\
-        \ 'order': 0}, {'motor': 'y', 'position': -66.08796572576671, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 180.0, 'order': 0}], 'bar_loc': {'spot': '20B', 'th': 0, 'ximg': 0.2744643431426752,\
-        \ 'yimg': -64.31013926360723, 'th0': 0.0, 'xoff': -0.6190456845107617, 'x0':\
-        \ 0.12740999660360391, 'y0': -66.08796572576671, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.16938450225264923},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PM6_CN',\
-        \ 'sample_name': 'PM6_CN', 'project_name': 'Tanner PM6', 'institution': 'WSU',\
-        \ 'proposal_id': 318915, 'bar_spot': '22B', 'front': True, 'grazing': False,\
-        \ 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': -1.748402617576021, 'order': 0}, {'motor': 'y',\
-        \ 'position': -54.106539273839864, 'order': 0}, {'motor': 'z', 'position':\
-        \ 0.0, 'order': 0}, {'motor': 'th', 'position': 180.0, 'order': 0}], 'bar_loc':\
-        \ {'spot': '22B', 'th': 0, 'ximg': 0.6416689667134889, 'yimg': -52.33008841960945,\
-        \ 'th0': 0.0, 'xoff': -0.6025989707169215, 'x0': 0.543204676142178, 'y0':\
-        \ -54.106539273839864, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.12612949812587892},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'blank',\
-        \ 'sample_name': 'blank', 'project_name': 'calibration', 'institution': 'WSU',\
-        \ 'proposal_id': 318915, 'bar_spot': '24B', 'front': True, 'grazing': False,\
-        \ 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': -1.8}, {'motor': 'y', 'position': -42.5}, {'motor':\
-        \ 'th', 'position': 179.9998}, {'motor': 'z', 'position': -1.1316}], 'bar_loc':\
-        \ {'spot': '24B', 'th': 0, 'ximg': 0.9400227233647733, 'yimg': -40.44183873150439,\
-        \ 'th0': 0.0, 'xoff': -0.5862782853812716, 'x0': 0.8897761511676002, 'y0':\
-        \ -42.216924518862655, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.4193790234057211},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'blank', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'nexafs', 'energy_list_parameters': 'carbon_NEXAFS',\
-        \ 'polarization_frame': 'lab', 'polarizations': [0], 'exposure_time': 1.0,\
-        \ 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions':\
-        \ None, 'group_name': 'calibration_sample', 'priority': 32, 'acquire_status':\
-        \ 'Not begun', 'uid_local': '93c9e1d0-1d68-4eb0-a0ed-8a2203782008', 'notes':\
-        \ None}]}, {'bar_name': '20251201_WSU', 'sample_id': '50nmPS', 'sample_name':\
-        \ '50nmPS', 'project_name': 'calibration', 'institution': 'WSU', 'proposal_id':\
-        \ 318915, 'bar_spot': '25A', 'front': True, 'grazing': False, 'angle': 0,\
-        \ 'height': 0.25, 'sample_priority': 1, 'notes': None, 'location': [{'motor':\
-        \ 'x', 'position': 0.7}, {'motor': 'y', 'position': -36.3}, {'motor': 'th',\
-        \ 'position': 179.9998}, {'motor': 'z', 'position': -1.1316}], 'bar_loc':\
-        \ {'spot': '25A', 'th': 0, 'ximg': -2.7621533780728296, 'yimg': -34.84438371676756,\
-        \ 'th0': 0.0, 'xoff': -0.5785938655236216, 'x0': -2.7896971540978686, 'y0':\
-        \ -36.61882677701213, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.5574524209967233},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': '50nmPS', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters': [285, 285, 0], 'polarization_frame':\
-        \ 'lab', 'polarizations': [0, 90], 'exposure_time': 0.1, 'exposures_per_energy':\
-        \ 1, 'cycles': 0, 'sample_angles': [0], 'spiral_dimensions': None, 'group_name':\
-        \ 'calibration_sample', 'priority': 34, 'acquire_status': 'Not begun', 'uid_local':\
-        \ 'aa326772-281d-4b57-a0ac-a67eab3e3a05', 'notes': None}]}, {'bar_name': '20251201_WSU',\
-        \ 'sample_id': '25nmPS', 'sample_name': '25nmPS', 'project_name': 'calibration',\
-        \ 'institution': 'WSU', 'proposal_id': 318915, 'bar_spot': '25C', 'front':\
-        \ True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority': 1,\
-        \ 'notes': None, 'location': [{'motor': 'x', 'position': -5.981384717380184,\
-        \ 'order': 0}, {'motor': 'y', 'position': -36.24822009085248, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 180.0, 'order': 0}], 'bar_loc': {'spot': '25C', 'th': 0, 'ximg': 4.851255237913026,\
-        \ 'yimg': -34.473819580591254, 'th0': 0.0, 'xoff': -0.578085139611744, 'x0':\
-        \ 4.825214438156696, 'y0': -36.24822009085248, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.5665931910739346},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PM6_TEY',\
-        \ 'sample_name': 'PM6_TEY', 'project_name': 'Tanner PM6', 'institution': 'WSU',\
-        \ 'proposal_id': 318915, 'bar_spot': '27B', 'front': True, 'grazing': True,\
-        \ 'angle': 90, 'height': 0.5, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': 1.1898786924109608, 'order': 0}, {'motor': 'y',\
-        \ 'position': -27.21889355532637, 'order': 0}, {'motor': 'z', 'position':\
-        \ 0.0, 'order': 0}, {'motor': 'th', 'position': 0.0, 'order': 0}], 'bar_loc':\
-        \ {'spot': '27B', 'th': 90, 'ximg': 1.1793015248932992, 'yimg': -25.44552971738679,\
-        \ 'th0': 0.0, 'xoff': -0.5656907264859978, 'x0': 1.1898786924109608, 'y0':\
-        \ -27.21889355532637, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -1.0392955893186944},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PM6_CN_TEY',\
-        \ 'sample_name': 'PM6_CN_TEY', 'project_name': 'Tanner PM6', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '28B', 'front': True, 'grazing':\
-        \ True, 'angle': 90, 'height': 0.5, 'sample_priority': 1, 'notes': None, 'location':\
-        \ [{'motor': 'x', 'position': 1.68487022408527, 'order': 0}, {'motor': 'y',\
-        \ 'position': -21.457644161389936, 'order': 0}, {'motor': 'z', 'position':\
-        \ 0.0, 'order': 0}, {'motor': 'th', 'position': 0.0, 'order': 0}], 'bar_loc':\
-        \ {'spot': '28B', 'th': 90, 'ximg': 1.6509286072995017, 'yimg': -19.684941782282444,\
-        \ 'th0': 0.0, 'xoff': -0.557782350946809, 'x0': 1.68487022408527, 'y0': -21.457644161389936,\
-        \ 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003,\
-        \ 'af2xoff': -0.5266100000000016, 'af1zoff': -1.0890474999999995, 'af2zoff':\
-        \ -5.785155, 'zoff': -1.181393015064418}, 'components': None, 'sample_desc':\
-        \ None, 'project_desc': None, 'sample_set': None, 'sample_state': None, 'composition':\
-        \ None, 'acq_history': [], 'density': None, 'acquisitions': []}, {'bar_name':\
-        \ '20251201_WSU', 'sample_id': 'SBA15', 'sample_name': 'SBA15', 'project_name':\
-        \ 'calibration', 'institution': 'NIST', 'proposal_id': 318915, 'bar_spot':\
-        \ '29A', 'front': True, 'grazing': False, 'angle': 0, 'height': 0.25, 'sample_priority':\
-        \ 1, 'notes': \"For SDD and beam center calibration. Don't change this row.\"\
-        , 'location': [{'motor': 'x', 'position': -1.1622313573682483, 'order': 0},\
-        \ {'motor': 'y', 'position': -11.92294487200976, 'order': 0}, {'motor': 'z',\
-        \ 'position': 0.0, 'order': 0}, {'motor': 'th', 'position': 180.0, 'order':\
-        \ 0}], 'bar_loc': {'spot': '29A', 'th': 180.0, 'ximg': 0.00023381887779017063,\
-        \ 'yimg': -10.151337187928476, 'th0': 0.0, 'xoff': -0.5446942206685024, 'x0':\
-        \ 0.07284291603124393, 'y0': -11.92294487200976, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -1.1665600997781018},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': [{'sample_id': 'SBA15', 'configuration_instrument':\
-        \ 'WAXS', 'scan_type': 'rsoxs', 'energy_list_parameters': [200, 91.65, 291.65,\
-        \ 8.35, 300, 100, 1300], 'polarization_frame': 'lab', 'polarizations': [90],\
-        \ 'exposure_time': 0.1, 'exposures_per_energy': 1, 'cycles': 0, 'sample_angles':\
-        \ [0], 'spiral_dimensions': None, 'group_name': 'BeamCalibration', 'priority':\
-        \ 1, 'acquire_status': 'Finished 2025-12-03_11-50-04', 'uid_local': '491c0aca-7e3e-4a33-b52d-9dba51f76c0c',\
-        \ 'notes': 'Do not delete this row.\\n\\nRSoXS energy scan (scan_type = rsoxs)\
-        \ on SBA15 (sample_id = SBA15). \\n2D detector and beamstop are in the beam\
-        \ path (configuration_instrument = WAXS) --> Scattering images can be captured.\\\
-        nScan is over a custom list of energies.  Between 200 and 291.65 eV, scans\
-        \ will be taken in 91.65 eV steps.  Between 291.65 and 300 eV, scans will\
-        \ be taken in 8.35 eV steps.  Between 300 and 1300 eV, scans will be taken\
-        \ in  100 eV steps.\\n0.1 s exposure times per image (exposure_time = 0.1)\
-        \ --> Reduces saturation of 2D detector.\\nThe scan is performed at 90\xB0\
-        \ polarization (polarizations = [90]), cycles = 0 (default, only runs in ascending\
-        \ energy order but no descending energy order), and sample_angles = [0] (beam\
-        \ is at normal incidence from sample surface for transmission sample).\\n\\\
-        nOptional:\\nUse multiple exposures (e.g., exposures_per_energy = 50) to increase\
-        \ signal-to-noise to assess more subtle features in the sample and/or 2D detector\
-        \ artifacts.'}]}, {'bar_name': '20251201_WSU', 'sample_id': 'TiO', 'sample_name':\
-        \ 'TiO', 'project_name': 'calibration', 'institution': 'NIST', 'proposal_id':\
-        \ 318915, 'bar_spot': '29C', 'front': True, 'grazing': True, 'angle': 90,\
-        \ 'height': 0.5, 'sample_priority': 1, 'notes': None, 'location': [{'motor':\
-        \ 'x', 'position': 9.416255928346784, 'order': 0}, {'motor': 'y', 'position':\
-        \ -13.574383338057894, 'order': 0}, {'motor': 'z', 'position': 0.0, 'order':\
-        \ 0}, {'motor': 'th', 'position': 0.0, 'order': 0}], 'bar_loc': {'spot': '29C',\
-        \ 'th': 90, 'ximg': 9.350344154572525, 'yimg': -11.802586049520297, 'th0':\
-        \ 0.0, 'xoff': -0.5469611240216389, 'x0': 9.416255928346784, 'y0': -13.574383338057894,\
-        \ 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003,\
-        \ 'af2xoff': -0.5266100000000016, 'af1zoff': -1.0890474999999995, 'af2zoff':\
-        \ -5.785155, 'zoff': -1.3758284565602459}, 'components': None, 'sample_desc':\
-        \ None, 'project_desc': None, 'sample_set': None, 'sample_state': None, 'composition':\
-        \ None, 'acq_history': [], 'density': None, 'acquisitions': []}, {'bar_name':\
-        \ '20251201_WSU', 'sample_id': 'HOPG_old', 'sample_name': 'HOPG_old', 'project_name':\
-        \ 'calibration', 'institution': 'NIST', 'proposal_id': 318915, 'bar_spot':\
-        \ '30A', 'front': True, 'grazing': True, 'angle': 90, 'height': 0.5, 'sample_priority':\
-        \ 1, 'notes': \"Energy calibrant.  Don't change this row.\", 'location': [{'motor':\
-        \ 'x', 'position': -6.927586037728728, 'order': 0}, {'motor': 'y', 'position':\
-        \ -2.647692428412986, 'order': 0}, {'motor': 'z', 'position': 0.0, 'order':\
-        \ 0}, {'motor': 'th', 'position': 0.0, 'order': 0}], 'bar_loc': {'spot': '30A',\
-        \ 'th': 90, 'ximg': -7.037810441970846, 'yimg': -0.877149651824709, 'th0':\
-        \ 0.0, 'xoff': -0.531962228954701, 'x0': -6.927586037728728, 'y0': -2.647692428412986,\
-        \ 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003,\
-        \ 'af2xoff': -0.5266100000000016, 'af1zoff': -1.0890474999999995, 'af2zoff':\
-        \ -5.785155, 'zoff': -1.645328098740963}, 'components': None, 'sample_desc':\
-        \ None, 'project_desc': None, 'sample_set': None, 'sample_state': None, 'composition':\
-        \ None, 'acq_history': [], 'density': None, 'acquisitions': []}, {'bar_name':\
-        \ '20251201_WSU', 'sample_id': 'HOPG_new', 'sample_name': 'HOPG_new', 'project_name':\
-        \ 'calibration', 'institution': 'NIST', 'proposal_id': 318915, 'bar_spot':\
-        \ '30C', 'front': True, 'grazing': True, 'angle': 90, 'height': 0.5, 'sample_priority':\
-        \ 1, 'notes': None, 'location': [{'motor': 'x', 'position': 8.430171484168248,\
-        \ 'order': 0}, {'motor': 'y', 'position': -3.441511853472658, 'order': 0},\
-        \ {'motor': 'z', 'position': 0.0, 'order': 0}, {'motor': 'th', 'position':\
-        \ 0.0, 'order': 0}], 'bar_loc': {'spot': '30C', 'th': 90, 'ximg': 8.3231663735926,\
-        \ 'yimg': -1.6708779371273792, 'th0': 0.0, 'xoff': -0.5330518922715297, 'x0':\
-        \ 8.430171484168248, 'y0': -3.441511853472658, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -1.6257490649073212},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'OpenBeam',\
-        \ 'sample_name': 'OpenBeam', 'project_name': 'calibration', 'institution':\
-        \ 'NIST', 'proposal_id': 318915, 'bar_spot': '40A', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.0, 'sample_priority': 1, 'notes': \"Bar moved\
-        \ out of beam path for reference scan.  Don't change this row.\", 'location':\
-        \ [{'motor': 'x', 'position': 0.4495488135398816, 'order': 0}, {'motor': 'y',\
-        \ 'position': 43.461409359649565, 'order': 0}, {'motor': 'z', 'position':\
-        \ 0.0, 'order': 0}, {'motor': 'th', 'position': 180.0, 'order': 0}], 'bar_loc':\
-        \ {'spot': '40A', 'th': 0, 'ximg': -1.6841042924336094, 'yimg': 45.22665827191571,\
-        \ 'th0': 0.0, 'xoff': -0.4686689972646332, 'x0': -1.3868868080691477, 'y0':\
-        \ 43.461409359649565, 'af1y': -187.37918000000002, 'af2y': 3.0214999999999748,\
-        \ 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016, 'af1zoff':\
-        \ -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -2.282578757326762},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC0_1',\
-        \ 'sample_name': 'PC0_1', 'project_name': 'Acacia Ternary', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '2B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.3}, {'motor': 'y', 'position':\
-        \ -174.1}, {'motor': 'th', 'position': 180.0005}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '2B', 'th': 0, 'ximg': 0.9093127505571932,\
-        \ 'yimg': -172.33761871913617, 'th0': 0.0, 'xoff': -0.7673503169043044, 'x0':\
-        \ 0.32410823744932793, 'y0': -174.12784942391798, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.8341171499197477},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC0_2',\
-        \ 'sample_name': 'PC0_2', 'project_name': 'Acacia Ternary', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '2B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.3}, {'motor': 'y', 'position':\
-        \ -173.5}, {'motor': 'th', 'position': 180.0005}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '2B', 'th': 0, 'ximg': 0.9093127505571932,\
-        \ 'yimg': -172.33761871913617, 'th0': 0.0, 'xoff': -0.7673503169043044, 'x0':\
-        \ 0.32410823744932793, 'y0': -174.12784942391798, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.8341171499197477},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC2_1',\
-        \ 'sample_name': 'PC2_1', 'project_name': 'Acacia Ternary', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '6B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.3}, {'motor': 'y', 'position':\
-        \ -150.8}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '6B', 'th': 0, 'ximg': 0.31800586340505355,\
-        \ 'yimg': -148.4539622772085, 'th0': 0.0, 'xoff': -0.7345618365409179, 'x0':\
-        \ -0.17032859311123516, 'y0': -150.24145054394856, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.2449748373596456},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC2_2',\
-        \ 'sample_name': 'PC2_2', 'project_name': 'Acacia Ternary', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '6B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.9}, {'motor': 'y', 'position':\
-        \ -149.9}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '6B', 'th': 0, 'ximg': 0.31800586340505355,\
-        \ 'yimg': -148.4539622772085, 'th0': 0.0, 'xoff': -0.7345618365409179, 'x0':\
-        \ -0.17032859311123516, 'y0': -150.24145054394856, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 2.2449748373596456},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC4_1',\
-        \ 'sample_name': 'PC4_1', 'project_name': 'Acacia Ternary', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '10B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.2}, {'motor': 'y', 'position':\
-        \ -126.8}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '10B', 'th': 0, 'ximg': 0.45426954251088425,\
-        \ 'yimg': -124.43631844906372, 'th0': 0.0, 'xoff': -0.701589412701682, 'x0':\
-        \ 0.06334858390207637, 'y0': -126.22104889267615, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.6525274346111223},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'PC4_2',\
-        \ 'sample_name': 'PC4_2', 'project_name': 'Acacia Ternary', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '10B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -0.9}, {'motor': 'y', 'position':\
-        \ -125.6}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '10B', 'th': 0, 'ximg': 0.45426954251088425,\
-        \ 'yimg': -124.43631844906372, 'th0': 0.0, 'xoff': -0.701589412701682, 'x0':\
-        \ 0.06334858390207637, 'y0': -126.22104889267615, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.6525274346111223},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD1-1_1',\
-        \ 'sample_name': 'BD1-1_1', 'project_name': 'Neher blends', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '14B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.5}, {'motor': 'y', 'position':\
-        \ -101.8}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '14B', 'th': 0, 'ximg': -0.09824254774235364,\
-        \ 'yimg': -100.28321514554041, 'th0': 0.0, 'xoff': -0.6684310244411573, 'x0':\
-        \ -0.3912005964607337, 'y0': -102.0651722119069, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.056738629394483},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD1-1_2',\
-        \ 'sample_name': 'BD1-1_2', 'project_name': 'Neher blends', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '14B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.2}, {'motor': 'y', 'position':\
-        \ -101.5}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '14B', 'th': 0, 'ximg': -0.09824254774235364,\
-        \ 'yimg': -100.28321514554041, 'th0': 0.0, 'xoff': -0.6684310244411573, 'x0':\
-        \ -0.3912005964607337, 'y0': -102.0651722119069, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 1.056738629394483},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD2-1_1',\
-        \ 'sample_name': 'BD2-1_1', 'project_name': 'Neher blends', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '16B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.6}, {'motor': 'y', 'position':\
-        \ -90.7}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '16B', 'th': 0, 'ximg': 0.2483326025941448,\
-        \ 'yimg': -88.32637245893125, 'th0': 0.0, 'xoff': -0.6520161717743876, 'x0':\
-        \ 0.003870479553002626, 'y0': -90.1069565822426, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.7617971086757351},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD2-1_2',\
-        \ 'sample_name': 'BD2-1_2', 'project_name': 'Neher blends', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '16B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.3}, {'motor': 'y', 'position':\
-        \ -89.5}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '16B', 'th': 0, 'ximg': 0.2483326025941448,\
-        \ 'yimg': -88.32637245893125, 'th0': 0.0, 'xoff': -0.6520161717743876, 'x0':\
-        \ 0.003870479553002626, 'y0': -90.1069565822426, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.7617971086757351},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD3-1_1',\
-        \ 'sample_name': 'BD3-1_1', 'project_name': 'Neher blends', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '18B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -1.0}, {'motor': 'y', 'position':\
-        \ -77.8}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '18B', 'th': 0, 'ximg': 0.4958862814059284,\
-        \ 'yimg': -76.29526366867854, 'th0': 0.0, 'xoff': -0.6354993635009921, 'x0':\
-        \ 0.3002213009716964, 'y0': -78.07446632133815, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.4650236530456904},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'BD3-1_2',\
-        \ 'sample_name': 'BD3-1_2', 'project_name': 'Neher blends', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '18B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -2.2}, {'motor': 'y', 'position':\
-        \ -77.8}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '18B', 'th': 0, 'ximg': 0.4958862814059284,\
-        \ 'yimg': -76.29526366867854, 'th0': 0.0, 'xoff': -0.6354993635009921, 'x0':\
-        \ 0.3002213009716964, 'y0': -78.07446632133815, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': 0.4650236530456904},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'blank_1',\
-        \ 'sample_name': 'blank_1', 'project_name': 'calibration', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '24B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -2.4}, {'motor': 'y', 'position':\
-        \ -41.9}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '24B', 'th': 0, 'ximg': 0.9400227233647733,\
-        \ 'yimg': -40.44183873150439, 'th0': 0.0, 'xoff': -0.5862782853812716, 'x0':\
-        \ 0.8897761511676002, 'y0': -42.216924518862655, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.4193790234057211},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': 'blank_2',\
-        \ 'sample_name': 'blank_2', 'project_name': 'calibration', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '24B', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': -2.1}, {'motor': 'y', 'position':\
-        \ -41.3}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '24B', 'th': 0, 'ximg': 0.9400227233647733,\
-        \ 'yimg': -40.44183873150439, 'th0': 0.0, 'xoff': -0.5862782853812716, 'x0':\
-        \ 0.8897761511676002, 'y0': -42.216924518862655, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.4193790234057211},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': '50nmPS_1',\
-        \ 'sample_name': '50nmPS_1', 'project_name': 'calibration', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '25A', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': 0.7}, {'motor': 'y', 'position':\
-        \ -35.7}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '25A', 'th': 0, 'ximg': -2.7621533780728296,\
-        \ 'yimg': -34.84438371676756, 'th0': 0.0, 'xoff': -0.5785938655236216, 'x0':\
-        \ -2.7896971540978686, 'y0': -36.61882677701213, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.5574524209967233},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}, {'bar_name': '20251201_WSU', 'sample_id': '50nmPS_2',\
-        \ 'sample_name': '50nmPS_2', 'project_name': 'calibration', 'institution':\
-        \ 'WSU', 'proposal_id': 318915, 'bar_spot': '25A', 'front': True, 'grazing':\
-        \ False, 'angle': 0, 'height': 0.25, 'sample_priority': 1, 'notes': None,\
-        \ 'location': [{'motor': 'x', 'position': 1.6}, {'motor': 'y', 'position':\
-        \ -35.7}, {'motor': 'th', 'position': 179.9998}, {'motor': 'z', 'position':\
-        \ -1.1316}], 'bar_loc': {'spot': '25A', 'th': 0, 'ximg': -2.7621533780728296,\
-        \ 'yimg': -34.84438371676756, 'th0': 0.0, 'xoff': -0.5785938655236216, 'x0':\
-        \ -2.7896971540978686, 'y0': -36.61882677701213, 'af1y': -187.37918000000002,\
-        \ 'af2y': 3.0214999999999748, 'af1xoff': -0.7880000000000003, 'af2xoff': -0.5266100000000016,\
-        \ 'af1zoff': -1.0890474999999995, 'af2zoff': -5.785155, 'zoff': -0.5574524209967233},\
-        \ 'components': None, 'sample_desc': None, 'project_desc': None, 'sample_set':\
-        \ None, 'sample_state': None, 'composition': None, 'acq_history': [], 'density':\
-        \ None, 'acquisitions': []}]"
+    - default: '[{''bar_name'': ''20260123_Commissioning'', ''sample_id'': ''AF1_front'',
+        ''sample_name'': ''AF1_front'', ''project_name'': ''Calibration'', ''institution'':
+        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''0A'', ''front'': True,
+        ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
+        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': 0.7668522618567337,
+        ''order'': 0}, {''motor'': ''y'', ''position'': -185.48584749058006, ''order'':
+        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
+        ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''0A'', ''ximg'':
+        0.7668522618567337, ''yimg'': -185.48584749058006, ''th0'': 0.0, ''th'': 0},
+        ''sample_desc'': None, ''sample_state'': None, ''composition'': None, ''project_desc'':
+        ''Calibration'', ''sample_set'': None, ''components'': None, ''density'':
+        None, ''acq_history'': [], ''acquisitions'': []}, {''bar_name'': ''20260123_Commissioning'',
+        ''sample_id'': ''AF2_front'', ''sample_name'': ''AF2_front'', ''project_name'':
+        ''Calibration'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
+        ''0A'', ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.0,
+        ''sample_priority'': 1, ''notes'': None, ''location'': [{''motor'': ''x'',
+        ''position'': 1.3988319386793564, ''order'': 0}, {''motor'': ''y'', ''position'':
+        4.883507350675398, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
+        0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}], ''bar_loc'':
+        {''spot'': ''0A'', ''ximg'': 1.3988319386793564, ''yimg'': 4.883507350675398,
+        ''th0'': 0.0, ''th'': 0}, ''sample_desc'': None, ''sample_state'': None, ''composition'':
+        None, ''project_desc'': ''Calibration'', ''sample_set'': None, ''components'':
+        None, ''density'': None, ''acq_history'': [], ''acquisitions'': []}, {''bar_name'':
+        ''20260123_Commissioning'', ''sample_id'': ''diode'', ''sample_name'': ''diode'',
+        ''project_name'': ''Calibration'', ''institution'': ''NIST'', ''proposal_id'':
+        318915, ''bar_spot'': ''0A'', ''front'': True, ''grazing'': False, ''angle'':
+        0, ''height'': 0.0, ''sample_priority'': 1, ''notes'': None, ''location'':
+        [{''motor'': ''x'', ''position'': 1.7058478523374134, ''order'': 0}, {''motor'':
+        ''y'', ''position'': 47.863550112126916, ''order'': 0}, {''motor'': ''z'',
+        ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0,
+        ''order'': 0}], ''bar_loc'': {''spot'': ''0A'', ''ximg'': 1.7058478523374134,
+        ''yimg'': 47.863550112126916, ''th0'': 0.0, ''th'': 0}, ''sample_desc'': None,
+        ''sample_state'': None, ''composition'': None, ''project_desc'': ''Calibration'',
+        ''sample_set'': None, ''components'': None, ''density'': None, ''acq_history'':
+        [], ''acquisitions'': []}, {''bar_name'': ''20260123_Commissioning'', ''sample_id'':
+        ''SiN_Blank'', ''sample_name'': ''SiN_Blank'', ''project_name'': ''calibration'',
+        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''18A'',
+        ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'':
+        1, ''notes'': ''Typical transmission RSoXS sample on SiN membrane that is
+        mounted to the front of the bar.  0 degrees angle corresponds to normal incidence.  bar_spot
+        can be filled in after you mount samples.'', ''location'': [{''motor'': ''x'',
+        ''position'': 0.3879492283086652, ''order'': 0}, {''motor'': ''y'', ''position'':
+        -75.47723051800399, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
+        0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}], ''bar_loc'':
+        {''spot'': ''18A'', ''th'': 0, ''ximg'': 0.3879492283086652, ''yimg'': -75.47723051800399,
+        ''th0'': 0.0}, ''sample_desc'': None, ''sample_state'': None, ''composition'':
+        None, ''project_desc'': None, ''sample_set'': None, ''components'': None,
+        ''density'': None, ''acq_history'': [], ''acquisitions'': []}, {''bar_name'':
+        ''20260123_Commissioning'', ''sample_id'': ''AlFoil'', ''sample_name'': ''AlFoil'',
+        ''project_name'': ''calibration'', ''institution'': ''NIST'', ''proposal_id'':
+        318915, ''bar_spot'': ''21A'', ''front'': True, ''grazing'': True, ''angle'':
+        90, ''height'': 0.5, ''sample_priority'': 1, ''notes'': ''For camera characterization'',
+        ''location'': [{''motor'': ''x'', ''position'': 0.5707779886148003, ''order'':
+        0}, {''motor'': ''y'', ''position'': -50.563222356391265, ''order'': 0}, {''motor'':
+        ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'':
+        180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''21A'', ''th'': 90, ''ximg'':
+        0.5707779886148003, ''yimg'': -50.563222356391265, ''th0'': 0.0}, ''sample_desc'':
+        None, ''sample_state'': None, ''composition'': None, ''project_desc'': None,
+        ''sample_set'': None, ''components'': None, ''density'': None, ''acq_history'':
+        [], ''acquisitions'': []}, {''bar_name'': ''20260123_Commissioning'', ''sample_id'':
+        ''GoldGrid_AsIs'', ''sample_name'': ''GoldGrid_AsIs'', ''project_name'': ''calibration'',
+        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''26A'',
+        ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'':
+        1, ''notes'': ''To assess contamination growth'', ''location'': [{''motor'':
+        ''x'', ''position'': 0.12485768500949135, ''order'': 0}, {''motor'': ''y'',
+        ''position'': -28.39664856242054, ''order'': 0}, {''motor'': ''z'', ''position'':
+        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
+        ''bar_loc'': {''spot'': ''26A'', ''th'': 0, ''ximg'': 0.12485768500949135,
+        ''yimg'': -28.39664856242054, ''th0'': 0.0}, ''sample_desc'': None, ''sample_state'':
+        None, ''composition'': None, ''project_desc'': None, ''sample_set'': None,
+        ''components'': None, ''density'': None, ''acq_history'': [], ''acquisitions'':
+        []}, {''bar_name'': ''20260123_Commissioning'', ''sample_id'': ''GoldGrid_UVO90min'',
+        ''sample_name'': ''GoldGrid_UVO90min'', ''project_name'': ''calibration'',
+        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''26B'',
+        ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'':
+        1, ''notes'': ''To assess contamination growth'', ''location'': [{''motor'':
+        ''x'', ''position'': -5.4763670151417685, ''order'': 0}, {''motor'': ''y'',
+        ''position'': -28.108585577841332, ''order'': 0}, {''motor'': ''z'', ''position'':
+        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
+        ''bar_loc'': {''spot'': ''26B'', ''th'': 0, ''ximg'': -5.4763670151417685,
+        ''yimg'': -28.108585577841332, ''th0'': 0.0}, ''sample_desc'': None, ''sample_state'':
+        None, ''composition'': None, ''project_desc'': None, ''sample_set'': None,
+        ''components'': None, ''density'': None, ''acq_history'': [], ''acquisitions'':
+        []}, {''bar_name'': ''20260123_Commissioning'', ''sample_id'': ''HOPG'', ''sample_name'':
+        ''HOPG'', ''project_name'': ''calibration'', ''institution'': ''NIST'', ''proposal_id'':
+        318915, ''bar_spot'': ''30A'', ''front'': True, ''grazing'': True, ''angle'':
+        90, ''height'': 0.5, ''sample_priority'': 1, ''notes'': "Energy calibrant.  Don''t
+        change this row.", ''location'': [{''motor'': ''x'', ''position'': 7.219044333275832,
+        ''order'': 0}, {''motor'': ''y'', ''position'': -2.5659824046921074, ''order'':
+        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
+        ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''30A'', ''th'':
+        90, ''ximg'': 7.219044333275832, ''yimg'': -2.5659824046921074, ''th0'': 0.0},
+        ''sample_desc'': None, ''sample_state'': None, ''composition'': None, ''project_desc'':
+        None, ''sample_set'': None, ''components'': None, ''density'': None, ''acq_history'':
+        [], ''acquisitions'': [{''sample_id'': ''HOPG'', ''configuration_instrument'':
+        ''WAXSNEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [90], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [20], ''spiral_dimensions'':
+        None, ''group_name'': ''Check calibration'', ''priority'': 1, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''46d72a4c-e491-4fe2-87f6-1e8fbf03d3dc'', ''notes'':
+        None}]}, {''bar_name'': ''20260123_Commissioning'', ''sample_id'': ''OpenBeam'',
+        ''sample_name'': ''OpenBeam'', ''project_name'': ''calibration'', ''institution'':
+        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''40A'', ''front'': True,
+        ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
+        ''notes'': "Bar moved out of beam path for reference scan.  Don''t change
+        this row.", ''location'': [{''motor'': ''x'', ''position'': 0.4086251509401393,
+        ''order'': 0}, {''motor'': ''y'', ''position'': 47.70139727445229, ''order'':
+        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
+        ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''40A'', ''th'':
+        0, ''ximg'': 0.4086251509401393, ''yimg'': 47.70139727445229, ''th0'': 0.0},
+        ''sample_desc'': None, ''sample_state'': None, ''composition'': None, ''project_desc'':
+        None, ''sample_set'': None, ''components'': None, ''density'': None, ''acq_history'':
+        [], ''acquisitions'': [{''sample_id'': ''OpenBeam'', ''configuration_instrument'':
+        ''WAXSNEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 2, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''0bfe1f7d-32e4-45ce-bb77-79510808431b'', ''notes'':
+        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'',
+        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 3, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''dd29211a-61e2-42bb-bcc3-9fc5b986dee1'', ''notes'':
+        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'',
+        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 4, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''547b71f9-2216-47c5-81d6-d431d8cb0f9e'', ''notes'':
+        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'',
+        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 5, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''d926c8d8-75ec-43ed-8485-cf57f29259cc'', ''notes'':
+        None}]}, {''bar_name'': ''20260123_Commissioning'', ''sample_id'': ''HOPG_guess'',
+        ''sample_name'': ''HOPG_guess'', ''project_name'': ''calibration'', ''institution'':
+        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''30A'', ''front'': True,
+        ''grazing'': True, ''angle'': 90, ''height'': 0.5, ''sample_priority'': 1,
+        ''notes'': "Energy calibrant.  Don''t change this row.", ''location'': [{''motor'':
+        ''x'', ''position'': 0.349624999999989, ''order'': 0}, {''motor'': ''y'',
+        ''position'': -4.9927000000000135, ''order'': 0}, {''motor'': ''z'', ''position'':
+        -1.1715149999999923, ''order'': 0}, {''motor'': ''th'', ''position'': 70.007472995,
+        ''order'': 0}], ''bar_loc'': {''spot'': ''30A'', ''th'': 90, ''ximg'': 7.219044333275832,
+        ''yimg'': -2.5659824046921074, ''th0'': 0.0}, ''sample_desc'': None, ''sample_state'':
+        None, ''composition'': None, ''project_desc'': None, ''sample_set'': None,
+        ''components'': None, ''density'': None, ''acq_history'': [], ''acquisitions'':
+        []}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -34072,12 +32624,6 @@ existing_plans:
         name: KEYWORD_ONLY
         value: 3
       name: polarization
-    properties:
-      is_generator: true
-  spirals_WSU:
-    module: rsoxs.plans.run_acquisitions
-    name: spirals_WSU
-    parameters: []
     properties:
       is_generator: true
   sr_rsoxs:
@@ -35158,6 +33704,50 @@ existing_plans:
         name: KEYWORD_ONLY
         value: 3
       name: md
+    properties:
+      is_generator: true
+  wait_for_condition:
+    description: Wait for a condition function to return True.
+    module: nbs_bl.plans.plan_stubs
+    name: wait_for_condition
+    parameters:
+    - description: A condition function that returns a boolean.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition
+    - annotation:
+        type: typing.List
+      default: None
+      description: Arguments for the condition function.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition_args
+    - annotation:
+        type: typing.Dict
+      default: None
+      description: Keyword arguments for the condition function.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: condition_kwargs
+    - annotation:
+        type: typing.Optional[float]
+      default: None
+      description: Maximum time to wait in seconds. If None, wait indefinitely.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: timeout
+    - annotation:
+        type: float
+      default: '10'
+      description: Time to sleep between checks in seconds. Default is 10.
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sleep_time
     properties:
       is_generator: true
   waxs_back_on:

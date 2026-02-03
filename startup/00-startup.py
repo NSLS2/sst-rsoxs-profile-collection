@@ -21,7 +21,7 @@ from bluesky.utils import ProgressBarManager
 
 
 plt.ion()
-
+"""
 paths = [
     path
     for path in Path(
@@ -31,6 +31,7 @@ paths = [
 ]
 for path in paths:
     sys.path.append(str(path))
+"""
 
 ## Uses this package: https://github.com/xraygui/nbs-bl
 ## Gives the path to profile_collection directory and looks for devices.toml file

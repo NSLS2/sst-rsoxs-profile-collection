@@ -574,6 +574,35 @@ name = "Sample Imager Detector Area Camera" ## TODO: Would like to rename to "So
 camera_name = "sampleviewer_cam-1"
 date_template = "%Y/%m/%d"
 read_attrs = ["tiff"]
+## Camera specs #####################################
+## Allied Vision
+## Mako G-57C IRC PoE, SN: 536940227, MAC 000F315C9B43, 967, Made in Germany
+## Cable connections #################################
+## Ethernet cable from camera to port upstream of RSoXS
+## Ethernet cable from port upstream of RSoXS (Workstation area) to pyI-4:1 patch panel on upstream inboard SST2 side.
+## Cable from pyI-4:1 patch panel to C racks on inboard SST2 side of RSoXS.
+## Switch: [need to locate port]
+## IOC: xf07id-ioc3, softioc: ad_RSoXS_cam05 
+## Acquisition parameters in Phoebus: ######################
+## Exposure time = 0.05 s ## Likely the first parameter to be adjusted if image is too bright or dim
+## Acquire Period: 1 s
+## Num Images: 1
+## Exp/Image: 1
+## Image Mode: Single
+## Trigger Mode: Fixed Rate
+## areaDetector Plugins --> Expert (AD detail) --> Prosilica
+## Binning x = 1, y = 1
+## Region start x = 0, y = 0
+## Region size x = 2464, y = 2056
+## Gain: 0
+## Data type: UInt8
+## Color mode: RGB1 ## May need to switch this to something else then back to RGB1 for colors to show up
+## Bayer convert: None
+## Shutter mode: None
+## Wait for plugins: Yes
+## Image counter: 0
+## Array callbacks: Enable
+## Buffer & memory polling: 1
 
 [manipulator]
 _target = "rsoxs.devices.manipulator.ManipulatorBuilderRSOXS"
@@ -681,10 +710,10 @@ prefix = "XF:07ID1-ES"
 
 [BeamStopW] ## TODO: rename so that it is more obvious which is a signal vs. a motor
 _target = "sst_base.motors.PrettyMotorFMBODeadband"
- _group = "motors"
+_group = "motors"
 kind = "hinted"
 name = "Beam Stop WAXS"
-prefix = "XF:07ID2-ES1{BS-Ax:1}Mtr"
+prefix = "XF:07ID2-ES1{BS-Ax:2}Mtr" #prefix = "XF:07ID2-ES1{BS-Ax:1}Mtr" ## December 2025, put SAXS beamstop Ax:2 into WAXS position
 _baseline = true
 
 #[Beamstop_WAXS] ## This is Jamie's definition, can be used for flyscanning (?)
@@ -763,52 +792,54 @@ name = "Detector WAXS Translation"
 prefix = "XF:07ID2-ES1{Det-Ax:2}Mtr"
 _baseline = true
 
-[waxs_det]
-_target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
-_group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
-_load_order = 2
-prefix = "XF:07ID1-ES:1{GE:2}"
-name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
-read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
+#[waxs_det]
+#_target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
+#_group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
+#_load_order = 2
+#_deferred = true
+#prefix = "XF:07ID1-ES:1{GE:2}"
+#name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
+#read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
 ## Greateyes GE 4k4k camera, serial number GE060232
 
-[BeamStopS]
-_target = "sst_base.motors.PrettyMotorFMBODeadband"
-_group = "motors"
-kind = "hinted"
-name = "Beam Stop SAXS"
-prefix = "XF:07ID2-ES1{BS-Ax:2}Mtr"
-_baseline = true
-
-[Beamstop_SAXS] ## This is Jamie's definition, can be used for flyscanning (?)
-_target = "ophyd.EpicsSignalRO"
-kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC2_MON"
-name = "SAXS Beamstop"
+#[BeamStopS]
+#_target = "sst_base.motors.PrettyMotorFMBODeadband"
+#_group = "motors"
+#kind = "hinted"
+#name = "Beam Stop SAXS"
+#prefix = "XF:07ID2-ES1{BS-Ax:2}Mtr"
 #_baseline = true
 
-[Beamstop_SAXS_int]
-_target = "sst_base.detectors.scalar.ophScalar"
-_group = ["detectors"]
-kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC2_MON"
-name = "SAXS Beamstop"
+#[Beamstop_SAXS] ## This is Jamie's definition, can be used for flyscanning (?)
+#_target = "ophyd.EpicsSignalRO"
+#kind = "normal"
+#prefix = "XF:07ID-ES1{DMR:I400-1}:IC2_MON"
+#name = "SAXS Beamstop"
+#_baseline = true
 
-[Det_S]
-_target = "sst_base.motors.PrettyMotorFMBODeadband"
-_group = "motors"
-kind = "hinted"
-name = "Detector SAXS Translation"
-prefix = "XF:07ID2-ES1{Det-Ax:1}Mtr"
-_baseline = true
+#[Beamstop_SAXS_int]
+#_target = "sst_base.detectors.scalar.ophScalar"
+#_group = ["detectors"]
+#kind = "normal"
+#prefix = "XF:07ID-ES1{DMR:I400-1}:IC2_MON"
+#name = "SAXS Beamstop"
 
-[DetS_cam]
-_target = "sst_base.cameras.StandardProsilica"
-_group = "all_standard_pros"
-prefix = "XF:07ID1-ES:1{Scr:3}"
-name = "WAXS Detector Area Camera"
+#[Det_S]
+#_target = "sst_base.motors.PrettyMotorFMBODeadband"
+#_group = "motors"
+#kind = "hinted"
+#name = "Detector SAXS Translation"
+#prefix = "XF:07ID2-ES1{Det-Ax:1}Mtr"
+#_baseline = true
+
+#[DetS_cam]
+#_target = "sst_base.cameras.StandardProsilica"
+#_group = "all_standard_pros"
+#prefix = "XF:07ID1-ES:1{Scr:3}"
+#name = "WAXS Detector Area Camera"
 ## Greateyes GE 4k4k camera, serial number GE060230
 ## Power supply: Serial number PSK2002, Input 85-264VAC 50/60Hz 1.9/3.8A max 230/115VAC, Output 400 W 36VDC max, CE certified
+## Actually this might be an optical camera, not the Greateyes camera?  Check.
 
 [mc19_fault]
 _target = "ophyd.EpicsSignalRO"
