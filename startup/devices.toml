@@ -936,17 +936,25 @@ name = "Photon Shutter 7"
 ## M4C is curved (meridional cylinder)
 ## M4 and downstream mirrors have drain currents measured
 
-[DownstreamLargeDiode] 
-_target = "ophyd.EpicsSignalRO"
+## Diagnostic module (DM) 7
+[dm7_photodiode]
+name = "DM7 photodiode"
+_group = "detectors"
 kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC4_MON"
-name = "DownstreamLargeDiode"
+#_baseline = true
+## Connected to SRS570 curent pre-amplifier labelled "RSoXS Beamstop WAXS" on rack behind ucal station
+## --> Connected to ADC3 channel 7
+_target = "sst_base.detectors.scalar.ADCBuffer"
+prefix = "XF:07ID-BI[ADC:3-Ch:7]"
 
-[DownstreamLargeDiode_int] 
-_target = "sst_base.detectors.scalar.ophScalar"
-kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC4_MON"
-name = "DownstreamLargeDiode"
+[dm7_y]
+_target = "sst_base.motors.PrettyMotorFMBODeadband"
+_group = "motors"
+prefix = "XF:07ID2-BI{Diag:07-Ax:Y}Mtr"
+name = "Diagnostic module 7 assembly vertical translation" 
+kind = "hinted"
+_baseline = true
+## Motor range is -82 to 29.9.  Normally retracted at ###.  Photodiode is at -15.
 
 #[bpm13_sum]
 #_target = "ophyd.EpicsSignalRO"
