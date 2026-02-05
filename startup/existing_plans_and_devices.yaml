@@ -22804,7 +22804,7 @@ existing_plans:
     properties:
       is_generator: true
   commissioning_scans_20260204:
-    module: rsoxs.plans.run_acquisitions
+    module: rsoxs.plans.custom_acquisitions_commissioning
     name: commissioning_scans_20260204
     parameters: []
     properties:
@@ -24605,6 +24605,48 @@ existing_plans:
     parameters: []
     properties:
       is_generator: true
+  m3_sweep:
+    description: 'Sweeps M3 pitch across different M3 x, energies, and polarizations.
+
+      If the M3 pitch and x at which the maximum flux occurs stays the same across
+      energies, then upstream M2/PGM are well-aligned.
+
+      If not, then the M2/PGM roll may need to be adjusted via the manual wobble stick.'
+    module: rsoxs.alignment.m3
+    name: m3_sweep
+    parameters:
+    - default: '[0, 90]'
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: polarizations
+    - default: None
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: energies
+    - default: None
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: m3_xs
+    - default: None
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: m3_pitches
+    - default: '''WAXSNEXAFS'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: configuration
+    - default: '''OpenBeam'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sample_id
+    properties:
+      is_generator: true
   mg_rsoxs:
     description: 'Perform an in-place RSoXS scan for  with energy pattern [1270, 1300,
       0.3, 1340, 0.2, 1360, 0.5, 1380, 1] '
@@ -26012,10 +26054,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': 0.007194999999988738, ''order'':
-        0}, {''motor'': ''y'', ''position'': 345.03558, ''order'': 0}, {''motor'':
+    - default: '[{''motor'': ''x'', ''position'': -0.0007100000000050954, ''order'':
+        0}, {''motor'': ''y'', ''position'': 345.00173, ''order'': 0}, {''motor'':
         ''z'', ''position'': -1.1715149999999923, ''order'': 0}, {''motor'': ''th'',
-        ''position'': -0.007022058000018205, ''order'': 0}]'
+        ''position'': -0.004275475999975242, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1

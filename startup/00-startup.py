@@ -49,10 +49,12 @@ run_report(__file__)
 from rsoxs.devices.cameras import configure_cameras
 from rsoxs.plans.rsoxs import *
 from rsoxs.plans.run_acquisitions import *
+from rsoxs.plans.custom_acquisitions_commissioning import *
 from rsoxs.configuration_setup.configuration_load_save import *
 from rsoxs.configuration_setup.configurations_instrument import *
 from rsoxs.alignment.fiducials import *
 from rsoxs.alignment.energy_calibration import *
+from rsoxs.alignment.m3 import *
 
 ## Eliot's old code
 from rsoxs.HW.cameras import * ## 20250131 - temporary solution to using crosshairs, need a better long-term solution
