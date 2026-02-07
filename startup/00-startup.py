@@ -50,6 +50,7 @@ from rsoxs.devices.cameras import configure_cameras
 from rsoxs.plans.rsoxs import *
 from rsoxs.plans.run_acquisitions import *
 from rsoxs.plans.custom_acquisitions_commissioning import *
+from rsoxs.plans.custom_acquisitions_liquids import *
 from rsoxs.configuration_setup.configuration_load_save import *
 from rsoxs.configuration_setup.configurations_instrument import *
 from rsoxs.alignment.fiducials import *
