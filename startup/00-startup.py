@@ -119,7 +119,7 @@ if not is_re_worker_active(): ## If not running queueserver, run these
     pbar_manager = ProgressBarManager()
     RE.waiting_hook = pbar_manager
 
-    beamline_status()  # print out the current sample metadata, motor position and detector status
+    #beamline_status()  # print out the current sample metadata, motor position and detector status
 
 
 ## TODO: delete thee code below, but add the important devices to baseline in devices.toml

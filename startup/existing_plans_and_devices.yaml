@@ -21562,17 +21562,6 @@ existing_devices:
     is_readable: true
     module: ophyd.signal
 existing_plans:
-  HOPG_energy_resolution_series:
-    description: 'This series is especially helpful when selecting slits1.vsize to
-      balance beam flux and energy resolution.
-
-      Moreover, it should be run routinely during commissioning to assess energy resolution
-      and adjust energy calibration if needed.'
-    module: rsoxs.plans.run_acquisitions
-    name: HOPG_energy_resolution_series
-    parameters: []
-    properties:
-      is_generator: true
   I0_mesh_vertical_profile_energy_scan:
     module: rsoxs.plans.run_acquisitions
     name: I0_mesh_vertical_profile_energy_scan
@@ -22803,9 +22792,9 @@ existing_plans:
       name: md
     properties:
       is_generator: true
-  commissioning_scans_20260204:
+  commissioning_scans_20260205:
     module: rsoxs.plans.custom_acquisitions_commissioning
-    name: commissioning_scans_20260204
+    name: commissioning_scans_20260205
     parameters: []
     properties:
       is_generator: true
@@ -23235,6 +23224,32 @@ existing_plans:
     module: rsoxs.Functions.contingencies
     name: enc_clr_x
     parameters: []
+    properties:
+      is_generator: true
+  energy_resolution_series:
+    description: 'This series is especially helpful when selecting slits1.vsize to
+      balance beam flux and energy resolution.
+
+      Moreover, it should be run routinely during commissioning to assess energy resolution
+      and adjust energy calibration if needed.'
+    module: rsoxs.alignment.energy_calibration
+    name: energy_resolution_series
+    parameters:
+    - default: '''HOPG'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sample_id
+    - default: '''carbon_NEXAFS_slow'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: energy_parameters
+    - default: None
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: slit1_vsizes
     properties:
       is_generator: true
   f_rsoxs:
@@ -24593,16 +24608,6 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: sim_mode
-    properties:
-      is_generator: true
-  m3_pitch_sweep:
-    description: 'Runs sweep in M3 pitch across different energies to see if the maximum
-      stays the same across energies.
-
-      If not, then the M2/PGM roll may need to be adjusted via the manual wobble stick.'
-    module: rsoxs.plans.run_acquisitions
-    name: m3_pitch_sweep
-    parameters: []
     properties:
       is_generator: true
   m3_sweep:
@@ -26054,10 +26059,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': -0.0007100000000050954, ''order'':
-        0}, {''motor'': ''y'', ''position'': 345.00173, ''order'': 0}, {''motor'':
+    - default: '[{''motor'': ''x'', ''position'': 0.3493349999999893, ''order'': 0},
+        {''motor'': ''y'', ''position'': -4.992670000000004, ''order'': 0}, {''motor'':
         ''z'', ''position'': -1.1715149999999923, ''order'': 0}, {''motor'': ''th'',
-        ''position'': -0.004275475999975242, ''order'': 0}]'
+        ''position'': 70.007472995, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
