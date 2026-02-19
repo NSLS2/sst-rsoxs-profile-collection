@@ -186,6 +186,15 @@ read_attrs = ['tiff','stats5']
 ## As a result, the rounded edge of the beam is visible on the frame, but it is cut off on the straight inner edge of the frame.  The camera is as far back as can be placed, so a larger portion of the beam cannot be seen.
 ## M1 reflects the beam through the mask/frame.
 
+[slits_foe]
+_target = "sst_base.slits.FMBOQuadSlits"
+_group = "motors"
+kind = "hinted"
+prefix = "XF:07IDA-OP{Slt:01-Ax:"
+name = "FOE slits"
+concurrent = 1
+_baseline = true
+
 [fs6_cam] #was FS6_cam
 _target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory" 
 _group = "all_standard_pros" ## TODO: Does this need another group?
