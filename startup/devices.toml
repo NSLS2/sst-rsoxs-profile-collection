@@ -694,6 +694,17 @@ name = "RSoXS TEM Inboard-Outboard"
 prefix = "XF:07ID1-ES:1{Smpl-Ax:Z}Mtr"
 _baseline = true
 
+[gv_tem]
+_target = "sst_base.shutters.EPS_Shutter"
+_group = "gate_valves"
+shutter_type = "GV"
+openval = 0
+closeval = 1
+prefix = "XF:07IDB-VA:2{RSoXS:Main-GV:2}"
+name = "TEM Load Lock Gate Valve"
+kind = "hinted"
+_baseline = true
+
 [tem_tempstage]
 _target = "rsoxs.HW.lakeshore.Lakeshore336Picky" 
 _group = "sample_environments" ## TODO: I made a new group, feel free to rename.
@@ -946,6 +957,15 @@ kind = "normal"
 ## --> Connected to ADC3 channel 7
 _target = "sst_base.detectors.scalar.ADCBuffer"
 prefix = "XF:07ID-BI[ADC:3-Ch:7]"
+
+[fs13_cam]
+_target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory"
+_group = "all_standard_pros" ## TODO: Does this need another group?
+prefix = "XF:07ID-BI{BPM:13}"
+name = "FS13 Camera"
+camera_name = "fs13_cam-1"
+date_template = "%Y/%m"
+read_attrs = ['tiff','stats5']
 
 [dm7_y]
 _target = "sst_base.motors.PrettyMotorFMBODeadband"

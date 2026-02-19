@@ -29,6 +29,9 @@ bluesky-live = ">=0.0.8,<0.0.9"
 bluesky-tiled-plugins = ">=2.0.1"
 ophyd-async = ">=0.13.7,<0.14"
 
+#[feature.profile.pypi-dependencies]
+#nslsii = { git = "https://github.com/NSLS-II/nslsii.git"}
+
 #[feature.nbs.dependencies]
 #pyhyperscattering = ">=0.2.10,<0.3"
 
@@ -84,6 +87,7 @@ numpy = ">2"
 [feature.terminal.tasks]
 start = "unset SESSION_MANAGER PYTHONPATH && MPLBACKEND=qtagg ipython --profile-dir=."
 pvs = "ipython --profile-dir=. -c 'get_pv_types(); exit()'"
+sync-experiment = "scripts/sync-experiment.sh"
 
 [feature.gui.tasks]
 gui = "scripts/gui-start.sh"
@@ -93,6 +97,8 @@ gui-dev = "scripts/gui-dev.sh"
 [feature.viewer.tasks]
 viewer = "scripts/viewer-start.sh"
 viewer-dev = "scripts/viewer-dev.sh"
+
+
 
 [environments]
 terminal = {features=["profile", "terminal"], solve-group="profile"}
