@@ -204,6 +204,15 @@ camera_name = "fs6_cam-1"
 date_template = "%Y/%m"
 read_attrs = ['tiff','stats5']
 
+[fs6_y]
+_target = "sst_base.motors.PrettyMotorFMBODeadband"
+_group = "motors"
+prefix = "XF:07IDA1-BI{FS:06-Ax:Y}Mtr"
+name = "Fluorescence screen 6 vertical translation" 
+kind = "hinted"
+_baseline = true
+## Normally retracted at 1.5.  Screen is at -1.
+
 [psh4]
 _target = "sst_base.shutters.EPS_Shutter"
 _group = "shutters"
@@ -305,6 +314,15 @@ _baseline = true
 ## GV26
 
 ## DM6 and FS12
+
+[slitc_cam] 
+_target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory"
+_group = "all_standard_pros" ## TODO: Does this need another group?
+prefix = "XF:07ID-BI{BPM:22}"
+name = "Slit C Camera"
+camera_name = "bpm22_cam-1"
+date_template = "%Y/%m"
+read_attrs = ['tiff','stats5']
 
 [slitsc] # was Exit_Slit # Precision slit C
 _target = "sst_base.motors.PrettyMotorFMBO"

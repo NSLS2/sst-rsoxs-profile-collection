@@ -4593,6 +4593,547 @@ existing_devices:
     is_movable: false
     is_readable: true
     module: rsoxs.devices.cameras
+  fs6_y:
+    classname: PrettyMotorFMBODeadband
+    components:
+      abdec:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      abdec_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      acceleration:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      amfae:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      amfae_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      amfe:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      amfe_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      ampen:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      ampen_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      asscs:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      asscs_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      clr_enc_lss:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      daerr:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      daerr_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      direction_of_travel:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      dvzer:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      dvzer_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      dwpro:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      dwpro_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      enable:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      enc_lss:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      enc_lss_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      encoder:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      errtg:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      errtg_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      fafoe:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      fafoe_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      frpos:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      frpos_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      high_limit_switch:
+        classname: EpicsSignalRO
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      high_limit_travel:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      hocpl:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      hocpl_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      home_cmd:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      home_forward:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      home_reverse:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      hsrch:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      hsrch_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      iffe:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      iffe_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      inpos:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      inpos_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      intmo:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      intmo_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      kill:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      loopm:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      loopm_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      low_limit_switch:
+        classname: EpicsSignalRO
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      low_limit_travel:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      mlim:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      mlim_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      motor_done_move:
+        classname: EpicsSignalRO
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      motor_egu:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      motor_is_moving:
+        classname: EpicsSignalRO
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      motor_stop:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      move_latch:
+        classname: Signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      mtact:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      mtact_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      offset_freeze_switch:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      phsra:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      phsra_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      plim:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      plim_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      prefe:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      prefe_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      resolution:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      set_use_switch:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      sodpl:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      sodpl_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      sopl:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      sopl_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      swpoc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      swpoc_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      tiact:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      tiact_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      tolerance:
+        classname: Signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      trmov:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      trmov_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      user_offset:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      user_offset_dir:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      user_readback:
+        classname: EpicsSignalRO
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      user_setpoint:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      uwpen:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      uwpen_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      uwsen:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      uwsen_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      velocity:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      wfoer:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+      wfoer_desc:
+        classname: EpicsSignal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: ophyd.signal
+    is_flyable: false
+    is_movable: true
+    is_readable: true
+    module: sst_base.motors
   fs7_cam:
     classname: StandardProsilicawstats
     is_flyable: false
@@ -14125,6 +14666,12 @@ existing_devices:
     is_movable: true
     is_readable: true
     module: ophyd.pseudopos
+  slitc_cam:
+    classname: StandardProsilicawstats
+    is_flyable: false
+    is_movable: false
+    is_readable: true
+    module: rsoxs.devices.cameras
   slits1:
     classname: FMBOQuadSlits
     components:
@@ -23941,6 +24488,19 @@ existing_plans:
       name: sample_id
     properties:
       is_generator: true
+  beam_motion_monitoring_20260312:
+    description: Quick function to get started while I put together a more detailed
+      one below.
+    module: rsoxs.plans.custom_acquisitions_commissioning
+    name: beam_motion_monitoring_20260312
+    parameters:
+    - default: '''OpenBeam'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sample_id
+    properties:
+      is_generator: true
   beam_motion_monitoring_FS13_20260213:
     description: Quick function to get started while I put together a more detailed
       one below.
@@ -25170,9 +25730,9 @@ existing_plans:
       name: md
     properties:
       is_generator: true
-  commissioning_scans_20260205:
+  commissioning_scans_20260312:
     module: rsoxs.plans.custom_acquisitions_commissioning
-    name: commissioning_scans_20260205
+    name: commissioning_scans_20260312
     parameters: []
     properties:
       is_generator: true
@@ -26967,6 +27527,14 @@ existing_plans:
       name: md
     properties:
       is_generator: true
+  knife_edge_20260220:
+    description: Transition from beam to no beam will be convolution of step function
+      and shape of beam in direction of scan.
+    module: rsoxs.plans.custom_acquisitions_broadband
+    name: knife_edge_20260220
+    parameters: []
+    properties:
+      is_generator: true
   load_configuration:
     module: rsoxs.configuration_setup.configurations_instrument
     name: load_configuration
@@ -28464,10 +29032,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': -0.4012750000000054, ''order'':
-        0}, {''motor'': ''y'', ''position'': 0.0032799999999895135, ''order'': 0},
-        {''motor'': ''z'', ''position'': -1.1715149999999923, ''order'': 0}, {''motor'':
-        ''th'', ''position'': -0.004275475999975242, ''order'': 0}]'
+    - default: '[{''motor'': ''x'', ''position'': -0.38358000000000914, ''order'':
+        0}, {''motor'': ''y'', ''position'': 44.60443999999998, ''order'': 0}, {''motor'':
+        ''z'', ''position'': -1.0278399999999976, ''order'': 0}, {''motor'': ''th'',
+        ''position'': 180.00121564, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -33837,6 +34405,12 @@ existing_plans:
       name: md
     properties:
       is_generator: true
+  night_20260220:
+    module: rsoxs.plans.custom_acquisitions_broadband
+    name: night_20260220
+    parameters: []
+    properties:
+      is_generator: true
   o_rsoxs:
     description: 'Perform an in-place RSoXS scan for  with energy pattern [515, 520,
       0.5, 526, 0.2, 535, 0.05, 545, 0.1, 555, 0.25, 585, 0.5, 600, 1] '
@@ -34689,798 +35263,161 @@ existing_plans:
     module: rsoxs.plans.run_acquisitions
     name: run_acquisitions_queue
     parameters:
-    - default: '[{''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''AF1_front'',
+    - default: '[{''bar_name'': ''20260312_Commissioning'', ''sample_id'': ''AF1_front'',
         ''sample_name'': ''AF1_front'', ''project_name'': ''Calibration'', ''institution'':
         ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''0A'', ''front'': True,
         ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
-        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': -1.2386756336093918,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -187.09357075598712, ''order'':
+        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': -1.0588451145502313,
+        ''order'': 0}, {''motor'': ''y'', ''position'': -187.11775170143835, ''order'':
         0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
         ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''0A'', ''ximg'':
-        0.8370334320551183, ''yimg'': -185.35546211754126, ''th0'': 0.0, ''th'': 0,
-        ''xoff'': -0.5458763445069679, ''x0'': 0.14692294459545557, ''y0'': -187.09357075598712,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 3.086562779674498}, ''components'': None, ''project_desc'':
-        ''Calibration'', ''sample_set'': None, ''sample_state'': None, ''sample_desc'':
-        None, ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''AF2_front'',
+        0.5243486025074797, ''yimg'': -185.51537532134387, ''th0'': 0.0, ''th'': 180.0,
+        ''xoff'': -0.349197181694815, ''x0'': 0.3604507511606008, ''y0'': -187.11775170143835,
+        ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
+        ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
+        -4.320895, ''zoff'': 3.091521057896909}, ''sample_desc'': None, ''sample_state'':
+        None, ''components'': None, ''project_desc'': ''Calibration'', ''density'':
+        None, ''sample_set'': None, ''composition'': None, ''acq_history'': [], ''acquisitions'':
+        []}, {''bar_name'': ''20260312_Commissioning'', ''sample_id'': ''AF2_front'',
         ''sample_name'': ''AF2_front'', ''project_name'': ''Calibration'', ''institution'':
         ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''0A'', ''front'': True,
         ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
-        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': -2.230340200456242,
-        ''order'': 0}, {''motor'': ''y'', ''position'': 3.249343724999233, ''order'':
+        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': -1.9442886435654343,
+        ''order'': 0}, {''motor'': ''y'', ''position'': 3.0745983403116863, ''order'':
         0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
         ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''0A'', ''ximg'':
-        2.0285079970212783, ''yimg'': 4.997392227333192, ''th0'': 0.0, ''th'': 0,
-        ''xoff'': -0.6588322425410668, ''x0'': 0.9126757153741079, ''y0'': 3.249343724999233,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.5000002812738926}, ''components'': None, ''project_desc'':
-        ''Calibration'', ''sample_set'': None, ''sample_state'': None, ''sample_desc'':
-        None, ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''diode'',
+        0.13526601612863898, ''yimg'': 4.87938626846457, ''th0'': 0.0, ''th'': 180.0,
+        ''xoff'': -0.40684840649404563, ''x0'': 1.130591830577343, ''y0'': 3.0745983403116863,
+        ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
+        ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
+        -4.320895, ''zoff'': 0.1791343495201012}, ''sample_desc'': None, ''sample_state'':
+        None, ''components'': None, ''project_desc'': ''Calibration'', ''density'':
+        None, ''sample_set'': None, ''composition'': None, ''acq_history'': [], ''acquisitions'':
+        []}, {''bar_name'': ''20260312_Commissioning'', ''sample_id'': ''diode'',
         ''sample_name'': ''diode'', ''project_name'': ''Calibration'', ''institution'':
         ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''0A'', ''front'': True,
         ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
-        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': -1.862092175109355,
-        ''order'': 0}, {''motor'': ''y'', ''position'': 46.82306335514949, ''order'':
+        ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': -1.0226389321798006,
+        ''order'': 0}, {''motor'': ''y'', ''position'': 44.60453941297511, ''order'':
         0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
         ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''0A'', ''ximg'':
-        1.7060009169630135, ''yimg'': 48.573387313039035, ''th0'': 0.0, ''th'': 0,
-        ''xoff'': -0.6846903557517969, ''x0'': 0.4927114636057609, ''y0'': 46.82306335514949,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.3657231009514197}, ''components'': None, ''project_desc'':
-        ''Calibration'', ''sample_set'': None, ''sample_state'': None, ''sample_desc'':
-        None, ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''Lipid_DPPC_DPPG_thick'',
-        ''sample_name'': ''Lipid_DPPC_DPPG_thick'', ''project_name'': ''Flagg'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''N1'', ''front'': True,
+        -1.0646861320072958, ''yimg'': 46.45352543669517, ''th0'': 0.0, ''th'': 180.0,
+        ''xoff'': -0.41943698835947474, ''x0'': 0.18376495546085114, ''y0'': 44.60453941297511,
+        ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
+        ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
+        -4.320895, ''zoff'': -0.45680736082285645}, ''sample_desc'': None, ''sample_state'':
+        None, ''components'': None, ''project_desc'': ''Calibration'', ''density'':
+        None, ''sample_set'': None, ''composition'': None, ''acq_history'': [], ''acquisitions'':
+        []}, {''bar_name'': ''20260312_Commissioning'', ''sample_id'': ''SiN_Blank'',
+        ''sample_name'': ''SiN_Blank'', ''project_name'': ''calibration'', ''institution'':
+        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''18A'', ''front'': True,
         ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'': 1,
-        ''notes'': ''Want transmission NEXAFS at C and O edge'', ''location'': [{''motor'':
-        ''x'', ''position'': 6.205586236266833, ''order'': 0}, {''motor'': ''y'',
-        ''position'': -100.79662536423746, ''order'': 0}, {''motor'': ''z'', ''position'':
-        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
-        ''bar_loc'': {''spot'': ''N1'', ''th'': 0, ''ximg'': -6.516639342117466, ''yimg'':
-        -99.05401022817128, ''th0'': 0.0, ''xoff'': -0.597087859214012, ''x0'': -7.399761954694857,
-        ''y0'': -100.79662536423746, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.570629308857639}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''Lipid_DPPC_DPPG_thin'', ''sample_name'': ''Lipid_DPPC_DPPG_thin'', ''project_name'':
-        ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
-        ''N2'', ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25,
-        ''sample_priority'': 1, ''notes'': ''Want transmission NEXAFS at C and O edge'',
-        ''location'': [{''motor'': ''x'', ''position'': -1.5715985040310192, ''order'':
-        0}, {''motor'': ''y'', ''position'': -101.32382707517097, ''order'': 0}, {''motor'':
-        ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'':
-        180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''N2'', ''th'': 0, ''ximg'':
-        1.2599919750432154, ''yimg'': -99.58123947001269, ''th0'': 0.0, ''xoff'':
-        -0.596774999957517, ''x0'': 0.378048504115985, ''y0'': -101.32382707517097,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.5722539385611896}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''PBDF_ascast_2024_3'',
-        ''sample_name'': ''PBDF_ascast_2024_3'', ''project_name'': ''Flagg'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''O1'', ''front'': True,
-        ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'': 1,
-        ''notes'': ''Want transmission NEXAFS at C and O edge'', ''location'': [{''motor'':
-        ''x'', ''position'': 5.288976598958484, ''order'': 0}, {''motor'': ''y'',
-        ''position'': -95.04134001988008, ''order'': 0}, {''motor'': ''z'', ''position'':
-        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
-        ''bar_loc'': {''spot'': ''O1'', ''th'': 0, ''ximg'': -5.593988168895013, ''yimg'':
-        -93.29842433806931, ''th0'': 0.0, ''xoff'': -0.6005032394307488, ''x0'': -6.489983077819981,
-        ''y0'': -95.04134001988008, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.55289376792721}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_unknowndoping_2024_1'', ''sample_name'': ''PBDF_unknowndoping_2024_1'',
-        ''project_name'': ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915,
-        ''bar_spot'': ''O2'', ''front'': True, ''grazing'': False, ''angle'': 0, ''height'':
-        0.25, ''sample_priority'': 1, ''notes'': ''Want transmission NEXAFS at C and
-        O edge'', ''location'': [{''motor'': ''x'', ''position'': 0.32455740178195847,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -94.73380568850219, ''order'':
-        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''O2'', ''th'':
-        0, ''ximg'': -0.6292461415551394, ''yimg'': -92.99087394699515, ''th0'': 0.0,
-        ''xoff'': -0.6006857406637042, ''x0'': -1.5259288831093671, ''y0'': -94.73380568850219,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.5519460672668055}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''PBDF_ascast_2024_1_folded'',
-        ''sample_name'': ''PBDF_ascast_2024_1_folded'', ''project_name'': ''Flagg'',
-        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''O3'',
-        ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'':
-        1, ''notes'': ''Want transmission NEXAFS at C and O edge'', ''location'':
-        [{''motor'': ''x'', ''position'': -6.310620144689535, ''order'': 0}, {''motor'':
-        ''y'', ''position'': -95.56854173081358, ''order'': 0}, {''motor'': ''z'',
-        ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0,
-        ''order'': 0}], ''bar_loc'': {''spot'': ''O3'', ''th'': 0, ''ximg'': 6.005055151615837,
-        ''yimg'': -93.82565357991072, ''th0'': 0.0, ''xoff'': -0.6001903801742537,
-        ''x0'': 5.110239384341028, ''y0'': -95.56854173081358, ''af1y'': -187.09348000000006,
-        ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093, ''af2xoff'':
-        -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'': -2.0, ''zoff'':
-        2.554518397630761}, ''components'': None, ''project_desc'': None, ''sample_set'':
-        None, ''sample_state'': None, ''sample_desc'': None, ''acq_history'': [],
-        ''density'': None, ''composition'': None, ''acquisitions'': []}, {''bar_name'':
-        ''20260211_Commissioning'', ''sample_id'': ''PBDF_ascast_2024_1A'', ''sample_name'':
-        ''PBDF_ascast_2024_1A'', ''project_name'': ''Flagg'', ''institution'': ''NIST'',
-        ''proposal_id'': 318915, ''bar_spot'': ''P1'', ''front'': True, ''grazing'':
-        False, ''angle'': 0, ''height'': 0.25, ''sample_priority'': 1, ''notes'':
-        ''Want transmission NEXAFS at C and O edge'', ''location'': [{''motor'': ''x'',
-        ''position'': 4.328569547280963, ''order'': 0}, {''motor'': ''y'', ''position'':
-        -89.15425424778932, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
+        ''notes'': ''Typical transmission RSoXS sample on SiN membrane that is mounted
+        to the front of the bar.  0 degrees angle corresponds to normal incidence.  bar_spot
+        can be filled in after you mount samples.'', ''location'': [{''motor'': ''x'',
+        ''position'': -0.8951639835346537, ''order'': 0}, {''motor'': ''y'', ''position'':
+        -77.26602318733242, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
         0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}], ''bar_loc'':
-        {''spot'': ''P1'', ''th'': 0, ''ximg'': -4.627401225519096, ''yimg'': -87.411031137507,
-        ''th0'': 0.0, ''xoff'': -0.6039968344616092, ''x0'': -5.536563216204182, ''y0'':
-        -89.15425424778932, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.5347520695708936}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_ascast_2023_1'', ''sample_name'': ''PBDF_ascast_2023_1'', ''project_name'':
-        ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
-        ''P2'', ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25,
-        ''sample_priority'': 1, ''notes'': ''Want transmission NEXAFS at C and O edge'',
-        ''location'': [{''motor'': ''x'', ''position'': -4.107052203586708, ''order'':
-        0}, {''motor'': ''y'', ''position'': -89.11032077187818, ''order'': 0}, {''motor'':
-        ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'':
-        180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''P2'', ''th'': 0, ''ximg'':
-        3.8082666439433392, ''yimg'': -87.36709536735353, ''th0'': 0.0, ''xoff'':
-        -0.6040229060663171, ''x0'': 2.8990063914540736, ''y0'': -89.11032077187818,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.5346166837622643}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''PBDF_n0p7VKCl_2023_1'',
-        ''sample_name'': ''PBDF_n0p7VKCl_2023_1'', ''project_name'': ''Flagg'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''P3'', ''front'': True,
-        ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'': 1,
-        ''notes'': ''Want transmission NEXAFS at C and O edge'', ''location'': [{''motor'':
-        ''x'', ''position'': -9.950555752590335, ''order'': 0}, {''motor'': ''y'',
-        ''position'': -89.15425424778932, ''order'': 0}, {''motor'': ''z'', ''position'':
-        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
-        ''bar_loc'': {''spot'': ''P3'', ''th'': 0, ''ximg'': 9.6517240743522, ''yimg'':
-        -87.411031137507, ''th0'': 0.0, ''xoff'': -0.6039968344616092, ''x0'': 8.742562083667115,
-        ''y0'': -89.15425424778932, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.5347520695708936}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_n1VTBAPF6_2023_1'', ''sample_name'': ''PBDF_n1VTBAPF6_2023_1'', ''project_name'':
-        ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
-        ''Q1'', ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.25,
-        ''sample_priority'': 1, ''notes'': ''Want transmission NEXAFS at C and O edge'',
-        ''location'': [{''motor'': ''x'', ''position'': 3.5003387548219296, ''order'':
-        0}, {''motor'': ''y'', ''position'': -82.91570066840956, ''order'': 0}, {''motor'':
-        ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'':
-        180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''Q1'', ''th'': 0, ''ximg'':
-        -3.7926215926035525, ''yimg'': -81.17215177571705, ''th0'': 0.0, ''xoff'':
-        -0.6076990023301331, ''x0'': -4.715736759482196, ''y0'': -82.91570066840956,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.515527284745543}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''PBDF_fromSi_2023_1'',
-        ''sample_name'': ''PBDF_fromSi_2023_1'', ''project_name'': ''Flagg'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''Q2'', ''front'': True,
-        ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'': 1,
-        ''notes'': ''Want transmission NEXAFS at C and O edge'', ''location'': [{''motor'':
-        ''x'', ''position'': -2.5626130519751404, ''order'': 0}, {''motor'': ''y'',
-        ''position'': -82.73996676476506, ''order'': 0}, {''motor'': ''z'', ''position'':
-        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
-        ''bar_loc'': {''spot'': ''Q2'', ''th'': 0, ''ximg'': 2.2705146885725735, ''yimg'':
-        -80.99640869510326, ''th0'': 0.0, ''xoff'': -0.6078032887489647, ''x0'': 1.3470064744772106,
-        ''y0'': -82.73996676476506, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.514985741511026}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''Tropp4'', ''sample_name'': ''Tropp4'', ''project_name'': ''Flagg'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''Q3'', ''front'': True,
-        ''grazing'': False, ''angle'': 0, ''height'': 0.25, ''sample_priority'': 1,
-        ''notes'': ''Want transmission NEXAFS at C and O edge'', ''location'': [{''motor'':
-        ''x'', ''position'': -7.264063288557668, ''order'': 0}, {''motor'': ''y'',
-        ''position'': -83.04750109614294, ''order'': 0}, {''motor'': ''z'', ''position'':
-        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0, ''order'': 0}],
-        ''bar_loc'': {''spot'': ''Q3'', ''th'': 0, ''ximg'': 6.971642094991752, ''yimg'':
-        -81.30395908617741, ''th0'': 0.0, ''xoff'': -0.6076207875160093, ''x0'': 6.048821713525649,
-        ''y0'': -83.04750109614294, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.515933442171431}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_ascast_2023_2_TEY'', ''sample_name'': ''PBDF_ascast_2023_2_TEY'', ''project_name'':
-        ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
-        ''S1'', ''front'': True, ''grazing'': True, ''angle'': 90, ''height'': 0.5,
-        ''sample_priority'': 1, ''notes'': ''Want sample tilt, rotate polarization
-        (~5 total polarizations) at C and O Edge'', ''location'': [{''motor'': ''x'',
-        ''position'': -5.061205325543238, ''order'': 0}, {''motor'': ''y'', ''position'':
-        -69.77269930694959, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
-        0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'':
-        ''S1'', ''th'': 90, ''ximg'': -4.108694464394249, ''yimg'': -68.02846407589261,
-        ''th0'': 0.0, ''xoff'': -0.6154985021207879, ''x0'': -5.061205325543238, ''y0'':
-        -69.77269930694959, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.2250256893166753}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_DDQ_2023_2_TEY'', ''sample_name'': ''PBDF_DDQ_2023_2_TEY'', ''project_name'':
-        ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
-        ''S2'', ''front'': True, ''grazing'': True, ''angle'': 90, ''height'': 0.5,
-        ''sample_priority'': 1, ''notes'': ''Want sample tilt, rotate polarization
-        (~5 total polarizations) at C and O Edge'', ''location'': [{''motor'': ''x'',
-        ''position'': 1.3364639717656042, ''order'': 0}, {''motor'': ''y'', ''position'':
-        -69.52974189197118, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
-        0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'':
-        ''S2'', ''th'': 90, ''ximg'': 2.2895182325304795, ''yimg'': -67.78549397347774,
-        ''th0'': 0.0, ''xoff'': -0.6156426812359799, ''x0'': 1.3364639717656042, ''y0'':
-        -69.52974189197118, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.2242769894834122}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_F4TCNQ_2023_2_TEY'', ''sample_name'': ''PBDF_F4TCNQ_2023_2_TEY'', ''project_name'':
-        ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'':
-        ''S3'', ''front'': True, ''grazing'': True, ''angle'': 90, ''height'': 0.5,
-        ''sample_priority'': 1, ''notes'': ''Want sample tilt, rotate polarization
-        (~5 total polarizations) at C and O Edge'', ''location'': [{''motor'': ''x'',
-        ''position'': 8.828404395967803, ''order'': 0}, {''motor'': ''y'', ''position'':
-        -69.69171350195678, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'':
-        0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'':
-        ''S3'', ''th'': 90, ''ximg'': 9.781096390322087, ''yimg'': -67.94747404175432,
-        ''th0'': 0.0, ''xoff'': -0.615546561825852, ''x0'': 8.828404395967803, ''y0'':
-        -69.69171350195678, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.2247761227055873}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_ascast_2026_1A_TEY'', ''sample_name'': ''PBDF_ascast_2026_1A_TEY'',
-        ''project_name'': ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915,
-        ''bar_spot'': ''V1'', ''front'': True, ''grazing'': True, ''angle'': 90, ''height'':
-        0.5, ''sample_priority'': 1, ''notes'': ''Want sample tilt, rotate polarization
-        (~5 total polarizations) at C and O Edge'', ''location'': [{''motor'': ''x'',
-        ''position'': -3.519937632958709, ''order'': 0}, {''motor'': ''y'', ''position'':
-        -52.765680258462254, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0,
-        ''order'': 0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}], ''bar_loc'':
-        {''spot'': ''V1'', ''th'': 90, ''ximg'': -2.5293887986976387, ''yimg'': -51.0205569068522,
-        ''th0'': 0.0, ''xoff'': -0.6255910401842251, ''x0'': -3.5199376329587095,
-        ''y0'': -52.765680258462254, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.1726167009882764}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''PBDF_ascast_2026_1B_TEY'', ''sample_name'': ''PBDF_ascast_2026_1B_TEY'',
-        ''project_name'': ''Flagg'', ''institution'': ''NIST'', ''proposal_id'': 318915,
-        ''bar_spot'': ''V2'', ''front'': True, ''grazing'': True, ''angle'': 90, ''height'':
-        0.5, ''sample_priority'': 1, ''notes'': ''Want sample tilt, rotate polarization
-        (~5 total polarizations) at C and O Edge'', ''location'': [{''motor'': ''x'',
-        ''position'': 7.3739464914621635, ''order'': 0}, {''motor'': ''y'', ''position'':
-        -53.089623478433445, ''order'': 0}, {''motor'': ''z'', ''position'': 0.0,
-        ''order'': 0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}], ''bar_loc'':
-        {''spot'': ''V2'', ''th'': 90, ''ximg'': 8.363770792902052, ''yimg'': -51.344517043405354,
-        ''th0'': 0.0, ''xoff'': -0.6253988013639691, ''x0'': 7.3739464914621635, ''y0'':
-        -53.089623478433445, ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977,
-        ''af1xoff'': -0.5448450000000093, ''af2xoff'': -0.6577950000000072, ''af1zoff'':
-        -1.413437499999997, ''af2zoff'': -2.0, ''zoff'': 2.173614967432627}, ''components'':
-        None, ''project_desc'': None, ''sample_set'': None, ''sample_state'': None,
-        ''sample_desc'': None, ''acq_history'': [], ''density'': None, ''composition'':
-        None, ''acquisitions'': []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'':
-        ''Tropp4_TEY'', ''sample_name'': ''Tropp4_TEY'', ''project_name'': ''Flagg'',
-        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''X1'',
+        {''spot'': ''18A'', ''th'': 180.0, ''ximg'': -0.3754762103211178, ''yimg'':
+        -75.5467374866446, ''th0'': 0.0, ''xoff'': -0.38249550675237154, ''x0'': 0.13017297002991046,
+        ''y0'': -77.26602318733242, ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972,
+        ''af1xoff'': -0.3487125000000084, ''af2xoff'': -0.40630250000000956, ''af1zoff'':
+        -1.4085050000000017, ''af2zoff'': -4.320895, ''zoff'': 1.159378143387097},
+        ''sample_desc'': None, ''sample_state'': None, ''components'': None, ''project_desc'':
+        None, ''density'': None, ''sample_set'': None, ''composition'': None, ''acq_history'':
+        [], ''acquisitions'': []}, {''bar_name'': ''20260312_Commissioning'', ''sample_id'':
+        ''AlFoil'', ''sample_name'': ''AlFoil'', ''project_name'': ''calibration'',
+        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''21A'',
         ''front'': True, ''grazing'': True, ''angle'': 90, ''height'': 0.5, ''sample_priority'':
-        1, ''notes'': ''Want sample tilt, rotate polarization (~5 total polarizations)
-        at C and O Edge'', ''location'': [{''motor'': ''x'', ''position'': -6.705900078351569,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -40.53682370454993, ''order'':
-        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'': ''X1'', ''th'':
-        90, ''ximg'': -5.688000130090858, ''yimg'': -38.79106175197076, ''th0'': 0.0,
-        ''xoff'': -0.632848055648887, ''x0'': -6.705900078351569, ''y0'': -40.53682370454993,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.134932142714047}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''Lipid_DPPC_DPPG_thick_TEY'',
-        ''sample_name'': ''Lipid_DPPC_DPPG_thick_TEY'', ''project_name'': ''Flagg'',
-        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''X2'',
-        ''front'': True, ''grazing'': True, ''angle'': 90, ''height'': 0.5, ''sample_priority'':
-        1, ''notes'': ''Want sample tilt, rotate polarization (~5 total polarizations)
-        at C and O Edge'', ''location'': [{''motor'': ''x'', ''position'': -0.832854670888632,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -41.10372433949951, ''order'':
-        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'': ''X2'', ''th'':
-        90, ''ximg'': 0.18377734493500952, ''yimg'': -39.35799199093877, ''th0'':
-        0.0, ''xoff'': -0.6325116377134391, ''x0'': -0.832854670888632, ''y0'': -41.10372433949951,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.13667910899166}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''Lipid_DPPC_DPPG_thin_TEY'',
-        ''sample_name'': ''Lipid_DPPC_DPPG_thin_TEY'', ''project_name'': ''Flagg'',
-        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''X3'',
-        ''front'': True, ''grazing'': True, ''angle'': 90, ''height'': 0.5, ''sample_priority'':
-        1, ''notes'': ''Want sample tilt, rotate polarization (~5 total polarizations)
-        at C and O Edge'', ''location'': [{''motor'': ''x'', ''position'': 7.226831091705402,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -41.630132071952694, ''order'':
-        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'': ''X3'', ''th'':
-        90, ''ximg'': 8.242285741694623, ''yimg'': -39.88442721283764, ''th0'': 0.0,
-        ''xoff'': -0.6321992496305232, ''x0'': 7.226831091705402, ''y0'': -41.630132071952694,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.13830129196373}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''Clean_Silicon_TEY'',
-        ''sample_name'': ''Clean_Silicon_TEY'', ''project_name'': ''Flagg'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''DD1'', ''front'': True,
-        ''grazing'': True, ''angle'': 20, ''height'': 0.5, ''sample_priority'': 1,
-        ''notes'': ''Want sample tilt, rotate polarization (~5 total polarizations)
-        at C and O Edge'', ''location'': [{''motor'': ''x'', ''position'': -4.137400888187582,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -4.312738898639848, ''order'':
-        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 70.0, ''order'': 0}], ''bar_loc'': {''spot'': ''DD1'', ''th'':
-        70.0, ''ximg'': -4.18021978081755, ''yimg'': -2.5650852944936915, ''th0'':
-        0.0, ''xoff'': -0.6543446479484846, ''x0'': -5.2791386754279195, ''y0'': -4.312738898639848,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.0233036655313437}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        [{''sample_id'': ''Clean_Silicon_TEY'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [68.7, 90], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [20], ''spiral_dimensions'':
-        None, ''group_name'': ''Control'', ''priority'': 2, ''acquire_status'': ''Finished
-        2026-02-13_13-13-47'', ''uid_local'': ''429e83bb-68bf-4611-9c0a-f1524cbe8ce1'',
-        ''notes'': ''Sample frame polarization equivalents = [20, 30, 55, 70, 90]''},
-        {''sample_id'': ''Clean_Silicon_TEY'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 22.9, 52.4, 68.7,
-        90], ''exposure_time'': 1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'':
-        [20], ''spiral_dimensions'': None, ''group_name'': ''Control'', ''priority'':
-        3, ''acquire_status'': ''Finished 2026-02-13_13-55-13'', ''uid_local'': ''2bfc0155-1a4c-49d9-a394-403eea59197f'',
-        ''notes'': ''Sample frame polarization equivalents = [20, 30, 55, 70, 90]''}]},
-        {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''HOPG'', ''sample_name'':
-        ''HOPG'', ''project_name'': ''calibration'', ''institution'': ''NIST'', ''proposal_id'':
-        318915, ''bar_spot'': ''DD2'', ''front'': True, ''grazing'': True, ''angle'':
+        1, ''notes'': ''For camera characterization'', ''location'': [{''motor'':
+        ''x'', ''position'': -0.13127517295754032, ''order'': 0}, {''motor'': ''y'',
+        ''position'': -49.273430424121344, ''order'': 0}, {''motor'': ''z'', ''position'':
+        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}],
+        ''bar_loc'': {''spot'': ''21A'', ''th'': 0.0, ''ximg'': -0.8075393964003084,
+        ''yimg'': -47.524353703794056, ''th0'': 0.0, ''xoff'': -0.39098063908156855,
+        ''x0'': -0.13127517295754032, ''y0'': -49.273430424121344, ''af1y'': -187.11605000000003,
+        ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084, ''af2xoff'':
+        -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'': -4.320895,
+        ''zoff'': 0.48073180151958894}, ''sample_desc'': None, ''sample_state'': None,
+        ''components'': None, ''project_desc'': None, ''density'': None, ''sample_set'':
+        None, ''composition'': None, ''acq_history'': [], ''acquisitions'': []}, {''bar_name'':
+        ''20260312_Commissioning'', ''sample_id'': ''SBA15'', ''sample_name'': ''SBA15'',
+        ''project_name'': ''calibration'', ''institution'': ''NIST'', ''proposal_id'':
+        318915, ''bar_spot'': ''28A'', ''front'': True, ''grazing'': False, ''angle'':
+        0, ''height'': 0.25, ''sample_priority'': 1, ''notes'': None, ''location'':
+        [{''motor'': ''x'', ''position'': -8.1472396408343, ''order'': 0}, {''motor'':
+        ''y'', ''position'': -17.458060675625916, ''order'': 0}, {''motor'': ''z'',
+        ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0,
+        ''order'': 0}], ''bar_loc'': {''spot'': ''28A'', ''th'': 180.0, ''ximg'':
+        6.475811454648948, ''yimg'': -15.675124558527784, ''th0'': 0.0, ''xoff'':
+        -0.4006245339755457, ''x0'': 7.345990572883208, ''y0'': -17.458060675625916,
+        ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
+        ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
+        -4.320895, ''zoff'': 0.24354785349396302}, ''sample_desc'': None, ''sample_state'':
+        None, ''components'': None, ''project_desc'': None, ''density'': None, ''sample_set'':
+        None, ''composition'': None, ''acq_history'': [], ''acquisitions'': []}, {''bar_name'':
+        ''20260312_Commissioning'', ''sample_id'': ''HOPG'', ''sample_name'': ''HOPG'',
+        ''project_name'': ''calibration'', ''institution'': ''NIST'', ''proposal_id'':
+        318915, ''bar_spot'': ''30A'', ''front'': True, ''grazing'': True, ''angle'':
         90, ''height'': 0.5, ''sample_priority'': 1, ''notes'': "Energy calibrant.  Don''t
-        change this row.", ''location'': [{''motor'': ''x'', ''position'': 5.968418483855329,
-        ''order'': 0}, {''motor'': ''y'', ''position'': -4.312738898639848, ''order'':
+        change this row.", ''location'': [{''motor'': ''x'', ''position'': 6.9303713189190805,
+        ''order'': 0}, {''motor'': ''y'', ''position'': -4.633260466930103, ''order'':
         0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'': ''DD2'', ''th'':
-        90, ''ximg'': 7.067337378465698, ''yimg'': -2.5650852944936915, ''th0'': 0.0,
-        ''xoff'': -0.6543446479484846, ''x0'': 5.968418483855329, ''y0'': -4.312738898639848,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.0233036655313437}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''OpenBeam'',
-        ''sample_name'': ''OpenBeam'', ''project_name'': ''calibration'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''40A'', ''front'': True,
-        ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
-        ''notes'': "Bar moved out of beam path for reference scan.  Don''t change
-        this row.", ''location'': [{''motor'': ''x'', ''position'': -0.39858240447886767,
-        ''order'': 0}, {''motor'': ''y'', ''position'': 46.66044068281, ''order'':
-        0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''40A'', ''th'':
-        180.0, ''ximg'': 0.24232043529795533, ''yimg'': 48.41075614840955, ''th0'':
-        0.0, ''xoff'': -0.684593849979334, ''x0'': -0.9706052954798007, ''y0'': 46.66044068281,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.3662242404934095}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        [{''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 22.9, 52.4, 68.7,
-        90], ''exposure_time'': 1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'':
-        [0], ''spiral_dimensions'': None, ''group_name'': ''Calibration'', ''priority'':
-        4, ''acquire_status'': ''Finished 2026-02-13_14-37-35'', ''uid_local'': ''d39f4be7-b54e-4065-ae7a-4d05ded2348b'',
-        ''notes'': None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'':
-        ''DM7NEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 22.9, 52.4, 68.7,
-        90], ''exposure_time'': 1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'':
-        [0], ''spiral_dimensions'': None, ''group_name'': ''Calibration'', ''priority'':
-        5, ''acquire_status'': ''Finished 2026-02-13_15-19-08'', ''uid_local'': ''a8a82b12-71c9-45bd-bf6d-d7cbef7943d1'',
-        ''notes'': None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'':
-        ''DM7NEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 6, ''acquire_status'':
-        ''Finished 2026-02-13_15-52-27'', ''uid_local'': ''2169d6e6-89d2-46a9-81a5-049f5c0aec31'',
-        ''notes'': None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'':
-        ''DM7NEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 7, ''acquire_status'':
-        ''Finished 2026-02-13_16-23-36'', ''uid_local'': ''64e49387-f790-4e21-9f1e-da02c8f774e4'',
-        ''notes'': None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'':
-        ''DM7NEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 8, ''acquire_status'':
-        ''Finished 2026-02-13_16-57-06'', ''uid_local'': ''abf94b07-a0cc-4b1a-a2de-8fc8db2493b6'',
-        ''notes'': None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'':
-        ''DM7NEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 9, ''acquire_status'':
-        ''Started 2026-02-13_16-57-45'', ''uid_local'': ''f03999f8-d319-47ae-a18d-3cd17d2bca31'',
-        ''notes'': None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'':
-        ''DM7NEXAFS'', ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 10, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''30b6ff8d-8979-4ed7-a57e-c67ad66509b8'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
+        ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'': ''30A'', ''th'':
+        0.0, ''ximg'': 5.982024956272745, ''yimg'': -2.836675600746048, ''th0'': 0.0,
+        ''xoff'': -0.4045119954831954, ''x0'': 6.9303713189190805, ''y0'': -4.633260466930103,
+        ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
+        ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
+        -4.320895, ''zoff'': -0.20283637361714213}, ''sample_desc'': None, ''sample_state'':
+        None, ''components'': None, ''project_desc'': None, ''density'': None, ''sample_set'':
+        None, ''composition'': None, ''acq_history'': [], ''acquisitions'': [{''sample_id'':
+        ''HOPG'', ''configuration_instrument'': ''WAXSNEXAFS'', ''scan_type'': ''nexafs'',
+        ''energy_list_parameters'': ''carbon_NEXAFS'', ''polarization_frame'': ''lab'',
+        ''polarizations'': [90], ''exposure_time'': 1, ''exposures_per_energy'': 1,
+        ''cycles'': 0, ''sample_angles'': [20], ''spiral_dimensions'': None, ''group_name'':
+        ''Check calibration'', ''priority'': 1, ''acquire_status'': ''Not begun'',
+        ''uid_local'': ''73880489-1966-4bae-956c-57f0bd926c2a'', ''notes'': None}]},
+        {''bar_name'': ''20260312_Commissioning'', ''sample_id'': ''OpenBeam'', ''sample_name'':
+        ''OpenBeam'', ''project_name'': ''calibration'', ''institution'': ''NIST'',
+        ''proposal_id'': 318915, ''bar_spot'': ''40A'', ''front'': True, ''grazing'':
+        False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1, ''notes'': "Bar
+        moved out of beam path for reference scan.  Don''t change this row.", ''location'':
+        [{''motor'': ''x'', ''position'': -0.3834277459840411, ''order'': 0}, {''motor'':
+        ''y'', ''position'': 44.604539412974994, ''order'': 0}, {''motor'': ''z'',
+        ''position'': 0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 180.0,
+        ''order'': 0}], ''bar_loc'': {''spot'': ''40A'', ''th'': 180.0, ''ximg'':
+        -1.7038973182030546, ''yimg'': 46.45352543669506, ''th0'': 0.0, ''xoff'':
+        -0.41943698835947474, ''x0'': -0.4554462307349083, ''y0'': 44.604539412974994,
+        ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
+        ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
+        -4.320895, ''zoff'': -0.45680736082285467}, ''sample_desc'': None, ''sample_state'':
+        None, ''components'': None, ''project_desc'': None, ''density'': None, ''sample_set'':
+        None, ''composition'': None, ''acq_history'': [], ''acquisitions'': [{''sample_id'':
+        ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'', ''scan_type'':
+        ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'', ''polarization_frame'':
+        ''lab'', ''polarizations'': [0], ''exposure_time'': 1, ''exposures_per_energy'':
+        1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'': None, ''group_name'':
+        ''Check optics contamination'', ''priority'': 2, ''acquire_status'': ''Not
+        begun'', ''uid_local'': ''eb9cbff7-ff74-4157-8326-2f3a3c0508b9'', ''notes'':
+        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'',
         ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 11, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''d6462de0-24fe-46f6-8582-a906902ef1b3'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 3, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''ec862519-c585-446c-9dc4-c33a74d08cb0'', ''notes'':
+        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'',
         ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 12, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''1302ccfb-5c2b-419e-93e4-2338c0b90900'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 4, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''976ccf78-71c3-444c-9bed-8b18469cf394'', ''notes'':
+        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''WAXSNEXAFS'',
         ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 13, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''b5a2370a-efb0-43e1-a601-4d6393ee2ba8'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 14, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''9c4bcbe4-de23-4d59-8ebf-600ededa43f5'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 15, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''a8176bf3-58e9-40b4-92c5-f0f080b2773c'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 16, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''95ec328b-09cc-4aaf-b988-adaa736a018b'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 17, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''599955f1-7418-44b5-b13b-1ef38517c990'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 18, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''044740fb-0579-4d17-a79f-68d224708df5'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 19, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''ac8b7d98-7a83-442f-a09a-dddfad3cb0ca'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 20, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''1243dfd0-f133-4a3f-9c39-9510f84fae99'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 21, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''2c471fb5-2384-44a8-9f84-fa6525f6e71a'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 22, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''d0221c9b-779e-4f7b-b12b-39c02dcd6452'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 23, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''1e0cf9c5-fcd3-4795-aceb-8276e274ec0b'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 24, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''b10bcaf5-389a-4378-bdd5-6eb2ab14f30a'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 25, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''1e53674d-5a68-4d76-82ae-0cf17ba845a9'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 26, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''b699f619-903f-40ac-8511-e3fe066fd8ef'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 27, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''7d0888ad-1089-4931-92f6-8df46879f6a2'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 28, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''21ee2a61-9798-4d37-8791-d08f01bfd45c'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 29, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''ef06a8cb-dcba-4a5c-8508-172e0b94cb8f'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 30, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''6aaf3a62-ea05-4588-959f-7c9dad26bf4e'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 31, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''e20148bd-5283-4d98-91de-86c605895dca'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 32, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''f08ed110-c100-4479-b2ac-d7ef49ce6045'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 33, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''b14fb29c-b75d-4599-9867-58a2159c2ad5'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 34, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''57123fbc-96c6-4157-8614-631fca0db04e'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 35, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''85e4d07f-23b3-44e0-8afa-c8d8f5e81c51'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 36, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''08d69e97-5898-4a3e-a4b6-01c2e331eb72'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 37, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''24bdadd1-128b-4340-8c6c-76abce368dbb'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 38, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''271e0645-9d78-4d0a-b709-66cd83edd50a'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 39, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''ad9662a8-7078-4e04-9e8a-3672b2b1247a'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 40, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''af442ce8-6fba-48b2-969d-bf8112b3f550'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 41, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''e0b32abc-f65b-456a-9f30-059c5dc757a8'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 42, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''37f1e28f-70f4-438f-ad2f-13253f697c50'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 43, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''a1756b27-193a-4208-940c-5193aee392a6'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 44, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''8ed1f271-99de-4660-b2cb-935e9e46af3d'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 45, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''700fab42-ad47-4d34-b0a1-86388650b7f9'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 46, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''371746b0-d46b-471a-a685-7f421d0de6d2'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 47, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''5d80aa92-0048-428b-acd5-b33037272a99'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 48, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''a0c260b8-5959-42e1-bb96-531b0cf69d04'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 49, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''bbcc71f8-e89c-4eef-bf72-eec563b4fc89'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 50, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''447fdab8-5259-4002-ab29-6d514cd16c3e'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 51, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''5ada5c1c-9b8f-4efb-b86e-d6ffdf2896dd'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 52, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''6ff7c7b2-8c87-45c0-80f7-e3dd5c748005'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 53, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''ee14aa21-39b8-447f-8cbb-5fbb76a5d5ea'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 54, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''48f4ec11-7195-4fe8-8602-ec85ae14fefe'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 55, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''728ad950-e876-4d53-b481-72bcf0bafce4'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 56, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''966c19a7-fb86-4658-a62a-f67a744c9b7d'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 57, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''22de6c82-83ab-43c1-9b1a-450511364cc1'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 58, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''fefeb0f0-3ddd-4634-a8c6-fcf483a3457f'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 59, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''e3aedf1d-a784-4fa8-ab09-74d4cb47e717'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 60, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''56aed793-abbe-4aea-ae83-8d30dc1987be'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 61, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''d6743d9f-8461-4a54-bb3b-2aea8918e22c'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''carbon_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 62, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''93f4b10b-1162-4bf2-89fb-296356a20b28'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''nitrogen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 63, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''ef7c9604-528c-48d2-ad91-e4ec385a2e5a'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''oxygen_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 64, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''7d511703-64fc-4f36-b712-0cce4013fb40'', ''notes'':
-        None}, {''sample_id'': ''OpenBeam'', ''configuration_instrument'': ''DM7NEXAFS'',
-        ''scan_type'': ''nexafs'', ''energy_list_parameters'': ''fluorine_NEXAFS'',
-        ''polarization_frame'': ''lab'', ''polarizations'': [0, 90, 45, 135], ''exposure_time'':
-        1, ''exposures_per_energy'': 1, ''cycles'': 1, ''sample_angles'': [0], ''spiral_dimensions'':
-        None, ''group_name'': ''Calibration'', ''priority'': 65, ''acquire_status'':
-        ''Not begun'', ''uid_local'': ''bc9ab295-0443-4808-ad28-25efd30f2d33'', ''notes'':
-        None}]}, {''bar_name'': ''20260211_Commissioning'', ''sample_id'': ''TEM'',
-        ''sample_name'': ''TEM'', ''project_name'': ''calibration'', ''institution'':
-        ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''40A'', ''front'': True,
-        ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'': 1,
-        ''notes'': ''TEM location'', ''location'': [{''motor'': ''x'', ''position'':
-        -0.39858240447886767, ''order'': 0}, {''motor'': ''y'', ''position'': 46.66044068281,
-        ''order'': 0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'':
-        ''th'', ''position'': 180.0, ''order'': 0}], ''bar_loc'': {''spot'': ''40A'',
-        ''th'': 0, ''ximg'': 0.24232043529795533, ''yimg'': 48.41075614840955, ''th0'':
-        0.0, ''xoff'': -0.684593849979334, ''x0'': -0.9706052954798007, ''y0'': 46.66044068281,
-        ''af1y'': -187.09348000000006, ''af2y'': 3.249434999999977, ''af1xoff'': -0.5448450000000093,
-        ''af2xoff'': -0.6577950000000072, ''af1zoff'': -1.413437499999997, ''af2zoff'':
-        -2.0, ''zoff'': 2.3662242404934095}, ''components'': None, ''project_desc'':
-        None, ''sample_set'': None, ''sample_state'': None, ''sample_desc'': None,
-        ''acq_history'': [], ''density'': None, ''composition'': None, ''acquisitions'':
-        []}]'
+        ''polarization_frame'': ''lab'', ''polarizations'': [0], ''exposure_time'':
+        1, ''exposures_per_energy'': 1, ''cycles'': 0, ''sample_angles'': [0], ''spiral_dimensions'':
+        None, ''group_name'': ''Check optics contamination'', ''priority'': 5, ''acquire_status'':
+        ''Not begun'', ''uid_local'': ''b1e7a2a7-0842-443c-b9dd-4295c80672f3'', ''notes'':
+        None}]}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -36053,6 +35990,12 @@ existing_plans:
         name: KEYWORD_ONLY
         value: 3
       name: md
+    properties:
+      is_generator: true
+  slit_sweeps_20260219:
+    module: rsoxs.plans.custom_acquisitions_broadband
+    name: slit_sweeps_20260219
+    parameters: []
     properties:
       is_generator: true
   snapshot:
