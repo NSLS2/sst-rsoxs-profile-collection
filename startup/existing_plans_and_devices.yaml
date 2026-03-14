@@ -24344,6 +24344,12 @@ existing_devices:
     is_movable: true
     is_readable: true
     module: ophyd.signal
+  waxs_det:
+    classname: RSOXSGreatEyesDetector
+    is_flyable: false
+    is_movable: false
+    is_readable: true
+    module: rsoxs.devices.detectors
 existing_plans:
   I0_mesh_vertical_profile_energy_scan:
     module: rsoxs.plans.custom_acquisitions_commissioning
@@ -24493,6 +24499,32 @@ existing_plans:
       one below.
     module: rsoxs.plans.custom_acquisitions_commissioning
     name: beam_motion_monitoring_20260312
+    parameters:
+    - default: '''OpenBeam'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sample_id
+    properties:
+      is_generator: true
+  beam_motion_monitoring_20260313:
+    description: Quick function to get started while I put together a more detailed
+      one below.
+    module: rsoxs.plans.custom_acquisitions_commissioning
+    name: beam_motion_monitoring_20260313
+    parameters:
+    - default: '''OpenBeam'''
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: sample_id
+    properties:
+      is_generator: true
+  beam_motion_monitoring_20260313_2:
+    description: Quick function to get started while I put together a more detailed
+      one below.
+    module: rsoxs.plans.custom_acquisitions_commissioning
+    name: beam_motion_monitoring_20260313_2
     parameters:
     - default: '''OpenBeam'''
       kind:
@@ -29033,9 +29065,9 @@ existing_plans:
     name: move_to_location
     parameters:
     - default: '[{''motor'': ''x'', ''position'': -0.38358000000000914, ''order'':
-        0}, {''motor'': ''y'', ''position'': 44.60443999999998, ''order'': 0}, {''motor'':
+        0}, {''motor'': ''y'', ''position'': 44.60457499999998, ''order'': 0}, {''motor'':
         ''z'', ''position'': -1.0278399999999976, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 180.00121564, ''order'': 0}]'
+        ''position'': 179.999842349, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1

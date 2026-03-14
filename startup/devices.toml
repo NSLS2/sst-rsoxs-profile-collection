@@ -830,14 +830,14 @@ name = "Detector WAXS Translation"
 prefix = "XF:07ID2-ES1{Det-Ax:2}Mtr"
 _baseline = true
 
-#[waxs_det]
-#_target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
-#_group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
-#_load_order = 2
-#_deferred = true
-#prefix = "XF:07ID1-ES:1{GE:2}"
-#name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
-#read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
+[waxs_det]
+_target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
+_group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
+_load_order = 2
+_deferred = true
+prefix = "XF:07ID1-ES:1{GE:2}"
+name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
+read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
 ## Greateyes GE 4k4k camera, serial number GE060232
 
 #[BeamStopS]
