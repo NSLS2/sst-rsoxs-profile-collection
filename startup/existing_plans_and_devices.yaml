@@ -25762,9 +25762,9 @@ existing_plans:
       name: md
     properties:
       is_generator: true
-  commissioning_scans_20260312:
+  commissioning_scans_20260315:
     module: rsoxs.plans.custom_acquisitions_commissioning
-    name: commissioning_scans_20260312
+    name: commissioning_scans_20260315
     parameters: []
     properties:
       is_generator: true
@@ -26227,7 +26227,7 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: sample_id
-    - default: '''carbon_NEXAFS_slow'''
+    - default: '''carbon_NEXAFS'''
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -26237,6 +26237,15 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: slit1_vsizes
+    - default: '[1.5]'
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: cffs
+    - kind:
+        name: VAR_KEYWORD
+        value: 4
+      name: kwargs
     properties:
       is_generator: true
   f_rsoxs:
@@ -29064,10 +29073,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': -0.38358000000000914, ''order'':
-        0}, {''motor'': ''y'', ''position'': 44.60457499999998, ''order'': 0}, {''motor'':
+    - default: '[{''motor'': ''x'', ''position'': -0.3830300000000051, ''order'':
+        0}, {''motor'': ''y'', ''position'': 100.00434999999999, ''order'': 0}, {''motor'':
         ''z'', ''position'': -1.0278399999999976, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 179.999842349, ''order'': 0}]'
+        ''position'': 180.00533551299998, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -35391,13 +35400,13 @@ existing_plans:
         ''20260312_Commissioning'', ''sample_id'': ''HOPG'', ''sample_name'': ''HOPG'',
         ''project_name'': ''calibration'', ''institution'': ''NIST'', ''proposal_id'':
         318915, ''bar_spot'': ''30A'', ''front'': True, ''grazing'': True, ''angle'':
-        90, ''height'': 0.5, ''sample_priority'': 1, ''notes'': "Energy calibrant.  Don''t
-        change this row.", ''location'': [{''motor'': ''x'', ''position'': 6.9303713189190805,
+        20, ''height'': 0.5, ''sample_priority'': 1, ''notes'': "Energy calibrant.  Don''t
+        change this row.", ''location'': [{''motor'': ''x'', ''position'': 2.29476969050073,
         ''order'': 0}, {''motor'': ''y'', ''position'': -4.633260466930103, ''order'':
         0}, {''motor'': ''z'', ''position'': 0.0, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 0.0, ''order'': 0}], ''bar_loc'': {''spot'': ''30A'', ''th'':
-        0.0, ''ximg'': 5.982024956272745, ''yimg'': -2.836675600746048, ''th0'': 0.0,
-        ''xoff'': -0.4045119954831954, ''x0'': 6.9303713189190805, ''y0'': -4.633260466930103,
+        ''position'': 70.0, ''order'': 0}], ''bar_loc'': {''spot'': ''30A'', ''th'':
+        70.0, ''ximg'': 5.982024956272745, ''yimg'': -2.836675600746048, ''th0'':
+        0.0, ''xoff'': -0.4045119954831954, ''x0'': 6.9303713189190805, ''y0'': -4.633260466930103,
         ''af1y'': -187.11605000000003, ''af2y'': 3.076514999999972, ''af1xoff'': -0.3487125000000084,
         ''af2xoff'': -0.40630250000000956, ''af1zoff'': -1.4085050000000017, ''af2zoff'':
         -4.320895, ''zoff'': -0.20283637361714213}, ''sample_desc'': None, ''sample_state'':

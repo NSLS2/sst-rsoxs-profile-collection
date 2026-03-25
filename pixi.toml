@@ -40,7 +40,7 @@ pyfai = { git = "https://github.com/silx-kit/pyFAI"}
 pyhyperscattering = { git = "https://github.com/usnistgov/PyHyperScattering" }
 nbs-core = ">=0.1.0"
 nbs-bl = {git = "https://github.com/xraygui/nbs-bl", tag="v0.2.1"}
-bluesky-darkframes = ">=0.6.0"
+bluesky-darkframes = {git = "https://github.com/cjtitus/bluesky-darkframes", branch = "fix_asset_docs" } #>=0.6.0"
 slackclient = "*"
 sst-base = { git = "https://github.com/nsls-ii-sst/sst_base", branch = "pol_spline" }
 rsoxs = { git = "https://github.com/usnistgov/sst-rsoxs", branch = "main" }
