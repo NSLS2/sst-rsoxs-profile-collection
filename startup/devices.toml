@@ -751,7 +751,7 @@ _target = "sst_base.motors.PrettyMotorFMBODeadband"
 _group = "motors"
 kind = "hinted"
 name = "Beam Stop WAXS"
-prefix = "XF:07ID2-ES1{BS-Ax:2}Mtr" #prefix = "XF:07ID2-ES1{BS-Ax:1}Mtr" ## December 2025, put SAXS beamstop Ax:2 into WAXS position
+prefix = "XF:07ID2-ES1{BS-Ax:1}Mtr"
 _baseline = true
 
 #[Beamstop_WAXS] ## This is Jamie's definition, can be used for flyscanning (?)
