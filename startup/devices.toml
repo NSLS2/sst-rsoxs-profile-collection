@@ -839,6 +839,9 @@ prefix = "XF:07ID1-ES:1{GE:2}"
 name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
 read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
 ## Greateyes GE 4k4k camera, serial number GE060232
+##################################################
+## Water cooling
+## Koolance LLX-700 chiller.  CH1 temp = 19.4 C, CH2 temp = 19.6 C, pump = 4225 RPM, flow rate = 2.7 LPM, liq temp = 13.9 C
 
 #[BeamStopS]
 #_target = "sst_base.motors.PrettyMotorFMBODeadband"
