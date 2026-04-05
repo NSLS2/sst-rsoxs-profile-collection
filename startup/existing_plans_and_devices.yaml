@@ -9313,6 +9313,235 @@ existing_devices:
     is_movable: true
     is_readable: true
     module: ophyd.signal
+  mir4:
+    classname: FMBHexapodMirror
+    components:
+      pitch:
+        classname: FMBHexapodMirrorAxis
+        components:
+          actuate:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          done:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          setpoint:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: sst_base.mirrors
+      roll:
+        classname: FMBHexapodMirrorAxis
+        components:
+          actuate:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          done:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          setpoint:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: sst_base.mirrors
+      x:
+        classname: FMBHexapodMirrorAxis
+        components:
+          actuate:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          done:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          setpoint:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: sst_base.mirrors
+      y:
+        classname: FMBHexapodMirrorAxis
+        components:
+          actuate:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          done:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          setpoint:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: sst_base.mirrors
+      yaw:
+        classname: FMBHexapodMirrorAxis
+        components:
+          actuate:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          done:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          setpoint:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: sst_base.mirrors
+      z:
+        classname: FMBHexapodMirrorAxis
+        components:
+          actuate:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          done:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
+            classname: EpicsSignalRO
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          setpoint:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+        is_flyable: false
+        is_movable: true
+        is_readable: true
+        module: sst_base.mirrors
+    is_flyable: false
+    is_movable: false
+    is_readable: true
+    module: sst_base.mirrors
   mirror2:
     classname: PrettyMotorFMBODeadbandFlyer
     components:
@@ -29079,10 +29308,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': 0.2004399999999933, ''order'': 0},
-        {''motor'': ''y'', ''position'': 99.998865, ''order'': 0}, {''motor'': ''z'',
-        ''position'': -1.1268299999999982, ''order'': 0}, {''motor'': ''th'', ''position'':
-        180.00670470800003, ''order'': 0}]'
+    - default: '[{''motor'': ''x'', ''position'': -0.0005400000000079785, ''order'':
+        0}, {''motor'': ''y'', ''position'': 49.99920999999999, ''order'': 0}, {''motor'':
+        ''z'', ''position'': -1.1268299999999982, ''order'': 0}, {''motor'': ''th'',
+        ''position'': -0.00565286300002299, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -35678,6 +35907,21 @@ existing_plans:
         -1.3465324999999986, ''af2zoff'': -5.90775, ''zoff'': -2.3313707185831056},
         ''sample_state'': None, ''sample_desc'': None, ''project_desc'': None, ''sample_set'':
         None, ''density'': None, ''composition'': None, ''components'': None, ''acq_history'':
+        [], ''acquisitions'': []}, {''bar_name'': ''20260326_Heilman'', ''sample_id'':
+        ''OpenBeam_2'', ''sample_name'': ''OpenBeam_2'', ''project_name'': ''calibration'',
+        ''institution'': ''NIST'', ''proposal_id'': 318915, ''bar_spot'': ''40A'',
+        ''front'': True, ''grazing'': False, ''angle'': 0, ''height'': 0.0, ''sample_priority'':
+        1, ''notes'': None, ''location'': [{''motor'': ''x'', ''position'': 0.20048999999999495,
+        ''order'': 0}, {''motor'': ''y'', ''position'': 99.99884499999999, ''order'':
+        0}, {''motor'': ''z'', ''position'': -1.1268299999999982, ''order'': 0}, {''motor'':
+        ''th'', ''position'': 180.00670470800003, ''order'': 0}], ''bar_loc'': {''spot'':
+        ''40A'', ''th'': 180.0, ''ximg'': 0.2964341875983081, ''yimg'': 42.29865272642266,
+        ''th0'': 0.0, ''xoff'': -0.7518426818378345, ''x0'': 0.5716575101652374, ''y0'':
+        41.285312817543044, ''af1y'': -187.50369500000005, ''af2y'': 2.7583299999999724,
+        ''af1xoff'': -0.6200725000000098, ''af2xoff'': -0.729170000000007, ''af1zoff'':
+        -1.3465324999999986, ''af2zoff'': -5.90775, ''zoff'': -2.3313707185831056},
+        ''sample_state'': None, ''sample_desc'': None, ''project_desc'': None, ''sample_set'':
+        None, ''density'': None, ''composition'': None, ''components'': None, ''acq_history'':
         [], ''acquisitions'': []}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
@@ -36854,6 +37098,11 @@ existing_plans:
     properties:
       is_generator: true
   test_scans_prefect:
+    description: 'Prefect is used to write out 1D detector data to csv files and 2D
+      detector data to tiff files.
+
+      The scans in this function will be used to test if the workflows are correctly
+      writing out files.'
     module: rsoxs.plans.custom_acquisitions_commissioning
     name: test_scans_prefect
     parameters: []

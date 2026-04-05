@@ -968,6 +968,12 @@ closeval = 1
 prefix = "XF:07IDA-PPS{PSh:7}"
 name = "Photon Shutter 7"
 
+[mir4]
+_target = "sst_base.mirrors.FMBHexapodMirror"
+_group = "motors"
+prefix = "XF:07ID2-OP{Mir:M4CD"
+name = "SST 1 Mirror 4 fmb" 
+kind = "hinted"
 #[mir4OLD]
 #_target = "sst_base.mirrors.HexapodMirror"
 #_group = "motors"
