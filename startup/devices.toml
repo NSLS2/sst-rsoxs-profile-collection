@@ -762,11 +762,17 @@ _baseline = true
 #_baseline = true
 
 [beamstop_waxs] # was Beamstop_WAXS_int
-_target = "sst_base.detectors.scalar.ophScalar" ## These signals are scalars (integrating detectors).  Each data point that is written out is the average of several "sub" data points.  Other statistics, such as standard deviation, median, etc. are available.  ## TODO: Would it be possible to combine this with the non-integrating signal and can toggle between which type to use?
+name = "WAXS Beamstop"
 _group = ["detectors"]
 kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC1_MON"
-name = "WAXS Beamstop"
+## Connected to I400, bad signal
+#_target = "sst_base.detectors.scalar.ophScalar" ## These signals are scalars (integrating detectors).  Each data point that is written out is the average of several "sub" data points.  Other statistics, such as standard deviation, median, etc. are available.  ## TODO: Would it be possible to combine this with the non-integrating signal and can toggle between which type to use?
+#prefix = "XF:07ID-ES1{DMR:I400-1}:IC1_MON"
+#_baseline = true
+## Connected to SRS570 curent pre-amplifier labelled "RSoXS Beamstop WAXS" on rack behind ucal station
+## --> Connected to ADC3 channel 7
+_target = "sst_base.detectors.scalar.ADCBuffer"
+prefix = "XF:07ID-BI[ADC:3-Ch:7]"
 
 [diode_i400_cap]
 _target = "ophyd.EpicsSignal"
@@ -986,7 +992,7 @@ kind = "hinted"
 ## Diagnostic module (DM) 7
 [dm7_photodiode]
 name = "DM7 photodiode"
-_group = "detectors"
+#_group = "detectors" ## Commenting out when using WAXS beamstop so that imports don't fail, but I don't record this stream
 kind = "normal"
 #_baseline = true
 ## Connected to SRS570 curent pre-amplifier labelled "RSoXS Beamstop WAXS" on rack behind ucal station
