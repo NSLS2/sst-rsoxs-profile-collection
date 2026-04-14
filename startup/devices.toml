@@ -47,7 +47,7 @@ string = true
 ## EPU60: https://www.osti.gov/biblio/1569013
 
 [en]
-_target = "sst_base.energy.EnPosFactory"
+_target = "sst_base.energy.EnergySoftFactory"
 _group = "source"
 _load_order = 2
 prefix = ""

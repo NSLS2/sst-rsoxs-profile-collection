@@ -23,7 +23,7 @@ slits1_outboard_current = { visible = false }
 
 
 [loaders]
-"EnPosFactory" = "sst_base.qt.models.energy.SST1EnergyModel"
+"EnergySoftFactory" = "sst_base.qt.models.energy.SST1EnergyModel"
 "I400SingleCh" = "nbs_gui.models.ScalarModel"
 "PrettyMotorFMBO" = "nbs_gui.models.MotorModel"
 "PrettyMotor" = "nbs_gui.models.MotorModel"

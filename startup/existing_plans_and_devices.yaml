@@ -2797,7 +2797,7 @@ existing_devices:
     is_readable: true
     module: sst_base.motors
   en:
-    classname: EnPos
+    classname: EnergySoft
     components:
       energy:
         classname: PseudoSingle
@@ -2950,7 +2950,7 @@ existing_devices:
         is_flyable: true
         is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.base
       epumode:
         classname: EpuMode
         components:
@@ -2969,7 +2969,7 @@ existing_devices:
         is_flyable: false
         is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.base
       epuphase:
         classname: UndulatorMotor
         components:
@@ -3102,29 +3102,17 @@ existing_devices:
         is_flyable: true
         is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.base
       flycontrol:
         classname: FlyControl
         components:
-          flymove_moving:
-            classname: EpicsSignal
-            is_flyable: false
-            is_movable: true
-            is_readable: true
-            module: ophyd.signal
-          flymove_speed_ev:
-            classname: EpicsSignal
+          done:
+            classname: EpicsSignalRO
             is_flyable: false
             is_movable: true
             is_readable: true
             module: ophyd.signal
           flymove_start:
-            classname: EpicsSignal
-            is_flyable: false
-            is_movable: true
-            is_readable: true
-            module: ophyd.signal
-          flymove_stop:
             classname: EpicsSignal
             is_flyable: false
             is_movable: true
@@ -3136,7 +3124,25 @@ existing_devices:
             is_movable: true
             is_readable: true
             module: ophyd.signal
+          macro_enable:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          move_latch:
+            classname: Signal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
           num_scans:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          readback:
             classname: EpicsSignal
             is_flyable: false
             is_movable: true
@@ -3190,16 +3196,34 @@ existing_devices:
             is_movable: true
             is_readable: true
             module: ophyd.signal
-          undulator_dance_enable:
+          setpoint:
             classname: EpicsSignal
             is_flyable: false
             is_movable: true
             is_readable: true
             module: ophyd.signal
+          speed:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          stop_signal:
+            classname: EpicsSignal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
+          tolerance:
+            classname: Signal
+            is_flyable: false
+            is_movable: true
+            is_readable: true
+            module: ophyd.signal
         is_flyable: false
-        is_movable: false
+        is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.base
       harmonic:
         classname: Signal
         is_flyable: false
@@ -3822,7 +3846,7 @@ existing_devices:
             is_flyable: false
             is_movable: true
             is_readable: true
-            module: sst_base.energy
+            module: sst_base.energy.soft
           mirror2:
             classname: PrettyMotorFMBODeadbandFlyer
             components:
@@ -4418,7 +4442,7 @@ existing_devices:
             is_flyable: false
             is_movable: true
             is_readable: true
-            module: sst_base.energy
+            module: sst_base.energy.soft
           move_latch:
             classname: Signal
             is_flyable: false
@@ -4464,7 +4488,7 @@ existing_devices:
         is_flyable: true
         is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.soft
       offset_gap:
         classname: Signal
         is_flyable: false
@@ -4524,7 +4548,7 @@ existing_devices:
     is_flyable: true
     is_movable: true
     is_readable: true
-    module: sst_base.energy
+    module: sst_base.energy.soft
   energy:
     classname: PseudoSingle
     components:
@@ -5735,7 +5759,7 @@ existing_devices:
     is_flyable: false
     is_movable: true
     is_readable: true
-    module: sst_base.energy
+    module: sst_base.energy.soft
   gv14:
     classname: EPS_Shutter
     components:
@@ -10137,7 +10161,7 @@ existing_devices:
     is_flyable: false
     is_movable: true
     is_readable: true
-    module: sst_base.energy
+    module: sst_base.energy.soft
   mono_en:
     classname: Monochromator
     components:
@@ -10754,7 +10778,7 @@ existing_devices:
         is_flyable: false
         is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.soft
       mirror2:
         classname: PrettyMotorFMBODeadbandFlyer
         components:
@@ -11350,7 +11374,7 @@ existing_devices:
         is_flyable: false
         is_movable: true
         is_readable: true
-        module: sst_base.energy
+        module: sst_base.energy.soft
       move_latch:
         classname: Signal
         is_flyable: false
@@ -11396,7 +11420,7 @@ existing_devices:
     is_flyable: true
     is_movable: true
     is_readable: true
-    module: sst_base.energy
+    module: sst_base.energy.soft
   mono_pgm_temperature:
     classname: EpicsSignalRO
     is_flyable: false
@@ -25237,7 +25261,7 @@ existing_plans:
     properties:
       is_generator: true
   cdsaxs_scan:
-    module: rsoxs.Functions.energyscancore
+    module: rsoxs.plans.cdsaxs
     name: cdsaxs_scan
     parameters:
     - default: None
@@ -27229,6 +27253,33 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: configuration
+    properties:
+      is_generator: true
+  fly_count:
+    module: nbs_bl.plans.flyscan_base
+    name: fly_count
+    parameters:
+    - kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: detectors
+    - annotation:
+        type: int
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: num
+    - annotation:
+        type: typing.Optional[dict]
+      default: None
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: md
+    - kind:
+        name: VAR_KEYWORD
+        value: 4
+      name: kwargs
     properties:
       is_generator: true
   fly_scan:
@@ -29313,10 +29364,10 @@ existing_plans:
     module: rsoxs.Functions.alignment
     name: move_to_location
     parameters:
-    - default: '[{''motor'': ''x'', ''position'': 2.5005549999999914, ''order'': 0},
-        {''motor'': ''y'', ''position'': -126.40063000000004, ''order'': 0}, {''motor'':
+    - default: '[{''motor'': ''x'', ''position'': 0.009609999999995011, ''order'':
+        0}, {''motor'': ''y'', ''position'': 345.0358, ''order'': 0}, {''motor'':
         ''z'', ''position'': -1.1268299999999982, ''order'': 0}, {''motor'': ''th'',
-        ''position'': 179.999838253, ''order'': 0}]'
+        ''position'': -0.00565286300002299, ''order'': 0}]'
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
@@ -30409,6 +30460,167 @@ existing_plans:
         name: KEYWORD_ONLY
         value: 3
       name: shift
+    properties:
+      is_generator: true
+  nbs_fly_count:
+    description: Wraps fly_count with additional arguments and default detectors.
+    module: nbs_bl.plans.preprocessors
+    name: nbs_fly_count
+    parameters:
+    - annotation:
+        type: int
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: num
+    - default: 'False'
+      description: If True, do not install suspenders
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: skip_suspenders
+    - annotation:
+        type: typing.Optional[str]
+      default: None
+      description: A comment that will be added into the run metadata. If not provided,
+        no comment will be added.
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: comment
+    - annotation:
+        type: typing.Optional[str]
+      default: None
+      description: A group name label that will be added into the run metadata.
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: group_name
+    - annotation:
+        type: list
+      default: None
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: plot_detectors
+    - annotation:
+        type: typing.Optional[float]
+      default: None
+      description: If not None, will set the beamline exit slit prior to the plan
+        start.
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: eslit
+    - annotation:
+        type: typing.Optional[str]
+      default: None
+      description: The sample id. If given, the selected sample metadata is set
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: sample
+    - annotation:
+        type: typing.Optional[dict]
+      default: '{}'
+      description: 'A dictionary of positions relative to the sample center. Parameters
+        not given will be assumed to
+
+        be the default for the sampleholder (typically moving the sample into the
+        beam at a typical angle)'
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: sample_position
+    - annotation:
+        type: typing.Optional[str]
+      default: None
+      description: The energy reference sample. If given, the selected reference sample
+        is set
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: eref_sample
+    - annotation:
+        type: typing.Optional[float]
+      default: None
+      description: If not None, will set the beamline energy prior to the plan start.
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: energy
+    - annotation:
+        type: typing.Optional[float]
+      default: None
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: polarization
+    - annotation:
+        type: int
+      default: '1'
+      description: The number of times to repeat the entire scan
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: repeat
+    - default: 'False'
+      description: Whether to use the Greateyes 2D detector for WAXS/SAXS
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: use_2d_detector
+    - default: '[]'
+      description: A list of extra detectors to be activated for the scan, by default
+        [].
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: extra_dets
+    - default: '1'
+      description: 'The exposure time in seconds for all detectors, by default None.
+
+        If None, do not set any exposure time, and assume that detectors are already
+        set'
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: dwell
+    - default: '1'
+      description: Number of exposures for the Greateyes detector to take per step
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: n_exposures
+    - default: 'True'
+      description: 'Whether to open the shutter for the scan. If True, the shutter
+        will be opened before the scan and closed after the scan.
+
+        If False, the shutter will be closed for the duration of the scan. Does not
+        apply to scans using the WAXS detector,
+
+        which have their own shutter control.'
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: open_shutter
+    - default: None
+      description: The name of an RSoXS configuration to load (optional)
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: configuration_name
+    - annotation:
+        type: typing.Optional[dict]
+      default: None
+      kind:
+        name: KEYWORD_ONLY
+        value: 3
+      name: md
+    - kind:
+        name: VAR_KEYWORD
+        value: 4
+      name: kwargs
     properties:
       is_generator: true
   nbs_fly_scan:
