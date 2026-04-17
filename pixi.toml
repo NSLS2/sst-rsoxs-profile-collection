@@ -2,23 +2,23 @@
 channels = ["conda-forge"]
 name = "sst-rsoxs-profile-collection"
 platforms = ["linux-64"]
-version = "2025.3.1"
+version = "2026.2.0"
 
 [system-requirements]
 libc = "2.17"
 
 [feature.profile.dependencies]
-bluesky-base = "==1.14.6"
+bluesky-base = "==1.15.0"
 bluesky-queueserver = "*"
-matplotlib-base= ">=3.9.3,<4"
+matplotlib-base= ">=3.10"
 networkx = ">=3.4.2,<4"
-nslsii = "==0.11.4"
+nslsii = "==0.11.8"
 numpy = "*"
 ophyd = ">=1.11.0"
 pyepics = "*"
 python = ">=3.12,<3.13"
 semver = ">=3.0.4,<4"
-tiled-client = ">=0.1.6"
+tiled-client = "==0.2.9"
 hdf5-external-filter-plugins = ">=0.1.0,<0.2"
 blosc-hdf5-plugin = ">=1.0.1,<2"
 ipython = ">=9.5.0,<10"
@@ -26,7 +26,7 @@ databroker = "==2.0.0"
 epicscorelibs = ">=7.0.7.99.1.1,<8"
 pyzmq = ">=27.0.2,<28"
 bluesky-live = ">=0.0.8,<0.0.9"
-bluesky-tiled-plugins = ">=2.0.1"
+bluesky-tiled-plugins = "==2.0.2"
 ophyd-async = ">=0.13.7,<0.14"
 
 #[feature.nbs.dependencies]
