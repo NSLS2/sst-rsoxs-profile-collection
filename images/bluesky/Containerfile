@@ -1,0 +1,15 @@
+ARG BASE_IMAGE=ghcr.io/xraygui/nbs-pods/bluesky:latest
+FROM ${BASE_IMAGE}
+
+RUN mkdir -p /usr/local/share/ipython/profile_collection /home/xf07id1/.ipython
+
+COPY pixi.toml pixi.lock /usr/local/share/ipython/profile_collection/
+COPY scripts/ /usr/local/share/ipython/profile_collection/scripts/
+COPY startup/ /usr/local/share/ipython/profile_collection/startup/
+
+RUN ln -sf /usr/local/share/ipython/profile_collection /home/xf07id1/.ipython/profile_collection
+
+RUN mkdir -p /home/xf07id1/collection_packages
+RUN git clone https://github.com/usnistgov/sst-rsoxs.git /home/xf07id1/collection_packages/rsoxs
+
+WORKDIR /usr/local/share/ipython/profile_collection
