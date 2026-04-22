@@ -1,5 +1,5 @@
 services:
-  main:
+  sim:
     volumes:
       - ${NBS_COLLECTION_PACKAGES}:/home/xf07id1/collection_packages
       - ${BEAMLINE_PODS_DIR}:/home/xf07id1/.ipython/profile_collection
@@ -7,4 +7,4 @@ services:
     environment:
       - IPYTHONDIR=/home/xf07id1/.ipython
       - NBS_SIM_MODE=1
-    command: pixi run sim
+    command: pixi run sim-dev

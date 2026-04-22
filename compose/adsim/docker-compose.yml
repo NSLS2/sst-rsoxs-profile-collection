@@ -1,0 +1,79 @@
+version: '3'
+
+networks:
+  bluesky-services_bluesky:
+    external: true
+
+services:
+  fs1:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID-BI{BPM:1}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  fs6:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID-BI{BPM:6}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  fs7:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID-BI{BPM:7}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  fs13:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID-BI{BPM:13}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  waxs:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID1-ES:1{GE:2}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  slitc:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID-BI{BPM:22}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  izero:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID1-ES:1{Scr:1}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  sample:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID1-ES:1{Scr:4}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes:
+      - /tmp:/nsls2/data/sst/proposals/
+    networks:
+      - bluesky-services_bluesky
+  side:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID1-ES:1{Scr:2}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky
+  sampleViewer:
+    image: docker.io/prjemian/synapps:latest
+    environment:
+      - PREFIX='XF:07ID1-ES:1{Scr:5}'
+    command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    networks:
+      - bluesky-services_bluesky

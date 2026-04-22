@@ -1,0 +1,17 @@
+[slits_foe]
+_target = "sst_base.slits.QuadSlits"
+
+[fs6_y]
+_target = "sst_base.motors.PrettyMotorDeadband"
+
+[slitsc] # was Exit_Slit # Precision slit C
+_target = "sst_base.motors.PrettyMotor"
+
+[slits1]
+_target = "sst_base.slits.QuadSlits"
+
+[izero_y] # was Izero_Y
+_target = "sst_base.motors.PrettyMotorDeadband"
+
+[slits3]
+_target = "sst_base.slits.QuadSlits"

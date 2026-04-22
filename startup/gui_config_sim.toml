@@ -1,0 +1,6 @@
+[gui]
+header = "nbs-gui-header"
+
+[kafka]
+config_file = "/etc/bluesky/kafka.yml"
+bl_acronym = "nbs"

@@ -1,0 +1,32 @@
+[settings.redis.md]
+__merge__ = "replace"
+host = "redis"
+prefix = "rsoxs"
+
+[settings.redis.config]
+__merge__ = "replace"
+host = "redisInfo"
+prefix = ""
+port = 60737
+db = 1
+
+[settings.redis.info]
+__merge__ = "replace"
+host = "redisInfo"
+prefix = ""
+port = 60737
+db = 2
+
+[settings.logging]
+__merge__ = "replace"
+enabled = true
+method = "nslsii"
+
+[settings.tiled_writer]
+__merge__ = "replace"
+enabled = true
+profile = "nbs"
+subscribe_method = "post_document"
+
+[settings.kafka]
+name = "nbs"

@@ -1,5 +1,5 @@
 services:
-  main:
+  gui:
     volumes:
       - ${NBS_COLLECTION_PACKAGES}:/home/xf07id1/collection_packages
       - ${BEAMLINE_PODS_DIR}:/home/xf07id1/.ipython/profile_collection

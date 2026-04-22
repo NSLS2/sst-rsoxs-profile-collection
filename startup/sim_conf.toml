@@ -1,0 +1,32 @@
+[loaders]
+"PrettyMotor" = "nbs_sim.devices.motors.FakeMotor"
+"EpicsMotor" = "nbs_sim.devices.motors.FakeMotor"
+"DeadbandEpicsMotor" = "nbs_sim.devices.motors.FakeMotor"
+"PrettyMotorFMBO" = "nbs_sim.devices.motors.FakeFMBOMotor"
+"PrettyMotorFMBODeadband" = "nbs_sim.devices.motors.FakeFMBOMotor"
+"PrettyMotorFMBODeadbandFlyer" = "nbs_sim.devices.motors.FakeFMBOMotor"
+"FlyableMotor" = "nbs_sim.devices.motors.FakeMotor"
+"ADCBuffer" = "nbs_sim.devices.detectors.ADCVoltage"
+"ophScalar" = "nbs_sim.devices.detectors.GenericDetector"
+"EPS_Shutter" = "nbs_sim.devices.shutters.SSTShutter"
+"MultiMeshBuilder" = "nbs_sim.devices.manipulator.MultiMesh"
+"ManipulatorBuilder" = "nbs_sim.devices.manipulator.Manipulator"
+"ManipulatorBuilderRSOXS" = "nbs_sim.devices.manipulator.ManipulatorRSOXS"
+"EnergySoftFactory" = "nbs_sim.devices.energy.SST1Energy"
+"EnergyTender" = "nbs_sim.devices.energy.HAXEnergyFlyer"
+"QuadSlits" = "nbs_sim.devices.slits.QuadSlits"
+"QuadSlitsLimitFactory" = "nbs_sim.devices.slits.QuadSlitsLimitFactory"
+"FMBOQuadSlits" = "nbs_sim.devices.slits.FMBOQuadSlits"
+"SRSADCFactory" = "nbs_sim.devices.srs570.SRSADCFactory"
+"FloodGun" = "nbs_sim.devices.floodgun.HAXFloodgun"
+"FMBHexapodMirror" = "nbs_sim.devices.mirrors.FMBHexapodMirror"
+"EpicsSignalRO" = "nbs_sim.devices.signals.ConstantSignal"
+"EpicsSignal" = "nbs_sim.devices.signals.ConstantSignal"
+"pid" = "nbs_sim.devices.pid.PIDGroup"
+"SMU" = "nbs_sim.devices.k2600b.K2600B"
+"RBDFactory" = "nbs_sim.devices.rbd9103.RBD9103"
+"WaxsDetectorFactory" = "nbs_sim.devices.greateyes.GreatEyes"
+
+[devices]
+ring_current = {_target = "nbs_sim.devices.signals.RingCurrent"}
+en = { _role = "energy", _load_order=1 }
