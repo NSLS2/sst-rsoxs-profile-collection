@@ -26,6 +26,7 @@
 "SMU" = "nbs_sim.devices.k2600b.K2600B"
 "RBDFactory" = "nbs_sim.devices.rbd9103.RBD9103"
 "WaxsDetectorFactory" = "nbs_sim.devices.greateyes.GreatEyes"
+"ShutterWait" = "nbs_sim.devices.signals.ConstantSignal"
 
 [devices]
 ring_current = {_target = "nbs_sim.devices.signals.RingCurrent"}

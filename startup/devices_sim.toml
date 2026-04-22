@@ -15,3 +15,9 @@ _target = "sst_base.motors.PrettyMotorDeadband"
 
 [slits3]
 _target = "sst_base.slits.QuadSlits"
+
+[shutter_control]
+_group = ['motors', 'shutters']
+
+[tem_tempstage]
+_baseline = false
