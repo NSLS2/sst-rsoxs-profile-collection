@@ -1,0 +1,138 @@
+name: Build and Push RSoXS Container Images
+
+on:
+  push:
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  build:
+    if: github.repository == 'nsls2/sst-rsoxs-profile-collection'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+    - name: Set IMAGE_NAME for GHCR
+      shell: bash
+      run: echo "IMAGE_NAME=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_ENV"
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v4
+
+    - name: Log in to Container Registry
+      uses: docker/login-action@v4
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Docker meta for rsoxs-bluesky
+      id: meta-rsoxs-bluesky
+      uses: docker/metadata-action@v6
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-bluesky
+        tags: |
+          type=raw,value=latest
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha
+
+    - name: Build and push rsoxs-bluesky image
+      uses: docker/build-push-action@v7
+      with:
+        context: .
+        file: ./images/bluesky/Containerfile
+        push: true
+        tags: ${{ steps.meta-rsoxs-bluesky.outputs.tags }}
+        labels: ${{ steps.meta-rsoxs-bluesky.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Docker meta for rsoxs-queueserver
+      id: meta-rsoxs-queueserver
+      uses: docker/metadata-action@v6
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-queueserver
+        tags: |
+          type=raw,value=latest
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha
+
+    - name: Build and push rsoxs-queueserver image
+      uses: docker/build-push-action@v7
+      with:
+        context: .
+        file: ./images/queueserver/Containerfile
+        push: true
+        tags: ${{ steps.meta-rsoxs-queueserver.outputs.tags }}
+        labels: ${{ steps.meta-rsoxs-queueserver.outputs.labels }}
+        build-args: |
+          BASE_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-bluesky:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Docker meta for rsoxs-gui
+      id: meta-rsoxs-gui
+      uses: docker/metadata-action@v6
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-gui
+        tags: |
+          type=raw,value=latest
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha
+
+    - name: Build and push rsoxs-gui image
+      uses: docker/build-push-action@v7
+      with:
+        context: .
+        file: ./images/gui/Containerfile
+        push: true
+        tags: ${{ steps.meta-rsoxs-gui.outputs.tags }}
+        labels: ${{ steps.meta-rsoxs-gui.outputs.labels }}
+        build-args: |
+          BASE_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-bluesky:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Docker meta for rsoxs-sim
+      id: meta-rsoxs-sim
+      uses: docker/metadata-action@v6
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-sim
+        tags: |
+          type=raw,value=latest
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha
+
+    - name: Build and push rsoxs-sim image
+      uses: docker/build-push-action@v7
+      with:
+        context: .
+        file: ./images/sim/Containerfile
+        push: true
+        tags: ${{ steps.meta-rsoxs-sim.outputs.tags }}
+        labels: ${{ steps.meta-rsoxs-sim.outputs.labels }}
+        build-args: |
+          BASE_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/rsoxs-bluesky:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
