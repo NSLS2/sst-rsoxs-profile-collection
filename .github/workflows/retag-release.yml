@@ -1,0 +1,64 @@
+name: Re-tag Release Images
+
+on:
+  push:
+    tags: [ 'v*' ]
+  workflow_dispatch:
+    inputs:
+      source_tag:
+        description: 'Existing image tag to re-tag from'
+        required: false
+        default: 'latest'
+      version:
+        description: 'Release version to apply (e.g. 2026.5.0) — omit leading v'
+        required: true
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  retag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - name: Log in to Container Registry
+      uses: docker/login-action@v4
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set IMAGE_NAME for GHCR
+      shell: bash
+      run: echo "IMAGE_NAME=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_ENV"
+
+    - name: Extract version from tag
+      id: version
+      run: |
+        if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          VERSION="${{ inputs.version }}"
+          echo "source_tag=${{ inputs.source_tag }}" >> "$GITHUB_OUTPUT"
+        else
+          TAG="${{ github.ref_name }}"
+          VERSION="${TAG#v}"
+          echo "source_tag=latest" >> "$GITHUB_OUTPUT"
+        fi
+        echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+        echo "major_minor=${VERSION%.*}" >> "$GITHUB_OUTPUT"
+
+    - name: Re-tag images as release
+      run: |
+        REPO="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}"
+        SOURCE="${{ steps.version.outputs.source_tag }}"
+        VERSION="${{ steps.version.outputs.version }}"
+        MAJOR_MINOR="${{ steps.version.outputs.major_minor }}"
+
+        for image in rsoxs-bluesky rsoxs-queueserver rsoxs-gui rsoxs-sim; do
+          docker buildx imagetools create \
+            --tag "${REPO}/${image}:${VERSION}" \
+            --tag "${REPO}/${image}:${MAJOR_MINOR}" \
+            "${REPO}/${image}:${SOURCE}"
+        done

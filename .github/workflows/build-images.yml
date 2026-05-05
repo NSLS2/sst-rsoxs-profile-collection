@@ -2,7 +2,7 @@ name: Build and Push RSoXS Container Images
 
 on:
   push:
-    tags: [ 'v*' ]
+    branches: [ build ]
   workflow_dispatch:
 
 env:
@@ -43,8 +43,6 @@ jobs:
           type=raw,value=latest
           type=ref,event=branch
           type=ref,event=pr
-          type=semver,pattern={{version}}
-          type=semver,pattern={{major}}.{{minor}}
           type=sha
 
     - name: Build and push rsoxs-bluesky image
@@ -67,8 +65,6 @@ jobs:
           type=raw,value=latest
           type=ref,event=branch
           type=ref,event=pr
-          type=semver,pattern={{version}}
-          type=semver,pattern={{major}}.{{minor}}
           type=sha
 
     - name: Build and push rsoxs-queueserver image
@@ -93,8 +89,6 @@ jobs:
           type=raw,value=latest
           type=ref,event=branch
           type=ref,event=pr
-          type=semver,pattern={{version}}
-          type=semver,pattern={{major}}.{{minor}}
           type=sha
 
     - name: Build and push rsoxs-gui image
@@ -119,8 +113,6 @@ jobs:
           type=raw,value=latest
           type=ref,event=branch
           type=ref,event=pr
-          type=semver,pattern={{version}}
-          type=semver,pattern={{major}}.{{minor}}
           type=sha
 
     - name: Build and push rsoxs-sim image
