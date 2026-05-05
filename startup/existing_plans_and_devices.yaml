@@ -2146,6 +2146,12 @@ existing_devices:
     is_movable: false
     is_readable: true
     module: ophyd.areadetector.plugins
+  detector:
+    classname: RSOXSGreatEyesDetector
+    is_flyable: false
+    is_movable: false
+    is_readable: true
+    module: rsoxs.devices.detectors
   diode_i400_PDU:
     classname: EpicsSignal
     is_flyable: false
@@ -21263,48 +21269,6 @@ existing_plans:
       name: hopgtheta
     properties:
       is_generator: true
-  grating_to_250:
-    module: rsoxs.HW.energy
-    name: grating_to_250
-    parameters:
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: hopgx
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: hopgy
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: hopgtheta
-    properties:
-      is_generator: true
-  grating_to_rsoxs:
-    module: rsoxs.HW.energy
-    name: grating_to_rsoxs
-    parameters:
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: hopgx
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: hopgy
-    - default: None
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: hopgtheta
-    properties:
-      is_generator: true
   image_bar:
     module: rsoxs.Functions.alignment_local
     name: image_bar
@@ -21777,22 +21741,6 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: dryrun
-    properties:
-      is_generator: true
-  load_sample:
-    description: move to a sample location and load the metadata with the sample information
-    module: rsoxs.Functions.alignment
-    name: load_sample
-    parameters:
-    - kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: sam_dict
-    - default: 'False'
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: sim_mode
     properties:
       is_generator: true
   m3_sweep:
@@ -23238,19 +23186,6 @@ existing_plans:
         name: VAR_KEYWORD
         value: 4
       name: position
-    properties:
-      is_generator: true
-  move_to_location:
-    module: rsoxs.Functions.alignment
-    name: move_to_location
-    parameters:
-    - default: '[{''motor'': ''x'', ''position'': 0.0, ''order'': 0}, {''motor'':
-        ''y'', ''position'': 0.0, ''order'': 0}, {''motor'': ''z'', ''position'':
-        0.0, ''order'': 0}, {''motor'': ''th'', ''position'': 0.0, ''order'': 0}]'
-      kind:
-        name: POSITIONAL_OR_KEYWORD
-        value: 1
-      name: locs
     properties:
       is_generator: true
   mv:
@@ -29141,7 +29076,7 @@ existing_plans:
       is_generator: true
   one_nd_sticky_exp_step:
     description: Inner loop of an N-dimensional step scan
-    module: rsoxs.Functions.per_steps
+    module: rsoxs.plans.per_steps
     name: one_nd_sticky_exp_step
     parameters:
     - description: devices to read
@@ -29712,12 +29647,6 @@ existing_plans:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: sample_id
-    properties:
-      is_generator: true
-  samxscan:
-    module: rsoxs.Functions.alignment
-    name: samxscan
-    parameters: []
     properties:
       is_generator: true
   scan_pgm_angles:
@@ -30797,29 +30726,40 @@ existing_plans:
     properties:
       is_generator: true
   take_exposure_corrected_reading:
-    module: rsoxs.Functions.per_steps
+    description: Trigger and read detectors with automatic exposure time correction.
+    module: rsoxs.plans.per_steps
     name: take_exposure_corrected_reading
     parameters:
     - default: None
+      description: List of detectors to trigger and read
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: detectors
     - default: None
+      description: Function to use for triggering and reading. If None, uses trigger_and_read_with_shutter
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: take_reading
     - default: None
+      description: Shutter device to control during reading
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: shutter
     - default: 'False'
+      description: Whether to check and correct exposure time, by default False
       kind:
         name: POSITIONAL_OR_KEYWORD
         value: 1
       name: check_exposure
+    - default: None
+      description: Primary detector that controls timing, by default None
+      kind:
+        name: POSITIONAL_OR_KEYWORD
+        value: 1
+      name: lead_detector
     properties:
       is_generator: true
   test_scans_prefect:

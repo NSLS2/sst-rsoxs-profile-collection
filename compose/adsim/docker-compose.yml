@@ -1,5 +1,9 @@
 version: '3'
 
+x-proposals-volume:
+  &proposals-volume
+  - /tmp/proposals:/nsls2/data/sst/proposals
+
 networks:
   bluesky-services_bluesky:
     external: true
@@ -10,6 +14,7 @@ services:
     environment:
       - PREFIX='XF:07ID-BI{BPM:1}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   fs6:
@@ -17,6 +22,7 @@ services:
     environment:
       - PREFIX='XF:07ID-BI{BPM:6}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   fs7:
@@ -24,6 +30,7 @@ services:
     environment:
       - PREFIX='XF:07ID-BI{BPM:7}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   fs13:
@@ -31,6 +38,7 @@ services:
     environment:
       - PREFIX='XF:07ID-BI{BPM:13}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   waxs:
@@ -38,6 +46,7 @@ services:
     environment:
       - PREFIX='XF:07ID1-ES:1{GE:2}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   slitc:
@@ -45,6 +54,7 @@ services:
     environment:
       - PREFIX='XF:07ID-BI{BPM:22}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   izero:
@@ -52,6 +62,7 @@ services:
     environment:
       - PREFIX='XF:07ID1-ES:1{Scr:1}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   sample:
@@ -59,8 +70,7 @@ services:
     environment:
       - PREFIX='XF:07ID1-ES:1{Scr:4}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
-    volumes:
-      - /tmp:/nsls2/data/sst/proposals/
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky
   side:
@@ -75,5 +85,6 @@ services:
     environment:
       - PREFIX='XF:07ID1-ES:1{Scr:5}'
     command: bash -c "/root/bin/adsim.sh start && tail -f /dev/null"
+    volumes: *proposals-volume
     networks:
       - bluesky-services_bluesky

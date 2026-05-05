@@ -627,7 +627,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/38/74/f94141b38a51a553efef7f510fc213894161ae49b88bffd037f8d2a7cb2f/frozendict-2.4.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6a/bd/d91c5e39f490a49df14320f4e8c80161cfcce09f1e2cde1edd16a551abb3/frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/f3/8d/5e5be3ced1d12966fefb5c4ea3b2a5b480afcea36406559442c6e31d4a48/multidict-6.7.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/e6/57/3c31d01017df2f8bb93d1d391409bf53ef775a59d916d6f8da059b5a4176/nbs_bl-0.3.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3d/39/827b565b3f4ad5d7676b162424ee072abc29bda82c92d18cde859c997764/nbs_bl-0.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/aa/a1ef22fd3450c91f037ebd2a601a9955d693479d2fedf191cac309fe3b28/nbs_core-0.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/bb/11/417fbc5cd4230b6a511aa46988c9f69bc72b857feb9665392c88e858d86a/nbs_gui-0.1.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a3/a7/805515fb4bbe6c203948c95af5b5d717bc2d73479af632104581323df973/nbs_livetable-0.1.2-py3-none-any.whl
@@ -636,8 +636,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/7a/60/aba9f3c3f1f48c7fbdf03bed45b576a916cd09c08242939b5294b85e37b4/qtconsole-5.7.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/69/76/37c0ccd5ab968a6a438f9c623aeecc84c202ab2fabc6a8fd927580c15b5a/QtPy-2.4.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.1#1d1f441b9a40c9ca39dd425b4b1a22233ecb0930
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#1d70bebdf049c11fb0124f685761bb008ac4c275
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
       - pypi: https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32dd3df50d43d7ff9854f8e0603945ff398974c1d91ac1ef/tomli_w-1.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   pods:
@@ -1260,14 +1260,14 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/38/74/f94141b38a51a553efef7f510fc213894161ae49b88bffd037f8d2a7cb2f/frozendict-2.4.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6a/bd/d91c5e39f490a49df14320f4e8c80161cfcce09f1e2cde1edd16a551abb3/frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/f3/8d/5e5be3ced1d12966fefb5c4ea3b2a5b480afcea36406559442c6e31d4a48/multidict-6.7.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: git+https://github.com/xraygui/nbs-pods#bb6a158d3f8c29c7ad7633bb6781860b2e1ffc1a
-      - pypi: https://files.pythonhosted.org/packages/e6/57/3c31d01017df2f8bb93d1d391409bf53ef775a59d916d6f8da059b5a4176/nbs_bl-0.3.1-py3-none-any.whl
+      - pypi: git+https://github.com/xraygui/nbs-pods#c729913b4457218eb61f7e1402f146471b76edd0
+      - pypi: https://files.pythonhosted.org/packages/3d/39/827b565b3f4ad5d7676b162424ee072abc29bda82c92d18cde859c997764/nbs_bl-0.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/aa/a1ef22fd3450c91f037ebd2a601a9955d693479d2fedf191cac309fe3b28/nbs_core-0.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.1#1d1f441b9a40c9ca39dd425b4b1a22233ecb0930
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#1d70bebdf049c11fb0124f685761bb008ac4c275
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   qs:
     channels:
@@ -1894,13 +1894,13 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/38/74/f94141b38a51a553efef7f510fc213894161ae49b88bffd037f8d2a7cb2f/frozendict-2.4.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6a/bd/d91c5e39f490a49df14320f4e8c80161cfcce09f1e2cde1edd16a551abb3/frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/f3/8d/5e5be3ced1d12966fefb5c4ea3b2a5b480afcea36406559442c6e31d4a48/multidict-6.7.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/e6/57/3c31d01017df2f8bb93d1d391409bf53ef775a59d916d6f8da059b5a4176/nbs_bl-0.3.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3d/39/827b565b3f4ad5d7676b162424ee072abc29bda82c92d18cde859c997764/nbs_bl-0.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/aa/a1ef22fd3450c91f037ebd2a601a9955d693479d2fedf191cac309fe3b28/nbs_core-0.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.1#1d1f441b9a40c9ca39dd425b4b1a22233ecb0930
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#1d70bebdf049c11fb0124f685761bb008ac4c275
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   sim:
     channels:
@@ -2521,14 +2521,14 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/38/74/f94141b38a51a553efef7f510fc213894161ae49b88bffd037f8d2a7cb2f/frozendict-2.4.7-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6a/bd/d91c5e39f490a49df14320f4e8c80161cfcce09f1e2cde1edd16a551abb3/frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/f3/8d/5e5be3ced1d12966fefb5c4ea3b2a5b480afcea36406559442c6e31d4a48/multidict-6.7.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/e6/57/3c31d01017df2f8bb93d1d391409bf53ef775a59d916d6f8da059b5a4176/nbs_bl-0.3.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3d/39/827b565b3f4ad5d7676b162424ee072abc29bda82c92d18cde859c997764/nbs_bl-0.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a7/aa/a1ef22fd3450c91f037ebd2a601a9955d693479d2fedf191cac309fe3b28/nbs_core-0.2.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/66/2b/f5d4205ae14109c792028bc633625203c1e984c38ff1046afaff645a10f2/nbs_sim-0.2.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3a/e6/4ad1dd469a8e5b4f5e1da7c22bc13d6de263a5a0031460363e89020d069a/nbs_sim-0.2.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.1#1d1f441b9a40c9ca39dd425b4b1a22233ecb0930
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#1d70bebdf049c11fb0124f685761bb008ac4c275
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   terminal:
     channels:
@@ -9527,10 +9527,10 @@ packages:
   - pkg:pypi/narwhals?source=hash-mapping
   size: 281869
   timestamp: 1775500139138
-- pypi: https://files.pythonhosted.org/packages/e6/57/3c31d01017df2f8bb93d1d391409bf53ef775a59d916d6f8da059b5a4176/nbs_bl-0.3.1-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/3d/39/827b565b3f4ad5d7676b162424ee072abc29bda82c92d18cde859c997764/nbs_bl-0.3.2-py3-none-any.whl
   name: nbs-bl
-  version: 0.3.1
-  sha256: 9652d9d857f678b51a73aa04c7878a02d83e3559e56644b29755d7c4b3501a99
+  version: 0.3.2
+  sha256: b209d2c6e6449037fbf2394c0f2c731cb7ac966b90b8497e101bf0ea6be2dd23
   requires_dist:
   - bluesky
   - bluesky-live
@@ -9581,14 +9581,14 @@ packages:
   - nslsii
   - qtpy
   requires_python: '>=3.8'
-- pypi: git+https://github.com/xraygui/nbs-pods#bb6a158d3f8c29c7ad7633bb6781860b2e1ffc1a
+- pypi: git+https://github.com/xraygui/nbs-pods#c729913b4457218eb61f7e1402f146471b76edd0
   name: nbs-pods
-  version: 0.2.5.dev2+gbb6a158d3
+  version: 0.2.6.dev4+gc729913b4
   requires_python: '>=3.8'
-- pypi: https://files.pythonhosted.org/packages/66/2b/f5d4205ae14109c792028bc633625203c1e984c38ff1046afaff645a10f2/nbs_sim-0.2.2-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/3a/e6/4ad1dd469a8e5b4f5e1da7c22bc13d6de263a5a0031460363e89020d069a/nbs_sim-0.2.3-py3-none-any.whl
   name: nbs-sim
-  version: 0.2.2
-  sha256: 0b3097141b7b14397db46c1162fc98e70ce82b09f8d3c918038e6e3b32b6e324
+  version: 0.2.3
+  sha256: 5952efcccc8dfae85268d26385792e4bc955b052ca8b1f422dda31a6298070c0
   requires_dist:
   - caproto
   - nbs-bl
@@ -11848,9 +11848,9 @@ packages:
   - pkg:pypi/rsa?source=hash-mapping
   size: 31709
   timestamp: 1744825527634
-- pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=main#1d70bebdf049c11fb0124f685761bb008ac4c275
+- pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
   name: rsoxs
-  version: 0.1.dev546+g1d70bebdf
+  version: 0.1.dev574+g64c6081ba
   requires_dist:
   - bluesky
   - nbs-bl
@@ -12373,9 +12373,9 @@ packages:
   - pkg:pypi/sqlalchemy?source=compressed-mapping
   size: 3707065
   timestamp: 1775241332871
-- pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.1#1d1f441b9a40c9ca39dd425b4b1a22233ecb0930
+- pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
   name: sst-base
-  version: 0.2.1
+  version: 0.2.3
   requires_dist:
   - bluesky
   - nbs-bl>=0.3.1

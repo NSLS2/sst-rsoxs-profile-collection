@@ -1,3 +1,6 @@
+[settings]
+startup_modules = ['rsoxs.startup', 'rsoxs.sim_startup']
+
 [settings.redis.md]
 __merge__ = "replace"
 host = "redis"

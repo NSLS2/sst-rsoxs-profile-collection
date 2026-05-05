@@ -7,8 +7,8 @@ ROOT_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
 cd -- "${ROOT_DIR}"
 
 if [[ $# -eq 0 ]]; then
-  exec podman-compose -f docker-compose.build.yml build
+  exec podman-compose --podman-build-args="--ulimit nofile=65536:65536" -f docker-compose.build.yml build
 fi
 
-exec podman-compose -f docker-compose.build.yml build "$@"
+exec podman-compose --podman-build-args="--ulimit nofile=65536:65536" -f docker-compose.build.yml build "$@"
 
