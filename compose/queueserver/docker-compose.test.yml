@@ -7,4 +7,5 @@ services:
     environment:
       - IPYTHONDIR=/home/xf07id1/.ipython
       - NBS_SIM_MODE=1
+      - NBS_PROFILE_USE_LOCKED_PACKAGES=${NBS_PROFILE_USE_LOCKED_PACKAGES}
     command: pixi run qs-pytest
