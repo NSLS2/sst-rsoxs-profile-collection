@@ -636,8 +636,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/7a/60/aba9f3c3f1f48c7fbdf03bed45b576a916cd09c08242939b5294b85e37b4/qtconsole-5.7.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/69/76/37c0ccd5ab968a6a438f9c623aeecc84c202ab2fabc6a8fd927580c15b5a/QtPy-2.4.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.4#84ae00a022bfef7e137af9616eb8ae71598d71c0
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#27d2151b260a87b3287ae607f67cab81a9db4646
       - pypi: https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32dd3df50d43d7ff9854f8e0603945ff398974c1d91ac1ef/tomli_w-1.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   pods:
@@ -1266,8 +1266,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.4#84ae00a022bfef7e137af9616eb8ae71598d71c0
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#27d2151b260a87b3287ae607f67cab81a9db4646
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   qs:
     channels:
@@ -1899,8 +1899,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.4#84ae00a022bfef7e137af9616eb8ae71598d71c0
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#27d2151b260a87b3287ae607f67cab81a9db4646
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   sim:
     channels:
@@ -2527,8 +2527,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/46/4b/3aae6835b8e5f44ea6a68348ad90f78134047b503765087be2f9912140ea/propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/67/d8/8af47ecca80c365d5ffcdce6fae78ec71921052189c1486ba9dbac7a36f4/pvxslibs-1.3.2-cp312-cp312-manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl
-      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
-      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
+      - pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.4#84ae00a022bfef7e137af9616eb8ae71598d71c0
+      - pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#27d2151b260a87b3287ae607f67cab81a9db4646
       - pypi: https://files.pythonhosted.org/packages/66/3e/868e5c3364b6cee19ff3e1a122194fa4ce51def02c61023970442162859e/yarl-1.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   terminal:
     channels:
@@ -11848,9 +11848,9 @@ packages:
   - pkg:pypi/rsa?source=hash-mapping
   size: 31709
   timestamp: 1744825527634
-- pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#64c6081ba98d8b8803d5e269cf9bd60154e874dc
+- pypi: git+https://github.com/usnistgov/sst-rsoxs?branch=develop#27d2151b260a87b3287ae607f67cab81a9db4646
   name: rsoxs
-  version: 0.1.dev574+g64c6081ba
+  version: 0.1.dev575+g27d2151b2
   requires_dist:
   - bluesky
   - nbs-bl
@@ -12373,9 +12373,9 @@ packages:
   - pkg:pypi/sqlalchemy?source=compressed-mapping
   size: 3707065
   timestamp: 1775241332871
-- pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.3#ee4f1b2bda314025c5f3d9233ef12a6a26499afd
+- pypi: git+https://github.com/nsls-ii-sst/sst-base?rev=v0.2.4#84ae00a022bfef7e137af9616eb8ae71598d71c0
   name: sst-base
-  version: 0.2.3
+  version: 0.2.4
   requires_dist:
   - bluesky
   - nbs-bl>=0.3.1
