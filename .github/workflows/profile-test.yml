@@ -13,6 +13,7 @@ jobs:
       contents: read
     env:
       NBS_COLLECTION_PACKAGES: ${{ github.workspace }}/collection_packages
+      NBS_PROFILE_USE_LOCKED_PACKAGES: "1"
 
     steps:
       - name: Checkout repository
@@ -23,6 +24,7 @@ jobs:
         with:
           cache: true
           environments: pods
+          frozen: true
 
       - name: Pods CLI smoke test
         shell: bash
@@ -36,18 +38,6 @@ jobs:
 
           pixi run -e pods pods-list | tee pods-list.txt
           grep -q "Available services" pods-list.txt
-
-      - name: Prepare collection_packages for containers
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          mkdir -p "${NBS_COLLECTION_PACKAGES}"
-          if [ ! -d "${NBS_COLLECTION_PACKAGES}/rsoxs/.git" ]; then
-            git clone https://github.com/nsls2/sst-rsoxs.git "${NBS_COLLECTION_PACKAGES}/rsoxs"
-          else
-            git -C "${NBS_COLLECTION_PACKAGES}/rsoxs" pull --ff-only
-          fi
 
       - name: Start bluesky-services
         shell: bash
