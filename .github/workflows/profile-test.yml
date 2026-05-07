@@ -14,6 +14,7 @@ jobs:
     env:
       NBS_COLLECTION_PACKAGES: ${{ github.workspace }}/collection_packages
       NBS_PROFILE_USE_LOCKED_PACKAGES: "1"
+      NBS_IMAGE_TAG: latest
 
     steps:
       - name: Checkout repository
