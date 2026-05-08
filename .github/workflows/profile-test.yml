@@ -1,0 +1,121 @@
+name: rsoxs Bluesky Profile Testing
+
+on:
+  pull_request:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  pods-smoke-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      NBS_COLLECTION_PACKAGES: ${{ github.workspace }}/collection_packages
+      NBS_PROFILE_USE_LOCKED_PACKAGES: "1"
+      NBS_IMAGE_TAG: latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Pixi
+        uses: prefix-dev/setup-pixi@v0.9.5
+        with:
+          cache: true
+          environments: pods
+          frozen: true
+
+      - name: Pods CLI smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p "${NBS_COLLECTION_PACKAGES}"
+
+          pixi run -e pods pods -- --help
+          pixi run -e pods podman-compose --version || true
+
+          pixi run -e pods pods-list | tee pods-list.txt
+          grep -q "Available services" pods-list.txt
+
+      - name: Start bluesky-services
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          podman --version
+          podman info --debug || true
+
+          pixi run -e pods pods-start bluesky-services
+
+          for i in $(seq 1 60); do
+            echo "wait_iter=${i}"
+            timeout 10s podman ps --format '{{.Names}}' | tee podman-ps.txt
+            if grep -q "bluesky-services_mongo" podman-ps.txt && grep -q "bluesky-services_kafka" podman-ps.txt; then
+              exit 0
+            fi
+            sleep 2
+          done
+
+          echo "Timed out waiting for bluesky-services to be running." >&2
+          podman ps -a || true
+          podman logs --tail 200 $(podman ps -aq) || true
+          exit 1
+
+      - name: Start ADSim
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pixi run -e pods pods-start adsim
+
+          for _ in $(seq 1 60); do
+            timeout 10s podman ps --format '{{.Names}}' | tee podman-ps.txt
+            if grep -q "adsim" podman-ps.txt; then
+              exit 0
+            fi
+            sleep 2
+          done
+
+          echo "Timed out waiting for ADSim to be running." >&2
+          podman ps -a || true
+          podman logs --tail 200 $(podman ps -aq) || true
+          exit 1
+
+      - name: Start sim
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pixi run -e pods pods-start sim
+
+          for _ in $(seq 1 60); do
+            timeout 10s podman ps --format '{{.Names}}' | tee podman-ps.txt
+            if grep -q "sim_sim" podman-ps.txt; then
+              exit 0
+            fi
+            sleep 2
+          done
+
+          echo "Timed out waiting for sim to be running." >&2
+          podman ps -a || true
+          podman logs --tail 200 $(podman ps -aq) || true
+          exit 1
+
+      - name: Start queueserver test
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pixi run -e pods pods-start --test queueserver
+
+      - name: Tear down minimal pods
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          pixi run -e pods pods-stop queueserver sim bluesky-services || true
+          podman ps -a || true
+

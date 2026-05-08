@@ -27,3 +27,16 @@ host = "info.sst.nsls2.bnl.gov"
 prefix = "rsoxs-"
 # port = 60737
 db = 2
+
+[settings.logging]
+enabled = true
+method = "nslsii"
+
+[settings.tiled_writer]
+profile = "nsls2"
+catalog_path = ["rsoxs", "raw"]
+api_key_env = "TILED_BLUESKY_WRITING_API_KEY_RSOXS"
+subscribe_method = "post_document"
+
+[settings.kafka]
+name = "rsoxs"

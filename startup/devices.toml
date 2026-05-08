@@ -47,7 +47,7 @@ string = true
 ## EPU60: https://www.osti.gov/biblio/1569013
 
 [en]
-_target = "sst_base.energy.EnPosFactory"
+_target = "sst_base.energy.EnergySoftFactory"
 _group = "source"
 _load_order = 2
 prefix = ""
@@ -186,6 +186,15 @@ read_attrs = ['tiff','stats5']
 ## As a result, the rounded edge of the beam is visible on the frame, but it is cut off on the straight inner edge of the frame.  The camera is as far back as can be placed, so a larger portion of the beam cannot be seen.
 ## M1 reflects the beam through the mask/frame.
 
+[slits_foe]
+_target = "sst_base.slits.FMBOQuadSlits"
+_group = "motors"
+kind = "hinted"
+prefix = "XF:07IDA-OP{Slt:01-Ax:"
+name = "FOE slits"
+concurrent = 1
+_baseline = true
+
 [fs6_cam] #was FS6_cam
 _target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory" 
 _group = "all_standard_pros" ## TODO: Does this need another group?
@@ -194,6 +203,15 @@ name = "FS6 Camera"
 camera_name = "fs6_cam-1"
 date_template = "%Y/%m"
 read_attrs = ['tiff','stats5']
+
+[fs6_y]
+_target = "sst_base.motors.PrettyMotorFMBODeadband"
+_group = "motors"
+prefix = "XF:07IDA1-BI{FS:06-Ax:Y}Mtr"
+name = "Fluorescence screen 6 vertical translation" 
+kind = "hinted"
+_baseline = true
+## Normally retracted at 1.5.  Screen is at -1.
 
 [psh4]
 _target = "sst_base.shutters.EPS_Shutter"
@@ -296,6 +314,15 @@ _baseline = true
 ## GV26
 
 ## DM6 and FS12
+
+[slitc_cam] 
+_target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory"
+_group = "all_standard_pros" ## TODO: Does this need another group?
+prefix = "XF:07ID-BI{BPM:22}"
+name = "Slit C Camera"
+camera_name = "bpm22_cam-1"
+date_template = "%Y/%m"
+read_attrs = ['tiff','stats5']
 
 [slitsc] # was Exit_Slit # Precision slit C
 _target = "sst_base.motors.PrettyMotorFMBO"
@@ -694,6 +721,17 @@ name = "RSoXS TEM Inboard-Outboard"
 prefix = "XF:07ID1-ES:1{Smpl-Ax:Z}Mtr"
 _baseline = true
 
+[gv_tem]
+_target = "sst_base.shutters.EPS_Shutter"
+_group = "gate_valves"
+shutter_type = "GV"
+openval = 0
+closeval = 1
+prefix = "XF:07IDB-VA:2{RSoXS:Main-GV:2}"
+name = "TEM Load Lock Gate Valve"
+kind = "hinted"
+_baseline = true
+
 [tem_tempstage]
 _target = "rsoxs.HW.lakeshore.Lakeshore336Picky" 
 _group = "sample_environments" ## TODO: I made a new group, feel free to rename.
@@ -713,7 +751,7 @@ _target = "sst_base.motors.PrettyMotorFMBODeadband"
 _group = "motors"
 kind = "hinted"
 name = "Beam Stop WAXS"
-prefix = "XF:07ID2-ES1{BS-Ax:2}Mtr" #prefix = "XF:07ID2-ES1{BS-Ax:1}Mtr" ## December 2025, put SAXS beamstop Ax:2 into WAXS position
+prefix = "XF:07ID2-ES1{BS-Ax:1}Mtr"
 _baseline = true
 
 #[Beamstop_WAXS] ## This is Jamie's definition, can be used for flyscanning (?)
@@ -724,11 +762,17 @@ _baseline = true
 #_baseline = true
 
 [beamstop_waxs] # was Beamstop_WAXS_int
-_target = "sst_base.detectors.scalar.ophScalar" ## These signals are scalars (integrating detectors).  Each data point that is written out is the average of several "sub" data points.  Other statistics, such as standard deviation, median, etc. are available.  ## TODO: Would it be possible to combine this with the non-integrating signal and can toggle between which type to use?
+name = "WAXS Beamstop"
 _group = ["detectors"]
 kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC1_MON"
-name = "WAXS Beamstop"
+## Connected to I400, bad signal
+#_target = "sst_base.detectors.scalar.ophScalar" ## These signals are scalars (integrating detectors).  Each data point that is written out is the average of several "sub" data points.  Other statistics, such as standard deviation, median, etc. are available.  ## TODO: Would it be possible to combine this with the non-integrating signal and can toggle between which type to use?
+#prefix = "XF:07ID-ES1{DMR:I400-1}:IC1_MON"
+#_baseline = true
+## Connected to SRS570 curent pre-amplifier labelled "RSoXS Beamstop WAXS" on rack behind ucal station
+## --> Connected to ADC3 channel 7
+_target = "sst_base.detectors.scalar.ADCBuffer"
+prefix = "XF:07ID-BI[ADC:3-Ch:7]"
 
 [diode_i400_cap]
 _target = "ophyd.EpicsSignal"
@@ -792,15 +836,18 @@ name = "Detector WAXS Translation"
 prefix = "XF:07ID2-ES1{Det-Ax:2}Mtr"
 _baseline = true
 
-#[waxs_det]
-#_target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
-#_group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
-#_load_order = 2
+[waxs_det]
+_target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
+_group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
+_load_order = 2
 #_deferred = true
-#prefix = "XF:07ID1-ES:1{GE:2}"
-#name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
-#read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
+prefix = "XF:07ID1-ES:1{GE:2}"
+name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
+read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
 ## Greateyes GE 4k4k camera, serial number GE060232
+##################################################
+## Water cooling
+## Koolance LLX-700 chiller.  CH1 temp = 19.4 C, CH2 temp = 19.6 C, pump = 4225 RPM, flow rate = 2.7 LPM, liq temp = 13.9 C
 
 #[BeamStopS]
 #_target = "sst_base.motors.PrettyMotorFMBODeadband"
@@ -927,6 +974,12 @@ closeval = 1
 prefix = "XF:07IDA-PPS{PSh:7}"
 name = "Photon Shutter 7"
 
+[mir4]
+_target = "sst_base.mirrors.FMBHexapodMirror"
+_group = "motors"
+prefix = "XF:07ID2-OP{Mir:M4CD"
+name = "SST 1 Mirror 4 fmb" 
+kind = "hinted"
 #[mir4OLD]
 #_target = "sst_base.mirrors.HexapodMirror"
 #_group = "motors"
@@ -936,17 +989,34 @@ name = "Photon Shutter 7"
 ## M4C is curved (meridional cylinder)
 ## M4 and downstream mirrors have drain currents measured
 
-[DownstreamLargeDiode] 
-_target = "ophyd.EpicsSignalRO"
+## Diagnostic module (DM) 7
+[dm7_photodiode]
+name = "DM7 photodiode"
+#_group = "detectors" ## Commenting out when using WAXS beamstop so that imports don't fail, but I don't record this stream
 kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC4_MON"
-name = "DownstreamLargeDiode"
+#_baseline = true
+## Connected to SRS570 curent pre-amplifier labelled "RSoXS Beamstop WAXS" on rack behind ucal station
+## --> Connected to ADC3 channel 7
+_target = "sst_base.detectors.scalar.ADCBuffer"
+prefix = "XF:07ID-BI[ADC:3-Ch:7]"
 
-[DownstreamLargeDiode_int] 
-_target = "sst_base.detectors.scalar.ophScalar"
-kind = "normal"
-prefix = "XF:07ID-ES1{DMR:I400-1}:IC4_MON"
-name = "DownstreamLargeDiode"
+[fs13_cam]
+_target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory"
+_group = "all_standard_pros" ## TODO: Does this need another group?
+prefix = "XF:07ID-BI{BPM:13}"
+name = "FS13 Camera"
+camera_name = "fs13_cam-1"
+date_template = "%Y/%m"
+read_attrs = ['tiff','stats5']
+
+[dm7_y]
+_target = "sst_base.motors.PrettyMotorFMBODeadband"
+_group = "motors"
+prefix = "XF:07ID2-BI{Diag:07-Ax:Y}Mtr"
+name = "Diagnostic module 7 assembly vertical translation" 
+kind = "hinted"
+_baseline = true
+## Motor range is -82 to 29.9.  Normally retracted at ###.  Photodiode is at -15.
 
 #[bpm13_sum]
 #_target = "ophyd.EpicsSignalRO"
