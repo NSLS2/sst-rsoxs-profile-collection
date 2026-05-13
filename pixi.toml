@@ -33,8 +33,8 @@ ophyd-async = ">=0.13.7,<0.14"
 #pyhyperscattering = ">=0.2.10,<0.3"
 
 [feature.nbs.pypi-dependencies]
-pyfai = { git = "https://github.com/silx-kit/pyFAI"}
-pyhyperscattering = { git = "https://github.com/usnistgov/PyHyperScattering" }
+pyfai = { git = "https://github.com/silx-kit/pyFAI", rev = "main" }
+pyhyperscattering = { git = "https://github.com/usnistgov/PyHyperScattering", rev = "main" }
 nbs-core = ">=0.1.0"
 nbs-bl = {git = "https://github.com/xraygui/nbs-bl", tag="v0.2.1"}
 bluesky-darkframes = ">=0.6.0"
