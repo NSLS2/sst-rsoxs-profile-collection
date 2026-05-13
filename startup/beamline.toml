@@ -13,19 +13,20 @@ xas = ['regions.toml']
 rsoxs = ['regions.toml']
 
 [settings.redis.md]
-host = "info.sst.nsls2.bnl.gov"
-prefix = "rsoxs-"
+host = "xf07id1-rsoxs-redis1.nsls2.bnl.gov"
+port = 6380
+ssl = true
 
 [settings.redis.config]
-host = "info.sst.nsls2.bnl.gov"
-prefix = "rsoxs-"
-# port = 60737
+host = "xf07id1-rsoxs-redis1.nsls2.bnl.gov"
+port = 6380
+ssl = true
 db = 1
 
 [settings.redis.info]
-host = "info.sst.nsls2.bnl.gov"
-prefix = "rsoxs-"
-# port = 60737
+host = "xf07id1-rsoxs-redis1.nsls2.bnl.gov"
+port = 6380
+ssl = true
 db = 2
 
 [settings.logging]
