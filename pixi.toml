@@ -28,6 +28,7 @@ pyzmq = ">=27.0.2,<28"
 bluesky-live = ">=0.0.8,<0.0.9"
 bluesky-tiled-plugins = ">=2.0.2"
 ophyd-async = ">=0.13.7,<0.14"
+hatchling = "*"
 
 #[feature.profile.pypi-dependencies]
 #nslsii = { git = "https://github.com/NSLS-II/nslsii.git"}
