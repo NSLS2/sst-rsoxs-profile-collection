@@ -40,7 +40,7 @@ hatchling = "*"
 # pyfai = "==2026.3.0"
 # pyhyperscattering = { git = "https://github.com/usnistgov/PyHyperScattering" }
 nbs-core = ">=0.2.0"
-nbs-bl = ">=0.3.2"
+nbs-bl = ">=0.3.3"
 bluesky-darkframes = {git = "https://github.com/bluesky/bluesky-darkframes", branch = "main" } #>=0.6.0"
 slackclient = "*"
 sst-base = { git = "https://github.com/nsls-ii-sst/sst-base", rev = "v0.2.4" }
