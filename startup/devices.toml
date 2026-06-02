@@ -156,6 +156,7 @@ prefix = "XF:07IDA-OP{Mir:M1"
 name = "SST 1 Mirror 1 fmb" 
 kind = "hinted"
 _baseline = true
+_modes = ["skip"]
 ## Plane (flat) mirror
 ## Accessible in Phoebus by going to File --> Open --> /opt/css/opi/production/cs-studio-xf/07id/edl_conv/MC02/6Pod_TopLevel_M1.bob
 ## Does not have drain current meausred
@@ -165,6 +166,7 @@ _target = "ophyd.EpicsSignalRO"
 kind = "normal"
 prefix = "XF:07IDA-OP{Mir:1}T:Msk-I"
 name = "Temperature_M1"
+#_modes = ["skip"]
 
 [mir1_pressure]
 _target = "ophyd.EpicsSignalRO"
@@ -173,6 +175,7 @@ kind = "normal"
 prefix = "XF:07IDA-VA:0{Mir:M1-CCG:1}P:Raw-I"
 name = "Mirror 1 Vacuum Pressure"
 _baseline = true
+#_modes = ["skip"]
 
 [fs1_cam] # was FS1_cam
 _target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory" 
@@ -186,6 +189,10 @@ read_attrs = ['tiff','stats5']
 ## As a result, the rounded edge of the beam is visible on the frame, but it is cut off on the straight inner edge of the frame.  The camera is as far back as can be placed, so a larger portion of the beam cannot be seen.
 ## M1 reflects the beam through the mask/frame.
 
+
+## Electrical panel door is left open (at least while the FOE doors are open) to prevent overheating of the electronics.
+
+
 [slits_foe]
 _target = "sst_base.slits.FMBOQuadSlits"
 _group = "motors"
@@ -194,6 +201,8 @@ prefix = "XF:07IDA-OP{Slt:01-Ax:"
 name = "FOE slits"
 concurrent = 1
 _baseline = true
+## File --> Open --> /opt/css/opi/production/cs-studio-xf/07id/edl_conv/MC03/Slt01_MainPanel.bob
+
 
 [fs6_cam] #was FS6_cam
 _target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory" 
@@ -252,6 +261,12 @@ _group = "motors"
 _load_order = 2
 _baseline = true
 
+[mirror2_temperature] 
+_target = "ophyd.EpicsSignalRO"
+kind = "normal"
+prefix = "XF:07IDA-OP{Mono:PGM}T:600-I" ## Originally, this was for 600 grating, but it's temporarily taped onto mirror2 motor to check temperature after increasing current
+name = "mirror2_temperature"
+
 [grating] ## angle
 _alias = "en.monoen.grating"
 _group = "motors"
@@ -270,6 +285,8 @@ _target = "ophyd.EpicsSignalRO"
 kind = "normal"
 prefix = "XF:07IDA-OP{Mono:PGM}T:Grg-I"
 name = "mono_pgm_temperature"
+
+
 
 ## Zero-order mask to block out zero-order reflections from PGM
 ## Other masks are also present between PGM nad M3
@@ -315,12 +332,31 @@ _baseline = true
 
 ## DM6 and FS12
 
+[slits_dm6]
+_target = "sst_base.slits.FMBOQuadSlits"
+_group = "motors"
+kind = "hinted"
+prefix = "XF:07ID2-OP{Slt:10-Ax:"
+name = "DM6 slits"
+concurrent = 1
+_baseline = true
+## File --> Open --> /opt/css/opi/production/cs-studio-xf/07id/edl_conv/MC06/Slt10_MainPanel.bob
+
+[dm6_y]
+_target = "sst_base.motors.PrettyMotorFMBODeadband"
+_group = "motors"
+prefix = "XF:07ID2-BI{Diag:06-Ax:Y}Mtr"
+name = "Diagnostic module 6 assembly vertical translation" 
+kind = "hinted"
+_baseline = true
+## File --> Open --> /opt/css/opi/production/cs-studio-xf/07id/edl_conv/MC05/DM06_MainPanel.bob
+
 [slitc_cam] 
 _target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory"
 _group = "all_standard_pros" ## TODO: Does this need another group?
 prefix = "XF:07ID-BI{BPM:22}"
 name = "Slit C Camera"
-camera_name = "bpm22_cam-1"
+camera_name = "fs22_cam-1"
 date_template = "%Y/%m"
 read_attrs = ['tiff','stats5']
 
@@ -331,6 +367,9 @@ kind = "hinted"
 prefix = "XF:07ID2-BI{Slt:11-Ax:YGap}Mtr"
 name = "Exit Slit of Mono Vertical Gap"
 _baseline = true
+## Phoebus -->  File --> Open --> /opt/css/opi/production/cs-studio-xf/07id/edl_conv/MC04/Slt11_MainPanel.bob
+## Even Phoebus only shows slit gap, but not positions of individual slit blades.  Unsure where to find that.
+
 
 ## GV27
 
@@ -431,6 +470,21 @@ string = true
 ## This I400 does not have an associated PDU the way the diode_i400 has.  To power cycle this I400, just disconnect and reconnect the cable.
 
 
+## For now, using the same SRS and ADC as izero_mesh to measure slit drain currents
+## TODO: eventually want to move these to permanent SRS's and ADCs
+[slit_drain_current]
+name = "Slit Drain Current"
+_group = "detectors"
+kind = "normal"
+## Connected to SRS570 curent pre-amplifier #13 on rack behind ucal station
+## --> Connected to ADC3 channel 2
+_target = "sst_base.detectors.scalar.ADCBuffer"
+prefix = "XF:07ID-BI[ADC:3-Ch:2]"
+## W003318101 flange
+## Drain current ports
+## FD4 (top side of flange): slits1.outboard, FD3: slits1.inboard, FD2: slits1.top, FD1 (inboard side): slits1.bottom 
+
+
 [izero_mesh] #was Izero_Mesh_int and Izero_Mesh
 name = "RSoXS Au Mesh Current"
 _group = "detectors"
@@ -528,6 +582,12 @@ name = "Middle Scatter Slits"
 concurrent = 1
 _baseline = true
 
+## Slits 2 drain currents
+## W003319101 flange
+## Drain current ports
+## FD1 (top side of flange): slits2.outboard, FD2: slits1.inboard, FD3: slits1.top, FD4 (inboard side of flange): slits1.bottom 
+
+
 [gv27a]
 _target = "sst_base.shutters.EPS_Shutter"
 _group = "gate_valves"
@@ -575,6 +635,7 @@ name = "RSoXS Sample Area Camera" ## TODO: Would like to rename to "RSoXS Sample
 camera_name = "sample_cam-1"
 date_template = "%Y/%m"
 read_attrs = ["tiff"]
+## IOC: xf07id-ioc3, softioc: escam04
 
 [Side_cam]
 _target = "sst_base.cameras.StandardProsilicaWithTIFFFactory"
@@ -592,6 +653,7 @@ prefix = "XF:07ID2-ES1{ImgY-Ax:1}Mtr"
 name = "RSoXS Sample Imager"
 kind = "hinted"
 _baseline = true
+## IOC: xf07id1-inst-ioc1, softioc: MC19, axis 7
 
 [SampleViewer_cam]
 _target = "sst_base.cameras.ColorProsilicaWithTIFFV33Factory"
@@ -610,6 +672,7 @@ read_attrs = ["tiff"]
 ## Cable from pyI-4:1 patch panel to C racks on inboard SST2 side of RSoXS.
 ## Switch: [need to locate port]
 ## IOC: xf07id-ioc3, softioc: ad_RSoXS_cam05 
+## Motor controller IOC is xf07id1-inst-ioc1, softioc is MC19, 7th axis on motor controller
 ## Acquisition parameters in Phoebus: ######################
 ## Exposure time = 0.05 s ## Likely the first parameter to be adjusted if image is too bright or dim
 ## Acquire Period: 1 s
@@ -1045,6 +1108,18 @@ _baseline = true
 #camera_name = "fs13_cam-1"
 #date_template = "%Y/%m"
 #read_attrs = ['tiff','stats5']
+
+
+## TODO: Check exact location on beamline
+## Ladder of reference materials downstream of RSoXS used for NEXAFS energy calibration
+[i0_up_tey]
+name = "I0 up sample current"
+#_group = "detectors"
+kind = "normal"
+_target = "sst_base.detectors.scalar.ADCBuffer"
+prefix = "XF:07ID-BI[ADC:1-Ch:5]"
+## Motor PV is 
+
 
 ## LARIAT 1
 
