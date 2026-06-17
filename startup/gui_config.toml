@@ -41,6 +41,7 @@ slits1_outboard_current = { visible = false }
 "MultiMeshBuilder" = "nbs_gui.models.PseudoPositionerModel"
 "QuadSlits" = "sst_base.qt.models.quadSlits.QuadSlitsModel"
 "FMBOQuadSlits" = "sst_base.qt.models.quadSlits.QuadSlitsModel"
+"RedisModeDevice" = "nbs_gui.models.RedisModeModel"
 
 [kafka]
 config_file = "/etc/bluesky/kafka.yml"
