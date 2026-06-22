@@ -2,7 +2,7 @@
 header = "sst-gui-header"
 
 [gui.tabs]
-include = ["nbs-gui-queue", "nbs-gui-console", "kafka-table-tab", "nbs-gui-monitor", "sst-gui-samples"]
+include = ["nbs-gui-queue", "nbs-gui-console", "kafka-table-tab", "rsoxs-monitor-tab", "sst-gui-samples"]
 
 [gui.plans]
 beamline_modifier = "rsoxs-configuration"

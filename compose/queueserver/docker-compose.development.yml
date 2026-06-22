@@ -7,4 +7,4 @@ services:
     environment:
       - IPYTHONDIR=/home/xf07id1/.ipython
       - NBS_SIM_MODE=1
-    command: pixi run qs-dev
+    command: pixi run qs

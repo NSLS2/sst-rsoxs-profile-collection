@@ -1,6 +1,6 @@
 [presets]
 demo = ["bluesky-services", "adsim", "sim", "gui", "queueserver"]
-develop = ["bluesky-services", "adsim", "sim", "gui", "--dev", "queueserver"]
+develop = ["bluesky-services", "adsim", "--dev", "sim", "gui", "queueserver"]
 test = ["bluesky-services", "adsim", "sim", "--test", "queueserver"]
 
 [bluesky-services]

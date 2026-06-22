@@ -998,6 +998,7 @@ _target = "ophyd.EpicsSignalRO"
 kind = "hinted"
 prefix = "XF:07IDB-VA:2{RSoXS:Main-TCG:1}P-I"
 name = "Main Chamber Pirani Gauge value"
+_group = "vacuum"
 _baseline = true
 
 [rsoxs_ccg_main_val]
@@ -1005,6 +1006,7 @@ _target = "ophyd.EpicsSignalRO"
 kind = "hinted"
 prefix = "XF:07IDB-VA:2{RSoXS:Main-CCG:1}P-I"
 name = "Main Chamber Chamber Cold Cathode Gauge"
+_group = "vacuum"
 _baseline = true
 
 ## Main chamber bottom turbo pump specs
