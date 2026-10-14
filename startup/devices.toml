@@ -183,7 +183,7 @@ kind = "normal"
 prefix = "XF:07IDA-VA:0{Mir:M1-CCG:1}P:Raw-I"
 name = "Mirror 1 Vacuum Pressure"
 _baseline = true
-#_modes = ["skip"]
+_modes = ["skip"]
 
 [fs1_cam] # was FS1_cam
 _target = "rsoxs.devices.cameras.StandardProsilicawstatsFactory" 
@@ -228,6 +228,7 @@ prefix = "XF:07IDA1-BI{FS:06-Ax:Y}Mtr"
 name = "Fluorescence screen 6 vertical translation" 
 kind = "hinted"
 _baseline = true
+_modes = ["skip"] ## 2026-08-19 - due to M1 repairs
 ## Normally retracted at 1.5.  Screen is at -1.
 
 [psh4]
@@ -911,7 +912,7 @@ _baseline = true
 _target = "rsoxs.devices.waxs.WaxsDetectorFactory" 
 _group = "all_standard_pros" ## TODO: Not sure if this belongs elsewhere.
 _load_order = 2
-_modes = ["waxs"]
+#_modes = ["waxs"] ## 2026-08-19
 prefix = "XF:07ID1-ES:1{GE:2}"
 name = "Wide Angle CCD Detector" ## TODO: Not sure how this is different from DetS_cam
 read_attrs = ['tiff', 'stats1.total', 'saturated','under_exposed','cam']
@@ -1088,7 +1089,7 @@ _group = "motors"
 prefix = "XF:07ID2-BI{Diag:07-Ax:Y}Mtr"
 name = "Diagnostic module 7 assembly vertical translation" 
 kind = "hinted"
-_baseline = true
+#_baseline = true
 ## Motor range is -82 to 29.9.  Normally retracted at ###.  Photodiode is at -15.
 
 #[bpm13_sum]
