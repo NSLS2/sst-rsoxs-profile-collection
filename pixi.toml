@@ -1,16 +1,14 @@
 [workspace]
 channels = ["conda-forge"]
 name = "sst-rsoxs-profile-collection"
-platforms = ["linux-64"]
-version = "2026.2.0"
-
-[system-requirements]
-libc = "2.17"
+platforms = [{ platform = "linux-64", glibc = "2.17" }]
+version = "2026.3.0"
+requires-pixi = ">=0.82.1"
 
 [feature.profile.dependencies]
 bluesky-base = "==1.15"
 bluesky-queueserver = "*"
-matplotlib-base= ">=3.10,<4"
+matplotlib-base = ">=3.10,<4"
 networkx = ">=3.4.2,<4"
 nslsii = "==0.11.8"
 numpy = "*"
@@ -28,6 +26,9 @@ pyzmq = ">=27.0.2,<28"
 bluesky-live = ">=0.0.8,<0.0.9"
 bluesky-tiled-plugins = ">=2.0.2"
 ophyd-async = ">=0.13.7,<0.14"
+ca-certificates = ">=2026.10.19"
+certifi = ">=2026.10.19"
+pip = ">=26.2.2"
 
 #[feature.profile.pypi-dependencies]
 #nslsii = { git = "https://github.com/NSLS-II/nslsii.git"}
@@ -40,7 +41,7 @@ ophyd-async = ">=0.13.7,<0.14"
 # pyhyperscattering = { git = "https://github.com/usnistgov/PyHyperScattering" }
 nbs-core = ">=0.2.0"
 nbs-bl = ">=0.3.2"
-bluesky-darkframes = {git = "https://github.com/bluesky/bluesky-darkframes", branch = "main" } #>=0.6.0"
+bluesky-darkframes = { git = "https://github.com/bluesky/bluesky-darkframes", branch = "main" } #>=0.6.0"
 slackclient = "*"
 sst-base = { git = "https://github.com/nsls-ii-sst/sst-base", rev = "v0.2.4" }
 rsoxs = { git = "https://github.com/nsls2/sst-rsoxs", rev = "v0.1.0" }
@@ -132,10 +133,25 @@ viewer-dev = "scripts/viewer-dev.sh"
 sim = "scripts/sim-start.sh"
 sim-dev = "scripts/sim-dev.sh"
 
-[environments]
-terminal = {features=["profile", "terminal"], solve-group="profile"}
-qs = {features=["profile", "nbs", "qs"], solve-group="profile"}
-gui = {features=["profile", "nbs", "gui-base", "gui"], solve-group="profile"}
-viewer = {features=["profile", "gui-base", "viewer"], solve-group="viewer"}
-pods = {features=["profile", "nbs", "pods"], solve-group="profile"}
-sim = {features=["profile", "sim", "nbs"]}
+[environments.viewer]
+features = ["profile", "gui-base", "viewer"]
+solve-group = "viewer"
+
+[environments.terminal]
+features = ["profile", "terminal"]
+solve-group = "profile"
+
+[environments.sim]
+features = ["profile", "sim", "nbs"]
+
+[environments.qs]
+features = ["profile", "nbs", "qs"]
+solve-group = "profile"
+
+[environments.pods]
+features = ["profile", "nbs", "pods"]
+solve-group = "profile"
+
+[environments.gui]
+features = ["profile", "nbs", "gui-base", "gui"]
+solve-group = "profile"
